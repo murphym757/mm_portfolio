@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from './header.js';
 import Contact from '../personalInfo/contact.js';
 import AboutMe from '../personalInfo/aboutMe.js';
-import NavLinks from '../design/navLinks.js';
+import NavLinksAboutMe from '../design/navLinksAboutMe.js';
 
 
 export default class Navigation extends Component {
@@ -14,7 +14,7 @@ export default class Navigation extends Component {
                 <div class="row">
                     <h3 class="jobTitleHeader col-sm-6">Full-Stack Developer</h3>
                     <div class="col-sm-6 pb-3">
-                        <NavLinks />
+                        <NavLinksAboutMe />
                     </div>
                 </div>
                 <div class="container-fluid pt-3">

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 import Navigation from '../design/navigation.js';
-import ProjectCards from '../projectCards/projectCards.js';
+import Projects from '../projects/projects.js';
 import Header from '../design/header.js';
 import Footer from '../design/footer.js'
 
@@ -19,7 +19,7 @@ export default class Home extends Component {
                                 {/*Routes*/}
                                 <Switch>
                                     <Route exact path="/" component={Navigation}/>
-                                    <Route exact path="/projects" component={ProjectCards}/>
+                                    <Route exact path="/projects" component={Projects}/>
                                 </Switch>
                                 <Footer />
                             </div>

@@ -24,9 +24,9 @@ var _aboutMe = require('../personalInfo/aboutMe.js');
 
 var _aboutMe2 = _interopRequireDefault(_aboutMe);
 
-var _navLinks = require('../design/navLinks.js');
+var _navLinksAboutMe = require('../design/navLinksAboutMe.js');
 
-var _navLinks2 = _interopRequireDefault(_navLinks);
+var _navLinksAboutMe2 = _interopRequireDefault(_navLinksAboutMe);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -65,7 +65,7 @@ var Navigation = function (_Component) {
                         _react2.default.createElement(
                             'div',
                             { 'class': 'col-sm-6 pb-3' },
-                            _react2.default.createElement(_navLinks2.default, null)
+                            _react2.default.createElement(_navLinksAboutMe2.default, null)
                         )
                     ),
                     _react2.default.createElement(

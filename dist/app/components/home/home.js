@@ -16,9 +16,9 @@ var _navigation = require('../design/navigation.js');
 
 var _navigation2 = _interopRequireDefault(_navigation);
 
-var _projectCards = require('../projectCards/projectCards.js');
+var _projects = require('../projects/projects.js');
 
-var _projectCards2 = _interopRequireDefault(_projectCards);
+var _projects2 = _interopRequireDefault(_projects);
 
 var _header = require('../design/header.js');
 
@@ -59,7 +59,7 @@ var Home = function (_Component) {
                         { 'class': 'container-fluid p-auto' },
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'container-fluid pt-3' },
+                            { 'class': 'container-fluid pt-3 pb-3' },
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'card main-card' },
@@ -72,7 +72,7 @@ var Home = function (_Component) {
                                     _reactRouterDom.Switch,
                                     null,
                                     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _navigation2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects', component: _projectCards2.default })
+                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects', component: _projects2.default })
                                 ),
                                 _react2.default.createElement(_footer2.default, null)
                             )

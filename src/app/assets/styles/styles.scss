@@ -88,11 +88,13 @@ img {
 
 .homeDivider {
     color: $amethystSmoke;
+    font-family: 'Montserrat-Black';
 }
 
 .fa-github {
     color: $rum;
 }
+
 // Footer
 .footer {
     color: $amethystSmoke;
@@ -123,7 +125,7 @@ p {
 }
 
 .main-card {
-    opacity: 0.92;
+    opacity: 0.95;
 }
 
 .nameHeader,
@@ -131,13 +133,16 @@ p {
 .heading-title,
 .aboutMeSection,
 .contactSection,
+.navLinksHeader,
+.project-card,
 .footer {
     text-align: center;
     justify-content: center;
 }
 
 .heading-title,
-.contactHeading {
+.contactHeading,
+.projectName {
     font-family: 'Montserrat-Black';
     color: $rum;
     -webkit-text-stroke-width: 0.5px;
@@ -170,26 +175,10 @@ p {
     border: none;
 }
 
-/*p,
-.navbar-brand,
-.email-link,
-.phone-link,
-.email-link:link,
-.phone-link:link,
-.email-link:active,
-.phone-link:active {
-    color: $white;
-}
-
-.email-link:visited,
-.phone-link:visited,
-.email-link:hover,
-.phone-link:hover {
-    color: $bordeaux;
-}*/
-
 // Projects Cards
-
+.sp-card {
+    background-color:black;
+}
 
 
 /*--------------------------------------------*/
@@ -381,11 +370,6 @@ p {
         .homeDivider {
             font-size: 12px; //h6 = 16px
         }
-    // About Me
-        .email-link,
-        .phone-link {
-            font-size: 14px; //h6 = 16px
-        }
     }
 @media only screen 
     and (min-device-width: 414px) 
@@ -540,7 +524,11 @@ p {
 /* Large devices (Computers, 1440px and up) */
 
 @media (min-width: 1440px) and (orientation: landscape) {
-    
+    // About Me
+    .email-link,
+    .phone-link {
+        font-size: 16px; //h6 = 16px
+    }
 }
 
 /* ---------------------------------------------------- */
