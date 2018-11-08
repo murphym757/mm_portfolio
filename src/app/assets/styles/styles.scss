@@ -204,7 +204,21 @@ p {
     and (max-device-height: 480px) 
     and (-webkit-device-pixel-ratio: 2) 
     and (orientation: portrait) {
-        
+    // Nav Links
+        .homeLink-active,
+        .homeLink,
+        .homeDivider {
+            font-size: 8px; //h6 = 16px
+        }
+    // About Me
+        .email-link,
+        .phone-link {
+            font-size: 7px //h6 = 16px
+        }
+    // About Me
+        .aboutMeSection{
+            font-size: 10px //p = 14px
+        }
     }
 @media only screen 
     and (min-device-width: 320px) 
@@ -219,7 +233,21 @@ p {
     and (min-device-width: 320px) 
     and (max-device-height: 568px) 
     and (orientation: portrait) {
-
+    // Nav Links
+        .homeLink-active,
+        .homeLink,
+        .homeDivider {
+            font-size: 8px; //h6 = 16px
+        }
+    // About Me
+        .email-link,
+        .phone-link {
+            font-size: 7px //h6 = 16px
+        }
+    // About Me
+        .aboutMeSection{
+            font-size: 10px //p = 14px
+        }
     }
 
 @media only screen 
@@ -234,14 +262,27 @@ p {
     and (min-device-width: 360px) 
     and (max-device-height: 640px) 
     and (orientation: portrait) {
-
+    // Nav Links
+         .homeLink-active,
+         .homeLink,
+         .homeDivider {
+             font-size: 8px; //h6 = 16px
+         }
+     // About Me
+         .email-link,
+         .phone-link {
+             font-size: 7px //h6 = 16px
+         }
+         .aboutMeSection{
+             font-size: 10px //p = 14px
+         }
     }
 
 @media only screen 
     and (min-device-width: 360px) 
     and (max-device-height: 640px) 
     and (orientation: landscape) {
-
+        
     }
 
 /* iphone 6, 6s, 7, 8 */
@@ -250,7 +291,31 @@ p {
     and (max-device-height: 667px) 
     and (-webkit-device-pixel-ratio: 2)
     and (orientation: portrait) {
+    // General
+        .nameHeader {
+            font-size: 32px; //h1 = 40px
+        }
+        .jobTitleHeader {
+            font-size: 24px; //h3 = 28px
+        }
 
+        .heading-title{
+            font-size: 18px //h3 = 28px
+        }
+    // Nav Links
+        .homeLink-active,
+        .homeLink,
+        .homeDivider {
+            font-size: 10px; //h6 = 16px
+        }
+    // About Me
+        .email-link,
+        .phone-link {
+            font-size: 10px //h6 = 16px
+        }
+        .aboutMeSection{
+            font-size: 10px //p = 14px
+        }
     }
 
 @media only screen 
@@ -258,7 +323,46 @@ p {
     and (max-device-height: 667px) 
     and (-webkit-device-pixel-ratio: 2)
     and (orientation: landscape) {
+        // General
+        .nameHeader {
+            font-size: 30px; //h1 = 40px
+        }
+        .jobTitleHeader {
+            font-size: 24px; //h3 = 28px
+        }
 
+        .heading-title{
+            font-size: 18px //h3 = 28px
+        }
+    // About Me
+        .aboutMeSection{
+            font-size: 10px //p = 14px
+        }
+        .fa-envelope {
+            font-size: 54px //fa-4x (4em) = 64px
+        }
+        .fa-mobile {
+            font-size: 38px //fa-3x (3em) = 48px
+        }
+        .email-link,
+        .phone-link {
+            font-size: 10px //h6 = 16px
+        }
+        .contactHeading {
+            font-size: 14px //h5 = 20px
+        }
+
+    // Footer
+        .footer {
+            font-size: 10px //h6 = 16px
+        }
+
+    // Nav Links
+        .homeLink-active,
+        .homeLink,
+        .homeDivider {
+            font-size: 10px; //h6 = 16px
+        }
 }
 
 /* iphone 6+, 6s+, 7+, 8+ */
@@ -332,7 +436,21 @@ p {
     and (max-device-height: 812px) 
     and (-webkit-device-pixel-ratio: 3) 
     and (orientation: portrait) {
-
+    // Nav Links
+        .homeLink-active,
+        .homeLink,
+        .homeDivider {
+            font-size: 10px; //h6 = 16px
+        }
+    // About Me
+        .email-link,
+        .phone-link {
+            font-size: 10px //h6 = 16px
+        }
+    // About Me
+        .aboutMeSection{
+            font-size: 10px //p = 14px
+        }
     }
 
 @media only screen 
@@ -369,7 +487,17 @@ p {
   and (max-device-height: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: portrait) {
-
+    // Nav Links
+        .homeLink-active,
+        .homeLink,
+        .homeDivider {
+            font-size: 12px; //h6 = 16px
+        }
+    // About Me
+        .email-link,
+        .phone-link {
+            font-size: 12px //h6 = 16px
+        }
   }
 
 
@@ -380,7 +508,11 @@ p {
   and (max-device-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: portrait) {
-
+    // About Me
+    .email-link,
+    .phone-link {
+        font-size: 12px //h6 = 16px
+    }
   }
 
 @media only screen 
