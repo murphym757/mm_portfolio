@@ -11,7 +11,7 @@ export default class Home extends Component {
             <Router>
                 <div>
                     <div class="container-fluid p-auto">
-                        <div class="container-fluid pt-3">
+                        <div class="container-fluid pt-3 pb-3">
                             <div class="card main-card">
                             <Link class="nameHeader-Link" to="/">
                                 <Header />

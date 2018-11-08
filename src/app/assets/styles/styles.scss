@@ -31,10 +31,6 @@ img {
     color: $rum;
 }
 
-.nameHeader-Link:hover {
-    text-decoration: none;
-}
-
 //  Nav Links
 .navLinksHeader {
     float:left;
@@ -107,7 +103,11 @@ img {
     color: $aquamarineBlue
 }
 
-// Landing Page
+// General
+.nameHeader-Link:hover {
+    text-decoration: none;  
+}
+
 p {
     font-family: 'Montserrat-Light';
 }
@@ -138,7 +138,7 @@ p {
 
 .heading-title,
 .contactHeading {
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Black';
     color: $rum;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: $aquamarineBlue;
@@ -271,10 +271,10 @@ p {
      // About Me
          .email-link,
          .phone-link {
-             font-size: 7px //h6 = 16px
+             font-size: 7px; //h6 = 16px
          }
          .aboutMeSection{
-             font-size: 10px //p = 14px
+             font-size: 10px; //p = 14px
          }
     }
 
@@ -299,8 +299,8 @@ p {
             font-size: 24px; //h3 = 28px
         }
 
-        .heading-title{
-            font-size: 18px //h3 = 28px
+        .heading-title {
+            font-size: 18px; //h3 = 28px
         }
     // Nav Links
         .homeLink-active,
@@ -311,10 +311,10 @@ p {
     // About Me
         .email-link,
         .phone-link {
-            font-size: 10px //h6 = 16px
+            font-size: 10px; //h6 = 16px
         }
         .aboutMeSection{
-            font-size: 10px //p = 14px
+            font-size: 10px; //p = 14px
         }
     }
 
@@ -332,29 +332,29 @@ p {
         }
 
         .heading-title{
-            font-size: 18px //h3 = 28px
+            font-size: 18px; //h3 = 28px
         }
     // About Me
         .aboutMeSection{
-            font-size: 10px //p = 14px
+            font-size: 10px; //p = 14px
         }
         .fa-envelope {
-            font-size: 54px //fa-4x (4em) = 64px
+            font-size: 54px; //fa-4x (4em) = 64px
         }
         .fa-mobile {
-            font-size: 38px //fa-3x (3em) = 48px
+            font-size: 38px; //fa-3x (3em) = 48px
         }
         .email-link,
         .phone-link {
-            font-size: 10px //h6 = 16px
+            font-size: 10px; //h6 = 16px
         }
         .contactHeading {
-            font-size: 14px //h5 = 20px
+            font-size: 14px; //h5 = 20px
         }
 
     // Footer
         .footer {
-            font-size: 10px //h6 = 16px
+            font-size: 10px; //h6 = 16px
         }
 
     // Nav Links
@@ -371,6 +371,10 @@ p {
     and (max-device-height: 736px) 
     and (-webkit-device-pixel-ratio: 3) 
     and (orientation: portrait) {
+    // General
+    .nameHeader {
+        font-size: 34px; //h1 = 40px
+    } 
     // Nav Links
         .homeLink-active,
         .homeLink,
@@ -380,7 +384,7 @@ p {
     // About Me
         .email-link,
         .phone-link {
-            font-size: 12px //h6 = 16px
+            font-size: 14px; //h6 = 16px
         }
     }
 @media only screen 
@@ -396,30 +400,30 @@ p {
             font-size: 24px; //h3 = 28px
         }
 
-        .heading-title{
-            font-size: 18px //h3 = 28px
+        .heading-title {
+            font-size: 18px; //h3 = 28px
         }
     // About Me
         .aboutMeSection{
-            font-size: 10px //p = 14px
+            font-size: 10px; //p = 14px
         }
         .fa-envelope {
-            font-size: 54px //fa-4x (4em) = 64px
+            font-size: 54px; //fa-4x (4em) = 64px
         }
         .fa-mobile {
-            font-size: 38px //fa-3x (3em) = 48px
+            font-size: 38px; //fa-3x (3em) = 48px
         }
         .email-link,
         .phone-link {
-            font-size: 7px //h6 = 16px
+            font-size: 7px; //h6 = 16px
         }
         .contactHeading {
-            font-size: 14px //h5 = 20px
+            font-size: 14px; //h5 = 20px
         }
 
     // Footer
         .footer {
-            font-size: 10px //h6 = 16px
+            font-size: 10px; //h6 = 16px
         }
 
     // Nav Links
@@ -445,11 +449,11 @@ p {
     // About Me
         .email-link,
         .phone-link {
-            font-size: 10px //h6 = 16px
+            font-size: 10px; //h6 = 16px
         }
     // About Me
         .aboutMeSection{
-            font-size: 10px //p = 14px
+            font-size: 10px; //p = 14px
         }
     }
 
@@ -496,7 +500,7 @@ p {
     // About Me
         .email-link,
         .phone-link {
-            font-size: 12px //h6 = 16px
+            font-size: 12px; //h6 = 16px
         }
   }
 
@@ -511,7 +515,7 @@ p {
     // About Me
     .email-link,
     .phone-link {
-        font-size: 12px //h6 = 16px
+        font-size: 18px; //h6 = 16px
     }
   }
 
