@@ -20,6 +20,38 @@ var _segaCard = require('../projectCards/segaCard.js');
 
 var _segaCard2 = _interopRequireDefault(_segaCard);
 
+var _ogPortfolioCard = require('../projectCards/ogPortfolioCard.js');
+
+var _ogPortfolioCard2 = _interopRequireDefault(_ogPortfolioCard);
+
+var _breakoutCard = require('../projectCards/breakoutCard.js');
+
+var _breakoutCard2 = _interopRequireDefault(_breakoutCard);
+
+var _bvCard = require('../projectCards/bvCard.js');
+
+var _bvCard2 = _interopRequireDefault(_bvCard);
+
+var _bvThemeCard = require('../projectCards/bvThemeCard.js');
+
+var _bvThemeCard2 = _interopRequireDefault(_bvThemeCard);
+
+var _cccCard = require('../projectCards/cccCard.js');
+
+var _cccCard2 = _interopRequireDefault(_cccCard);
+
+var _bvVaporwaveCard = require('../projectCards/bvVaporwaveCard.js');
+
+var _bvVaporwaveCard2 = _interopRequireDefault(_bvVaporwaveCard);
+
+var _cfBlogCard = require('../projectCards/cfBlogCard.js');
+
+var _cfBlogCard2 = _interopRequireDefault(_cfBlogCard);
+
+var _bvBlogCard = require('../projectCards/bvBlogCard.js');
+
+var _bvBlogCard2 = _interopRequireDefault(_bvBlogCard);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -78,22 +110,38 @@ var Projects = function (_Component) {
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-5' },
-                                _react2.default.createElement(_segaCard2.default, null)
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/Sega-Paradise' },
+                                    _react2.default.createElement(_segaCard2.default, null)
+                                )
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-5' },
-                                _react2.default.createElement(_segaCard2.default, null)
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/maurice-murphy-portfolio' },
+                                    _react2.default.createElement(_ogPortfolioCard2.default, null)
+                                )
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-5' },
-                                _react2.default.createElement(_segaCard2.default, null)
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/bayside-vinyl' },
+                                    _react2.default.createElement(_bvCard2.default, null)
+                                )
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-5' },
-                                _react2.default.createElement(_segaCard2.default, null)
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/bv-theme-generator' },
+                                    _react2.default.createElement(_bvThemeCard2.default, null)
+                                )
                             )
                         ),
                         _react2.default.createElement(
@@ -102,22 +150,38 @@ var Projects = function (_Component) {
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-5' },
-                                _react2.default.createElement(_segaCard2.default, null)
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/breakout' },
+                                    _react2.default.createElement(_breakoutCard2.default, null)
+                                )
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-5' },
-                                _react2.default.createElement(_segaCard2.default, null)
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/crossfader-blog' },
+                                    _react2.default.createElement(_cfBlogCard2.default, null)
+                                )
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-5' },
-                                _react2.default.createElement(_segaCard2.default, null)
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/bv-blog' },
+                                    _react2.default.createElement(_bvBlogCard2.default, null)
+                                )
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-5' },
-                                _react2.default.createElement(_segaCard2.default, null)
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/bayside-vaporwave' },
+                                    _react2.default.createElement(_bvVaporwaveCard2.default, null)
+                                )
                             )
                         ),
                         _react2.default.createElement(
@@ -126,7 +190,11 @@ var Projects = function (_Component) {
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-5' },
-                                _react2.default.createElement(_segaCard2.default, null)
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/cryptocoincount' },
+                                    _react2.default.createElement(_cccCard2.default, null)
+                                )
                             )
                         )
                     )

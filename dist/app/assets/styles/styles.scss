@@ -5,6 +5,11 @@ $amethystSmoke: #A18DA6;
 $rum: #897090;
 $black: #000000;
 $white: #FFFFFF;
+$wine: #A3717C;
+$pink: #FE829C;
+$dustyGrey: #7A7571;
+$mint: #C0DFD2;
+$iceTeal: #64A0A1;
 
 
 
@@ -177,9 +182,41 @@ p {
 
 // Projects Cards
 .sp-card {
-    background-color:black;
+    background-color:$black;
+}
+.og-card {
+    background-color: $wine;
+}
+.bo-card {
+    background-color: $iceTeal;
+}
+.bvb-card {
+    background-color: $mint;
+}
+.bv-card {
+    background-color: $mint;
+}
+.bvv-card {
+    background-color: $pink;
+}
+.ccc-card {
+    background-color: $black;
+}
+.cf-card {
+    background-color: $dustyGrey;
+}
+.mm-card {
+    background-color: $wine;
 }
 
+.card-img {
+    padding-top: 2.313em;
+    padding-bottom: 2.313em;
+}
+
+.cardLink {
+    text-decoration: none;
+}
 
 /*--------------------------------------------*/
 
