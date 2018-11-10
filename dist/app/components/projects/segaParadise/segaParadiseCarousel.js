@@ -20,6 +20,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var projectImage1 = "https://s3.amazonaws.com/mmportfolioreact/segaParadise/sp-image.png";
+var projectImage2 = "https://s3.amazonaws.com/mmportfolioreact/segaParadise/sp-image2.png";
+
 var SPCarousel = function (_Component) {
     _inherits(SPCarousel, _Component);
 
@@ -50,18 +53,22 @@ var SPCarousel = function (_Component) {
                         _react2.default.createElement(
                             'div',
                             { 'class': 'carousel-item active' },
-                            _react2.default.createElement('img', { 'class': 'd-block w-100', src: 'https://s3.amazonaws.com/mmportfolioreact/segaParadise/sp-image.png', alt: 'First slide' })
+                            _react2.default.createElement('img', { 'class': 'd-block w-100', src: projectImage1, alt: 'First slide' })
                         ),
                         _react2.default.createElement(
                             'div',
                             { 'class': 'carousel-item' },
-                            _react2.default.createElement('img', { 'class': 'd-block w-100', src: 'https://s3.amazonaws.com/mmportfolioreact/segaParadise/sp-image2.png', alt: 'Second slide' })
+                            _react2.default.createElement('img', { 'class': 'd-block w-100', src: projectImage2, alt: 'Second slide' })
                         )
                     ),
                     _react2.default.createElement(
                         'a',
                         { 'class': 'carousel-control-prev', href: '#carouselExampleIndicators', role: 'button', 'data-slide': 'prev' },
-                        _react2.default.createElement('span', { 'class': 'carousel-control-prev-icon', 'aria-hidden': 'true' }),
+                        _react2.default.createElement(
+                            'span',
+                            { 'aria-hidden': 'true' },
+                            _react2.default.createElement('i', { 'class': 'fas fa-chevron-left fa-2x' })
+                        ),
                         _react2.default.createElement(
                             'span',
                             { 'class': 'sr-only' },
@@ -71,7 +78,11 @@ var SPCarousel = function (_Component) {
                     _react2.default.createElement(
                         'a',
                         { 'class': 'carousel-control-next', href: '#carouselExampleIndicators', role: 'button', 'data-slide': 'next' },
-                        _react2.default.createElement('span', { 'class': 'carousel-control-next-icon', 'aria-hidden': 'true' }),
+                        _react2.default.createElement(
+                            'span',
+                            { 'aria-hidden': 'true' },
+                            _react2.default.createElement('i', { 'class': 'fas fa-chevron-right fa-2x' })
+                        ),
                         _react2.default.createElement(
                             'span',
                             { 'class': 'sr-only' },

@@ -16,39 +16,39 @@ var _navLinksProjects = require('../projects/navLinksProjects.js');
 
 var _navLinksProjects2 = _interopRequireDefault(_navLinksProjects);
 
-var _segaCard = require('../projectCards/segaCard.js');
+var _segaCard = require('./segaParadise/segaCard.js');
 
 var _segaCard2 = _interopRequireDefault(_segaCard);
 
-var _ogPortfolioCard = require('../projectCards/ogPortfolioCard.js');
+var _ogPortfolioCard = require('./mmPortfolio/ogPortfolioCard.js');
 
 var _ogPortfolioCard2 = _interopRequireDefault(_ogPortfolioCard);
 
-var _breakoutCard = require('../projectCards/breakoutCard.js');
+var _breakoutCard = require('./breakout/breakoutCard.js');
 
 var _breakoutCard2 = _interopRequireDefault(_breakoutCard);
 
-var _bvCard = require('../projectCards/bvCard.js');
+var _bvCard = require('./baysideVinyl/bvCard.js');
 
 var _bvCard2 = _interopRequireDefault(_bvCard);
 
-var _bvThemeCard = require('../projectCards/bvThemeCard.js');
+var _bvThemeCard = require('./bvThemeGenerator/bvThemeCard.js');
 
 var _bvThemeCard2 = _interopRequireDefault(_bvThemeCard);
 
-var _cccCard = require('../projectCards/cccCard.js');
+var _cccCard = require('./cryptocoincount/cccCard.js');
 
 var _cccCard2 = _interopRequireDefault(_cccCard);
 
-var _bvVaporwaveCard = require('../projectCards/bvVaporwaveCard.js');
+var _bvVaporwaveCard = require('./baysideVaporwave/bvVaporwaveCard.js');
 
 var _bvVaporwaveCard2 = _interopRequireDefault(_bvVaporwaveCard);
 
-var _cfBlogCard = require('../projectCards/cfBlogCard.js');
+var _cfBlogCard = require('./crossfaderBlog/cfBlogCard.js');
 
 var _cfBlogCard2 = _interopRequireDefault(_cfBlogCard);
 
-var _bvBlogCard = require('../projectCards/bvBlogCard.js');
+var _bvBlogCard = require('./bvBlog/bvBlogCard.js');
 
 var _bvBlogCard2 = _interopRequireDefault(_bvBlogCard);
 

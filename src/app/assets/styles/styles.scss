@@ -224,7 +224,8 @@ p {
     padding-bottom: 2.313em;
 }
 
-.cardLink {
+.cardLink:visited,
+.cardLink:hover {
     text-decoration: none;
 }
 
@@ -243,6 +244,29 @@ p {
 
 .project-description::first-letter {
     font-size: 150%;
+}
+.fa-external-link-square-alt,
+.fa-github-square {
+    color: $rum;
+}
+.linkTo {
+    font-family: 'Montserrat-Black';
+    color: $aquamarineBlue;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: $rum;
+    -moz-text-stroke-width: 0.5px;
+    -moz-text-stroke-color: $rum;
+}
+
+.projectPageLink:link,
+.projectPageLink:active {
+    color: $aquamarineBlue;
+}
+
+.projectPageLink:visited,
+.projectPageLink:hover {
+    color: $rum;
+    text-decoration: none;
 }
 /*--------------------------------------------*/
 
