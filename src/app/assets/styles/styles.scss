@@ -18,7 +18,7 @@ body {
     width: 100%;
     height: auto;
     background-color: $white;
-    background-image: url('https://public.adobecc.com/files/1UOATWCTTDGVFU2LXP2OE5OEOI4FFF');
+    background-image: url('https://s3.amazonaws.com/mmportfolioreact/Memphis-Grape-Design.jpg');
     background-blend-mode: multiply;
     background-position: center center;
     background-repeat: no-repeat;
@@ -147,7 +147,8 @@ p {
 
 .heading-title,
 .contactHeading,
-.projectName {
+.projectName,
+.heading-title-project {
     font-family: 'Montserrat-Black';
     color: $rum;
     -webkit-text-stroke-width: 0.5px;
@@ -181,31 +182,40 @@ p {
 }
 
 // Projects Cards
-.sp-card {
+.sp-card,
+.img-thumbnail-sp {
     background-color:$black;
 }
-.og-card {
+.og-card,
+.img-thumbnail-og {
     background-color: $wine;
 }
-.bo-card {
+.bo-card,
+.img-thumbnail-bo {
     background-color: $iceTeal;
 }
-.bvb-card {
+.bvb-card,
+.img-thumbnail-bvb {
     background-color: $mint;
 }
-.bv-card {
+.bv-card,
+.img-thumbnail-bv {
     background-color: $mint;
 }
-.bvv-card {
+.bvv-card,
+.img-thumbnail-bvv {
     background-color: $pink;
 }
-.ccc-card {
+.ccc-card,
+.img-thumbnail-ccc {
     background-color: $black;
 }
-.cf-card {
+.cf-card,
+.img-thumbnail-cf {
     background-color: $dustyGrey;
 }
-.mm-card {
+.mm-card,
+.img-thumbnail-mm {
     background-color: $wine;
 }
 
@@ -218,6 +228,22 @@ p {
     text-decoration: none;
 }
 
+// Projects
+.heading-title-project {
+    float: left;
+}
+.heading-title-role {
+    float: left;
+    color: $rum;
+}
+
+.project-description {
+    float: right;
+}
+
+.project-description::first-letter {
+    font-size: 150%;
+}
 /*--------------------------------------------*/
 
   // Media Queries

@@ -6,15 +6,15 @@ import Header from '../design/header.js';
 import Footer from '../design/footer.js';
 
 // Routes
-import SegaParadise from '../projects/segaParadise.js';
-import MMPortfolio from '../projects/mmPortfolio.js';
-import BVVinyl from '../projects/bvVinyl.js';
-import BVThemeGenerator from '../projects/bvThemeGenerator.js';
-import Breakout from '../projects/breakout.js';
-import CFBlog from '../projects/cfBlog.js';
-import BVBlog from '../projects/bvBlog.js';
-import BaysideVaporwave from '../projects/baysideVaporwave.js';
-import CryptoCoinCount from '../projects/cryptocoincount.js';
+import SegaParadise from '../projects/segaParadise/segaParadise.js';
+import MMPortfolio from '../projects/mmPortfolio/mmPortfolio.js';
+import BVVinyl from '../projects/baysideVinyl/bvVinyl.js';
+import BVThemeGenerator from '../projects/bvThemeGenerator/bvThemeGenerator.js';
+import Breakout from '../projects/breakout/breakout.js';
+import CFBlog from '../projects/crossfaderBlog/cfBlog.js';
+import BVBlog from '../projects/bvBlog/bvBlog.js';
+import BaysideVaporwave from '../projects/baysideVaporwave/baysideVaporwave.js';
+import CryptoCoinCount from '../projects/cryptocoincount/cryptocoincount.js';
 
 export default class Home extends Component {
     render() {

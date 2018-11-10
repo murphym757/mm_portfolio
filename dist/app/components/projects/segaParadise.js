@@ -64,8 +64,17 @@ var SegaParadise = function (_Component) {
                             { 'class': 'row' },
                             _react2.default.createElement(
                                 'h3',
-                                { 'class': 'heading-title pb-2 col-sm-6' },
+                                { 'class': 'heading-title-project col-sm-6' },
                                 'Sega Paradise'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'row' },
+                            _react2.default.createElement(
+                                'h6',
+                                { 'class': 'heading-title-role pb-2 col-sm-6' },
+                                'Developer & Designer'
                             )
                         ),
                         _react2.default.createElement(
@@ -75,18 +84,41 @@ var SegaParadise = function (_Component) {
                                 'div',
                                 { 'class': 'col-sm-6 pb-5' },
                                 _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Ma$e'
+                                    'p',
+                                    { 'class': 'project-description' },
+                                    'Sega Paradise is a wikipedia-like website dedicated to the games of the classic video game console, Sega Genesis. Once a user creates an account, they are given the ability to upload, modify, or delete anything they have contributed to the site.'
+                                ),
+                                _react2.default.createElement(
+                                    'p',
+                                    { 'class': 'project-description' },
+                                    'Built with Ruby on Rails, Bootstrap, HTML5, CSS3, JQuery, Devise, Amazon S3, Paperclip'
                                 )
                             ),
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-6 contactSection' },
                                 _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Cam\'Ron'
+                                    'div',
+                                    { 'class': 'container-fluid' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { 'class': 'row pb-1' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { 'class': 'container-fluid' },
+                                            _react2.default.createElement('img', { src: require('../../assets/images/segaParadise/sp-image.jpg') }),
+                                            _react2.default.createElement('img', { src: 'https://public.adobecc.com/files/1UOATWCTTDGVFU2LXP2OE5OEOI4FFF', alt: 'Project Image', height: '100', width: '500' })
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { 'class': 'row pt-1' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { 'class': 'container-fluid' },
+                                            _react2.default.createElement('img', { src: 'https://public.adobecc.com/files/1UOATWCTTDGVFU2LXP2OE5OEOI4FFF', alt: 'Project Image', height: '100', width: '500' })
+                                        )
+                                    )
                                 )
                             )
                         )

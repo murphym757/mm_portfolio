@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import NavLinksProjects from '../projects/navLinksProjects.js';
-import SegaCard from '../projectCards/segaCard.js';
-import OGPortfolioCard from '../projectCards/ogPortfolioCard.js';
-import BreakoutCard from '../projectCards/breakoutCard.js';
-import BVCard from '../projectCards/bvCard.js';
-import BVThemeCard from '../projectCards/bvThemeCard.js';
-import CCCCard from '../projectCards/cccCard.js';
-import BVVaporwaveCard from '../projectCards/bvVaporwaveCard.js';
-import CFBlogCard from '../projectCards/cfBlogCard.js';
-import BVBlogCard from '../projectCards/bvBlogCard.js';
+import SegaCard from './segaParadise/segaCard.js';
+import OGPortfolioCard from './mmPortfolio/ogPortfolioCard.js';
+import BreakoutCard from './breakout/breakoutCard.js';
+import BVCard from './baysideVinyl/bvCard.js';
+import BVThemeCard from './bvThemeGenerator/bvThemeCard.js';
+import CCCCard from './cryptocoincount/cccCard.js';
+import BVVaporwaveCard from './baysideVaporwave/bvVaporwaveCard.js';
+import CFBlogCard from './crossfaderBlog/cfBlogCard.js';
+import BVBlogCard from './bvBlog/bvBlogCard.js';
 
 export default class Projects extends Component {
     render() {
@@ -27,56 +27,55 @@ export default class Projects extends Component {
                             <h3 class="heading-title pb-2 col-sm-6">Projects</h3>
                         </div>
                         <div class="row">
-                            <div class="col-sm-3 pb-5">
-                                <Link class="cardLink" to="/projects/Sega-Paradise">
+                            <div class="col-sm-4 pb-5">
+                                <Link class="cardLink" to="/projects/sega-paradise">
                                     <SegaCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-3 pb-5">
+                            <div class="col-sm-4 pb-5">
                                 <Link class="cardLink" to="/projects/maurice-murphy-portfolio">
                                     <OGPortfolioCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-3 pb-5">
+                            <div class="col-sm-4 pb-5">
                                 <Link class="cardLink" to="/projects/bayside-vinyl">
                                     <BVCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-3 pb-5">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 pb-5">
                                 <Link class="cardLink" to="/projects/bv-theme-generator">
                                     <BVThemeCard />
                                 </Link>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3 pb-5">
+                            <div class="col-sm-4 pb-5">
                                 <Link class="cardLink" to="/projects/breakout">
                                     <BreakoutCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-3 pb-5">
+                            <div class="col-sm-4 pb-5">
                                 <Link class="cardLink" to="/projects/crossfader-blog">
                                     <CFBlogCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-3 pb-5">
+                            <div class="col-sm-4 pb-5 container-fluid">
                                 <Link class="cardLink" to="/projects/bv-blog">
                                     <BVBlogCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-3 pb-5">
+                            <div class="col-sm-4 pb-5">
                                 <Link class="cardLink" to="/projects/bayside-vaporwave">
                                     <BVVaporwaveCard />
                                 </Link>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3 pb-5">
+                            <div class="col-sm-4 pb-5">
                                 <Link class="cardLink" to="/projects/cryptocoincount">
                                     <CCCCard />
                                 </Link>
                             </div>
                         </div>
+ 
                     </div>
                 </div>
             </div>

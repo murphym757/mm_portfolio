@@ -23,11 +23,11 @@ export default class Navigation extends Component {
                     </div>
                     <div class="row">
                         <div class="col-sm-6 pb-5">
-                        <AboutMe />
+                            <AboutMe />
                         </div>
                         <div class="col-sm-6 contactSection">
-                        <Contact />
-                    </div>
+                            <Contact />
+                        </div>
                     </div>
                 </div>
                 </div>

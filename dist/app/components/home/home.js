@@ -28,7 +28,7 @@ var _footer = require('../design/footer.js');
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _segaParadise = require('../projects/segaParadise.js');
+var _segaParadise = require('../projects/segaParadise/segaParadise.js');
 
 var _segaParadise2 = _interopRequireDefault(_segaParadise);
 
