@@ -58,7 +58,9 @@ var BVBlogCard = function (_Component) {
                             'h5',
                             { 'class': 'projectName' },
                             'BV Blog'
-                        )
+                        ),
+                        ' ',
+                        _react2.default.createElement('i', { 'class': 'fab fa-node-js' })
                     )
                 )
             );

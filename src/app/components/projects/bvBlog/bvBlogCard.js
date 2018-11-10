@@ -14,7 +14,7 @@ export default class BVBlogCard extends Component {
                         </div>
                     </div>
                     <div class="col-12">
-                        <h5 class="projectName">BV Blog</h5>
+                        <h5 class="projectName">BV Blog</h5> <i class="fab fa-node-js"></i>
                     </div>
                 </div>
             </div>
