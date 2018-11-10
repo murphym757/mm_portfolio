@@ -16,7 +16,7 @@ export default class CFBlogCard extends Component {
                         </div>
                     </div>
                     <div class="col-12">
-                        <h5 class="projectName">Crossfader Blog</h5>
+                        <h5 class="projectName">Crossfader Blog</h5> <i class="far fa-gem"></i>
                     </div>
                 </div>
             </div>

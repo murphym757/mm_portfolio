@@ -16,7 +16,7 @@ export default class CCCCard extends Component {
                         </div>
                     </div>
                     <div class="col-12">
-                        <h5 class="projectName">CryptoCoinCount</h5>
+                        <h5 class="projectName">CryptoCoinCount</h5> <i class="fab fa-react"></i>
                     </div>
                 </div>
             </div>

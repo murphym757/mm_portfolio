@@ -58,7 +58,9 @@ var SegaCard = function (_Component) {
                             'h5',
                             { 'class': 'projectName' },
                             'Sega Paradise'
-                        )
+                        ),
+                        ' ',
+                        _react2.default.createElement('i', { 'class': 'far fa-gem' })
                     )
                 )
             );

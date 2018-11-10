@@ -14,7 +14,7 @@ export default class BreakoutCard extends Component {
                         </div>
                     </div>
                     <div class="col-12">
-                        <h5 class="projectName">BREAKOUT! JS Game</h5>
+                        <h5 class="projectName">BREAKOUT! JS Game</h5> <i class="fab fa-node-js"></i>
                     </div>
                 </div>
             </div>

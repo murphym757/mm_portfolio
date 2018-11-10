@@ -58,7 +58,9 @@ var BreakoutCard = function (_Component) {
                             'h5',
                             { 'class': 'projectName' },
                             'BREAKOUT! JS Game'
-                        )
+                        ),
+                        ' ',
+                        _react2.default.createElement('i', { 'class': 'fab fa-node-js' })
                     )
                 )
             );

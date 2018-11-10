@@ -58,7 +58,9 @@ var BVVaporwaveCard = function (_Component) {
                             'h5',
                             { 'class': 'projectName' },
                             'Bayside Vaporwave'
-                        )
+                        ),
+                        ' ',
+                        _react2.default.createElement('i', { 'class': 'fab fa-react' })
                     )
                 )
             );

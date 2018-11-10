@@ -14,7 +14,7 @@ export default class BVVaporwaveCard extends Component {
                         </div>
                     </div>
                     <div class="col-12">
-                        <h5 class="projectName">Bayside Vaporwave</h5>
+                        <h5 class="projectName">Bayside Vaporwave</h5> <i class="fab fa-react"></i>
                     </div>
                 </div>
             </div>

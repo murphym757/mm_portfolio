@@ -58,7 +58,9 @@ var BVThemeCard = function (_Component) {
                             'h5',
                             { 'class': 'projectName' },
                             'BV Theme Generator'
-                        )
+                        ),
+                        ' ',
+                        _react2.default.createElement('i', { 'class': 'far fa-gem' })
                     )
                 )
             );

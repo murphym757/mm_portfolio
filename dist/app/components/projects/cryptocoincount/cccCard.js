@@ -62,7 +62,9 @@ var CCCCard = function (_Component) {
                             'h5',
                             { 'class': 'projectName' },
                             'CryptoCoinCount'
-                        )
+                        ),
+                        ' ',
+                        _react2.default.createElement('i', { 'class': 'fab fa-react' })
                     )
                 )
             );

@@ -62,7 +62,9 @@ var CFBlogCard = function (_Component) {
                             'h5',
                             { 'class': 'projectName' },
                             'Crossfader Blog'
-                        )
+                        ),
+                        ' ',
+                        _react2.default.createElement('i', { 'class': 'far fa-gem' })
                     )
                 )
             );

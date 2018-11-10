@@ -14,7 +14,7 @@ export default class SegaCard extends Component {
                         </div>
                     </div>
                     <div class="col-12">
-                        <h5 class="projectName">Sega Paradise</h5>
+                        <h5 class="projectName">Sega Paradise</h5> <i class="far fa-gem"></i>
                     </div>
                 </div>
             </div>

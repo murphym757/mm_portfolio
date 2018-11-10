@@ -58,7 +58,9 @@ var BVCard = function (_Component) {
                             'h5',
                             { 'class': 'projectName' },
                             'Bayside Vinyl'
-                        )
+                        ),
+                        ' ',
+                        _react2.default.createElement('i', { 'class': 'far fa-gem' })
                     )
                 )
             );
