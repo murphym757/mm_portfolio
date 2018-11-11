@@ -51,11 +51,11 @@ var CryptoCoinCount = function (_Component) {
                     projectName: "CryptoCoinCount",
                     projectRole: "Developer & Designer",
                     projectDescription: "",
-                    projectUtilities: "",
+                    projectUtilities: "Built with React, React-Router, Node.js, HTML5, CSS3/SASS, Javascript ES2015 (formally ES6), JSX, Bootstrap, Webpack, Babel, npm, CryptoCompare API, Axios",
                     projectSite: "https://cryptocoincount.herokuapp.com/",
                     projectGithub: "https://github.com/murphym757/cryptocoincount",
-                    projectImage1: "",
-                    projectImage2: ""
+                    projectImage1: "https://s3.amazonaws.com/mmportfolioreact/cryptocoincount/CryptoCoinCount-home.png",
+                    projectImage2: "https://s3.amazonaws.com/mmportfolioreact/cryptocoincount/CryptoCoinCount-litecoin.png"
                 }
             });
         }
