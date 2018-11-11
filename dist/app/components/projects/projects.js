@@ -77,7 +77,7 @@ var Projects = function (_Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'container-fluid' },
+                    { 'class': 'container-fluid swing-in-top-fwd' },
                     _react2.default.createElement(
                         'div',
                         { 'class': 'row' },
@@ -109,7 +109,7 @@ var Projects = function (_Component) {
                             { 'class': 'row' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-4 pb-5' },
+                                { 'class': 'col-sm-3 pb-3' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
                                     { 'class': 'cardLink', to: '/projects/sega-paradise' },
@@ -118,7 +118,7 @@ var Projects = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-4 pb-5' },
+                                { 'class': 'col-sm-3 pb-3' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
                                     { 'class': 'cardLink', to: '/projects/maurice-murphy-portfolio' },
@@ -127,11 +127,20 @@ var Projects = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-4 pb-5' },
+                                { 'class': 'col-sm-3 pb-3' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
                                     { 'class': 'cardLink', to: '/projects/bayside-vinyl' },
                                     _react2.default.createElement(_bvCard2.default, null)
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'col-sm-3 pb-3' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/bv-theme-generator' },
+                                    _react2.default.createElement(_bvThemeCard2.default, null)
                                 )
                             )
                         ),
@@ -140,16 +149,7 @@ var Projects = function (_Component) {
                             { 'class': 'row' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-4 pb-5' },
-                                _react2.default.createElement(
-                                    _reactRouterDom.Link,
-                                    { 'class': 'cardLink', to: '/projects/bv-theme-generator' },
-                                    _react2.default.createElement(_bvThemeCard2.default, null)
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'col-sm-4 pb-5' },
+                                { 'class': 'col-sm-3 pb-3' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
                                     { 'class': 'cardLink', to: '/projects/breakout' },
@@ -158,7 +158,7 @@ var Projects = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-4 pb-5' },
+                                { 'class': 'col-sm-3 pb-3' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
                                     { 'class': 'cardLink', to: '/projects/crossfader-blog' },
@@ -167,7 +167,7 @@ var Projects = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-4 pb-5 container-fluid' },
+                                { 'class': 'col-sm-3 pb-3' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
                                     { 'class': 'cardLink', to: '/projects/bv-blog' },
@@ -176,7 +176,7 @@ var Projects = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-4 pb-5' },
+                                { 'class': 'col-sm-3 pb-3' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
                                     { 'class': 'cardLink', to: '/projects/bayside-vaporwave' },
@@ -185,11 +185,15 @@ var Projects = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-4 pb-5' },
+                                { 'class': 'row' },
                                 _react2.default.createElement(
-                                    _reactRouterDom.Link,
-                                    { 'class': 'cardLink', to: '/projects/cryptocoincount' },
-                                    _react2.default.createElement(_cccCard2.default, null)
+                                    'div',
+                                    { 'class': 'col-sm-3 pb-3' },
+                                    _react2.default.createElement(
+                                        _reactRouterDom.Link,
+                                        { 'class': 'cardLink', to: '/projects/cryptocoincount' },
+                                        _react2.default.createElement(_cccCard2.default, null)
+                                    )
                                 )
                             )
                         )

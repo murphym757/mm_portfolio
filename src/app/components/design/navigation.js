@@ -10,7 +10,7 @@ export default class Navigation extends Component {
     render() {
         return (
             <div> 
-                <div class="container-fluid">
+                <div class="container-fluid swing-in-top-fwd">
                 <div class="row">
                     <h3 class="jobTitleHeader col-sm-6">Full-Stack Developer</h3>
                     <div class="col-sm-6 pb-3">

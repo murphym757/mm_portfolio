@@ -53,7 +53,7 @@ var Navigation = function (_Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'container-fluid' },
+                    { 'class': 'container-fluid swing-in-top-fwd' },
                     _react2.default.createElement(
                         'div',
                         { 'class': 'row' },

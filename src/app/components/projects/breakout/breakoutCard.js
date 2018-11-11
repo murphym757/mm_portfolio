@@ -8,13 +8,13 @@ export default class BreakoutCard extends Component {
                 <div class="row project-card">
                     <div class="col-12">
                         <div class="card bo-card">
-                            <div class="pt-5 pb-5">
-                                <img class="img-thumbnail-bo img-fluid" src="./src/app/components/projects/breakout/breakoutLogo.svg" alt="Card Image" />
+                            <div class="pt-5 pb-5 pl-4 pr-4">
+                                <img class="img-thumbnail-bo img-fluid pulsate-fwd img-thumbnail" src="./src/app/components/projects/breakout/breakoutLogo.svg" alt="Card Image" />
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <h5 class="projectName">BREAKOUT! JS Game</h5> <i class="fab fa-node-js"></i>
+                        <h6 class="projectName">BREAKOUT! JS Game</h6> <i class="fab fa-node-js"></i>
                     </div>
                 </div>
             </div>

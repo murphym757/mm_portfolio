@@ -46,8 +46,8 @@ var BVBlogCard = function (_Component) {
                             { 'class': 'card bvb-card' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'pt-5 pb-5' },
-                                _react2.default.createElement('img', { 'class': 'img-thumbnail-bvb img-fluid', src: './src/app/components/projects/bvBlog/bvbLogo.svg', alt: 'Card Image' })
+                                { 'class': 'pt-5 pb-5 pl-4 pr-4' },
+                                _react2.default.createElement('img', { 'class': 'img-thumbnail-bvb img-fluid pulsate-fwd img-thumbnail', src: './src/app/components/projects/bvBlog/bvbLogo.svg', alt: 'Card Image' })
                             )
                         )
                     ),
@@ -55,7 +55,7 @@ var BVBlogCard = function (_Component) {
                         'div',
                         { 'class': 'col-12' },
                         _react2.default.createElement(
-                            'h5',
+                            'h6',
                             { 'class': 'projectName' },
                             'BV Blog'
                         ),

@@ -26,6 +26,8 @@ require('./app/assets/styles/styles.scss');
 
 require('./app/assets/styles/fonts.scss');
 
+require('./app/assets/styles/animations.scss');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _reactDom.render)(_react2.default.createElement(_main2.default, null), document.getElementById("app"));

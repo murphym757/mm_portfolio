@@ -20,7 +20,7 @@ export default class CryptoCoinCount extends Component {
             project: {
                 projectName: "CryptoCoinCount",
                 projectRole: "Developer & Designer",
-                projectDescription: "CryptoCoinCount is a cryptocurrency-monitoring app. With the CryptoCompare API, the user is given an up-to-date reflection of the status of a particular coin. Based on their popularity, only six coins are being provided at the moment",
+                projectDescription: "CryptoCoinCount is a cryptocurrency-monitoring app. With the CryptoCompare API, the user is given an up-to-date reflection of the status of a particular coin. Based on their popularity, only six coins are being provided at the moment.",
                 projectUtilities: "Built with React, React-Router, Node.js, HTML5, CSS3/SASS, Javascript ES2015 (formally ES6), JSX, Bootstrap, Webpack, Babel, npm, CryptoCompare API, Axios",
                 projectSite: "https://cryptocoincount.herokuapp.com/",
                 projectGithub: "https://github.com/murphym757/cryptocoincount",
@@ -33,7 +33,7 @@ export default class CryptoCoinCount extends Component {
     render() {
         return (
             <div> 
-                <div class="container-fluid">
+                <div class="container-fluid swing-in-top-fwd">
                     <div class="row">
                         <h3 class="jobTitleHeader col-sm-6">Full-Stack Developer</h3>
                         <div class="col-sm-6 pb-3">

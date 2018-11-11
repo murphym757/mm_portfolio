@@ -15,7 +15,7 @@ export default class Projects extends Component {
     render() {
         return (
             <div> 
-                <div class="container-fluid">
+                <div class="container-fluid swing-in-top-fwd">
                     <div class="row">
                         <h3 class="jobTitleHeader col-sm-6">Full-Stack Developer</h3>
                         <div class="col-sm-6 pb-3">
@@ -27,53 +27,55 @@ export default class Projects extends Component {
                             <h3 class="heading-title pb-2 col-sm-6">Projects</h3>
                         </div>
                         <div class="row">
-                            <div class="col-sm-4 pb-5">
+                            <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/sega-paradise">
                                     <SegaCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-4 pb-5">
+                            <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/maurice-murphy-portfolio">
                                     <OGPortfolioCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-4 pb-5">
+                            <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/bayside-vinyl">
                                     <BVCard />
                                 </Link>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4 pb-5">
+                            <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/bv-theme-generator">
                                     <BVThemeCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-4 pb-5">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/breakout">
                                     <BreakoutCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-4 pb-5">
+                            <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/crossfader-blog">
                                     <CFBlogCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-4 pb-5 container-fluid">
+                            <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/bv-blog">
                                     <BVBlogCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-4 pb-5">
+                            <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/bayside-vaporwave">
                                     <BVVaporwaveCard />
                                 </Link>
                             </div>
-                            <div class="col-sm-4 pb-5">
+                        <div class="row">
+                            <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/cryptocoincount">
                                     <CCCCard />
                                 </Link>
                             </div>
+                        </div>
                         </div>
  
                     </div>
