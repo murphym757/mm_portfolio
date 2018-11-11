@@ -46,12 +46,8 @@ var CCCCard = function (_Component) {
                             { 'class': 'card ccc-card' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'container-fluid card-img' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { 'class': 'pt-5 pb-5' },
-                                    _react2.default.createElement('img', { 'class': 'img-thumbnail-ccc img-fluid', src: './src/app/assets/images/cryptocoincount/CryptoCoinCount-logo.svg', alt: 'Card Image' })
-                                )
+                                { 'class': 'pt-5 pb-5' },
+                                _react2.default.createElement('img', { 'class': 'img-thumbnail-ccc img-fluid', src: './src/app/components/projects/cryptocoincount/cccLogo.svg', alt: 'Card Image' })
                             )
                         )
                     ),

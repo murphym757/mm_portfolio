@@ -9,7 +9,7 @@ export default class BVVaporwaveCard extends Component {
                     <div class="col-12">
                         <div class="card bvv-card">
                             <div class="pt-5 pb-5">
-                                <img class="img-thumbnail-bvv img-fluid" src="./src/app/assets/images/baysideVaporwave/BVVLogo.svg" alt="Card Image" height="130" width="130" />
+                                <img class="img-thumbnail-bvv img-fluid" src="./src/app/components/projects/baysideVaporwave/bvvLogo.svg" alt="Card Image" />
                             </div>
                         </div>
                     </div>

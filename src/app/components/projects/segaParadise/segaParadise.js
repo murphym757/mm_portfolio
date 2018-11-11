@@ -30,7 +30,6 @@ export default class SegaParadise extends Component {
         });
       }
 
-
     render() {
         return (
             <div> 
@@ -42,13 +41,13 @@ export default class SegaParadise extends Component {
                         </div>
                     </div>
                     <div class="container-fluid pt-3">
-                        <div class="row"> {/* Project Name (Lines 46-48) */}
+                        <div class="row"> {/* Project Name (Lines 44-46) */}
                             <h3 class="heading-title-project col-sm-6">{this.state.project.projectName}</h3>
                         </div>
-                        <div class="row"> {/* Role (Lines 49-52) */}
+                        <div class="row"> {/* Role (Lines 47-49) */}
                             <h6 class="heading-title-role pb-2 col-sm-6">{this.state.project.projectRole}</h6>
                         </div>
-                        <div class="row"> {/* Description (Left Side of Page) & Carousel (Right Side of Page) (Lines 52-89) */}
+                        <div class="row"> {/* Description (Left Side of Page) & Carousel (Right Side of Page) (Lines 50-87) */}
                             <div class="col-sm-6 pb-5"> {/* Description Section (Lines 53-60) */}
                                 <p class="project-description"> 
                                     {this.state.project.projectDescription}
@@ -86,7 +85,7 @@ export default class SegaParadise extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div class="row"> {/* Links Section (Lines 90-111) */}
+                        <div class="row"> {/* Links Section (Lines 88-109) */}
                             <div class="col-sm-6 pt-1 pb-1">
                                 <div class="row">
                                     <div class="col-6"> {/* Site Link (Lines 93-100) */}

@@ -47,7 +47,7 @@ var BreakoutCard = function (_Component) {
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'pt-5 pb-5' },
-                                _react2.default.createElement('img', { 'class': 'img-thumbnail-bo img-fluid', src: './src/app/assets/images/BreakoutJSGame/breakOutLogo.svg', alt: 'Card Image', height: '225', width: '225' })
+                                _react2.default.createElement('img', { 'class': 'img-thumbnail-bo img-fluid', src: './src/app/components/projects/breakout/breakoutLogo.svg', alt: 'Card Image' })
                             )
                         )
                     ),

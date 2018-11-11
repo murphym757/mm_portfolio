@@ -47,7 +47,7 @@ var OGPortfolioCard = function (_Component) {
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'pt-5 pb-5' },
-                                _react2.default.createElement('img', { 'class': 'img-thumbnail-og img-fluid', src: './src/app/assets/images/personalLogo.svg', alt: 'Card Image' })
+                                _react2.default.createElement('img', { 'class': 'img-thumbnail-og img-fluid', src: './src/app/components/projects/mmPortfolio/personalLogo.svg', alt: 'Card Image' })
                             )
                         )
                     ),

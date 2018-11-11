@@ -8,8 +8,8 @@ export default class BVCard extends Component {
                 <div class="row project-card">
                     <div class="col-12">
                         <div class="card bv-card">
-                            <div class="pt-3 pb-3">
-                                <img class="img-thumbnail-bv img-fluid" src="./src/app/assets/images/baysideVinyl/Bayside Logo.svg" alt="Card Image" height="130" width="130" />
+                            <div class="pt-5 pb-5">
+                                <img class="img-thumbnail-bv img-fluid" src="./src/app/components/projects/baysideVinyl/baysideLogo.svg" alt="Card Image" />
                             </div>
                         </div>
                     </div>

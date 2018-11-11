@@ -8,10 +8,8 @@ export default class CCCCard extends Component {
                 <div class="row project-card">
                     <div class="col-12">
                         <div class="card ccc-card">
-                        <div class="container-fluid card-img">
                             <div class="pt-5 pb-5">
-                                <img class="img-thumbnail-ccc img-fluid" src="./src/app/assets/images/cryptocoincount/CryptoCoinCount-logo.svg" alt="Card Image" />
-                                </div>
+                                <img class="img-thumbnail-ccc img-fluid" src="./src/app/components/projects/cryptocoincount/cccLogo.svg" alt="Card Image" />
                             </div>
                         </div>
                     </div>

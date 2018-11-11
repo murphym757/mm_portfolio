@@ -9,7 +9,7 @@ export default class BVThemeCard extends Component {
                     <div class="col-12">
                         <div class="card bvt-card">
                             <div class="pt-5 pb-5">
-                                <img class="img-thumbnail-bvt img-fluid" src="./src/app/assets/images/bvThemeGenerator/IMG_8723.JPG" alt="Card Image" height="130" width="130" />
+                                <img class="img-thumbnail-bvt img-fluid" src="./src/app/components/projects/bvThemeGenerator/bvtLogo.svg" alt="Card Image" />
                             </div>
                         </div>
                     </div>

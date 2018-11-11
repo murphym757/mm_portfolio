@@ -9,7 +9,7 @@ export default class OGPortfolioCard extends Component {
                     <div class="col-12">
                         <div class="card og-card">
                             <div class="pt-5 pb-5">
-                                <img class="img-thumbnail-og img-fluid" src="./src/app/assets/images/personalLogo.svg" alt="Card Image" />
+                                <img class="img-thumbnail-og img-fluid" src="./src/app/components/projects/mmPortfolio/personalLogo.svg" alt="Card Image" />
                             </div>
                         </div>
                     </div>

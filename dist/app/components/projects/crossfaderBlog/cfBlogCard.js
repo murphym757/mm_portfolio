@@ -46,12 +46,8 @@ var CFBlogCard = function (_Component) {
                             { 'class': 'card cf-card' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'container-fluid card-img' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { 'class': 'pt-5 pb-5' },
-                                    _react2.default.createElement('img', { 'class': 'img-thumbnail-cf img-fluid', src: './src/app/assets/images/cfBlog/cf-blog_logo.svg', alt: 'Card Image' })
-                                )
+                                { 'class': 'pt-5 pb-5' },
+                                _react2.default.createElement('img', { 'class': 'img-thumbnail-cf img-fluid', src: './src/app/components/projects/crossfaderBlog/cfbLogo.svg', alt: 'Card Image' })
                             )
                         )
                     ),

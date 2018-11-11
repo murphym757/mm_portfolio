@@ -8,10 +8,8 @@ export default class CFBlogCard extends Component {
                 <div class="row project-card">
                     <div class="col-12">
                         <div class="card cf-card">
-                        <div class="container-fluid card-img">
                             <div class="pt-5 pb-5">
-                                <img class="img-thumbnail-cf img-fluid" src="./src/app/assets/images/cfBlog/cf-blog_logo.svg" alt="Card Image" />
-                                </div>
+                                <img class="img-thumbnail-cf img-fluid" src="./src/app/components/projects/crossfaderBlog/cfbLogo.svg" alt="Card Image" />
                             </div>
                         </div>
                     </div>

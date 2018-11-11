@@ -46,8 +46,8 @@ var BVCard = function (_Component) {
                             { 'class': 'card bv-card' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'pt-3 pb-3' },
-                                _react2.default.createElement('img', { 'class': 'img-thumbnail-bv img-fluid', src: './src/app/assets/images/baysideVinyl/Bayside Logo.svg', alt: 'Card Image', height: '130', width: '130' })
+                                { 'class': 'pt-5 pb-5' },
+                                _react2.default.createElement('img', { 'class': 'img-thumbnail-bv img-fluid', src: './src/app/components/projects/baysideVinyl/baysideLogo.svg', alt: 'Card Image' })
                             )
                         )
                     ),

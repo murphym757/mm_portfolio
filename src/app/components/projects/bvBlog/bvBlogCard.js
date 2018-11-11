@@ -9,7 +9,7 @@ export default class BVBlogCard extends Component {
                     <div class="col-12">
                         <div class="card bvb-card">
                             <div class="pt-5 pb-5">
-                                <img class="img-thumbnail-bvb img-fluid" src="./src/app/assets/images/bvBlog/BV logo-2.0.svg" alt="Card Image" height="130" width="130" />
+                                <img class="img-thumbnail-bvb img-fluid" src="./src/app/components/projects/bvBlog/bvbLogo.svg" alt="Card Image" />
                             </div>
                         </div>
                     </div>
