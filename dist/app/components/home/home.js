@@ -64,6 +64,10 @@ var _cryptocoincount = require('../projects/cryptocoincount/cryptocoincount.js')
 
 var _cryptocoincount2 = _interopRequireDefault(_cryptocoincount);
 
+var _resume = require('../personalInfo/resume.js');
+
+var _resume2 = _interopRequireDefault(_resume);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -111,6 +115,7 @@ var Home = function (_Component) {
                                     _reactRouterDom.Switch,
                                     null,
                                     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _navigation2.default }),
+                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/resume', component: _resume2.default }),
                                     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects', component: _projects2.default }),
                                     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/sega-paradise', component: _segaParadise2.default }),
                                     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/maurice-murphy-portfolio', component: _mmPortfolio2.default }),

@@ -15,6 +15,7 @@ import CFBlog from '../projects/crossfaderBlog/cfBlog.js';
 import BVBlog from '../projects/bvBlog/bvBlog.js';
 import BaysideVaporwave from '../projects/baysideVaporwave/baysideVaporwave.js';
 import CryptoCoinCount from '../projects/cryptocoincount/cryptocoincount.js';
+import Resume from '../personalInfo/resume.js';
 
 export default class Home extends Component {
     render() {
@@ -30,6 +31,7 @@ export default class Home extends Component {
                                 {/*Routes*/}
                                 <Switch>
                                     <Route exact path="/" component={Navigation}/>
+                                    <Route exact path="/resume" component={Resume}/>
                                     <Route exact path="/projects" component={Projects}/>
                                     <Route exact path="/projects/sega-paradise" component={SegaParadise}/>
                                     <Route exact path="/projects/maurice-murphy-portfolio" component={MMPortfolio}/>

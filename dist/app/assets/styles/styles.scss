@@ -136,6 +136,7 @@ p {
 .nameHeader,
 .jobTitleHeader,
 .heading-title,
+.resumeSectionHeader,
 .aboutMeSection,
 .contactSection,
 .navLinksHeader,
@@ -179,6 +180,49 @@ p {
 
 .contact-card {
     border: none;
+}
+
+// Resume
+.resumeSectionHeader {
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    color: $aquamarineBlue;
+}
+
+.jobName,
+.resumeCollege {
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    color: $rum;
+}
+.jobTitle {
+    font-family: 'Montserrat-Light';
+    font-weight: 700;
+    color: $amethystSmoke;
+}
+.jobDescription {
+    font-family: 'Montserrat-Light';
+}
+.jobDescription::first-letter {
+    font-size: 150%;
+}
+.resumeSkillsHeader {
+    color: $rum;
+    font-family: 'Montserrat-Bold';
+}
+.resumeSkillsHeader-colon {
+    color: $aquamarineBlue;
+    font-family: 'Montserrat-Bold';
+}
+.resumeCollegeGrad {
+    font-family: 'Montserrat-Light';
+    font-weight: 700;
+    color: $aquamarineBlue;
+}
+.resumeCollegeGPA {
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    color: $aquamarineBlue;
 }
 
 // Projects Cards

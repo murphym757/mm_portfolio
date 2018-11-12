@@ -9,7 +9,7 @@ export default class NavLinksAboutMe extends Component {
                         <ul>
                             <li><Link class="homeLink-active" to="/">About</Link></li>
                             <li class="pl-2 pr-2 homeDivider">|</li>
-                            <li><Link class="homeLink" to="/">Resume</Link></li>
+                            <li><Link class="homeLink" to="/resume">Resume</Link></li>
                             <li class="pl-2 pr-2 homeDivider">|</li>
                             <li><Link class="homeLink" to="/projects">Projects</Link></li>
                             <li class="pl-2 pr-2 homeDivider">|</li>

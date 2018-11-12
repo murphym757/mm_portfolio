@@ -60,7 +60,7 @@ var NavLinksProjects = function (_Component) {
                             null,
                             _react2.default.createElement(
                                 _reactRouterDom.Link,
-                                { 'class': 'homeLink', to: '/' },
+                                { 'class': 'homeLink', to: '/resume' },
                                 'Resume'
                             )
                         ),
