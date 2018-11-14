@@ -106,7 +106,7 @@ var Projects = function (_Component) {
                         ),
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'row' },
+                            { 'class': 'row justify-content-center' },
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-3' },
@@ -142,11 +142,7 @@ var Projects = function (_Component) {
                                     { 'class': 'cardLink', to: '/projects/bv-theme-generator' },
                                     _react2.default.createElement(_bvThemeCard2.default, null)
                                 )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
+                            ),
                             _react2.default.createElement(
                                 'div',
                                 { 'class': 'col-sm-3 pb-3' },
@@ -185,15 +181,11 @@ var Projects = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'row' },
+                                { 'class': 'col-sm-3 pb-3' },
                                 _react2.default.createElement(
-                                    'div',
-                                    { 'class': 'col-sm-3 pb-3' },
-                                    _react2.default.createElement(
-                                        _reactRouterDom.Link,
-                                        { 'class': 'cardLink', to: '/projects/cryptocoincount' },
-                                        _react2.default.createElement(_cccCard2.default, null)
-                                    )
+                                    _reactRouterDom.Link,
+                                    { 'class': 'cardLink', to: '/projects/cryptocoincount' },
+                                    _react2.default.createElement(_cccCard2.default, null)
                                 )
                             )
                         )

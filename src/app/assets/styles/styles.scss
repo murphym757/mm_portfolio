@@ -343,11 +343,59 @@ p {
     // About Me
         .email-link,
         .phone-link {
-            font-size: 7px //h6 = 16px
+            font-size: 8px //h6 = 16px
         }
-    // About Me
         .aboutMeSection{
             font-size: 10px //p = 14px
+        }
+        // Resume
+        .linkTo {
+            font-family: 'Montserrat-Black';
+            color: $aquamarineBlue;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: $rum;
+            -moz-text-stroke-width: 0.5px;
+            -moz-text-stroke-color: $rum;
+        }
+        .resumeSectionHeader { 
+            font-size: 20px; //h3 = 28px
+        }
+        .jobName {
+            font-size: 12px; //h4 = 24px
+        }
+        .jobTitle {
+            font-size: 10px; //h5 = 20px
+        }
+        .jobDescription,
+        .resumeSkillsSection {
+            font-size: 10px; //p = 14px
+        }
+        .resumeCollege,
+        .resumeCollegeGPA {
+            font-size: 8px; //h6 = 16px
+        }
+        //Projects
+        .heading-title-project {
+            font-size: 20px; //h3 = 28px
+        }
+        .heading-title-role {
+            font-size: 12px; //h6 = 16px
+        }
+        .project-description {
+            font-size: 10px; //p = 14px
+        }
+        .linkTo {
+            font-size: 20px; //h3 = 28px
+        }
+        .fa-external-link-square-alt,
+        .fa-github-square { 
+            font-size: 20px; //fa-2x (2em) = 32px
+        }
+
+        //Footer
+        .footer {
+            font-size: 8px; //h6 = 16px
+    
         }
     }
 @media only screen 
@@ -374,9 +422,57 @@ p {
         .phone-link {
             font-size: 7px //h6 = 16px
         }
-    // About Me
         .aboutMeSection{
             font-size: 10px //p = 14px
+        }
+        // Resume
+        .linkTo {
+            font-family: 'Montserrat-Black';
+            color: $aquamarineBlue;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: $rum;
+            -moz-text-stroke-width: 0.5px;
+            -moz-text-stroke-color: $rum;
+        }
+        .resumeSectionHeader { 
+            font-size: 20px; //h3 = 28px
+        }
+        .jobName {
+            font-size: 12px; //h4 = 24px
+        }
+        .jobTitle {
+            font-size: 10px; //h5 = 20px
+        }
+        .jobDescription,
+        .resumeSkillsSection {
+            font-size: 10px; //p = 14px
+        }
+        .resumeCollege,
+        .resumeCollegeGPA {
+            font-size: 8px; //h6 = 16px
+        }
+        //Projects
+        .heading-title-project {
+            font-size: 20px; //h3 = 28px
+        }
+        .heading-title-role {
+            font-size: 12px; //h6 = 16px
+        }
+        .project-description {
+            font-size: 10px; //p = 14px
+        }
+        .linkTo {
+            font-size: 20px; //h3 = 28px
+        }
+        .fa-external-link-square-alt,
+        .fa-github-square { 
+            font-size: 20px; //fa-2x (2em) = 32px
+        }
+
+        //Footer
+        .footer {
+            font-size: 8px; //h6 = 16px
+    
         }
     }
 
@@ -446,54 +542,56 @@ p {
         .aboutMeSection{
             font-size: 10px; //p = 14px
         }
+    // Resume
+    .linkTo {
+        font-family: 'Montserrat-Black';
+        color: $aquamarineBlue;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: $rum;
+        -moz-text-stroke-width: 0.5px;
+        -moz-text-stroke-color: $rum;
+    }
+    .resumeSectionHeader { 
+        font-size: 18px; //h3 = 28px
+    }
+    .jobName {
+        font-size: 12px; //h4 = 24px
+    }
+    .jobTitle {
+        font-size: 10px; //h5 = 20px
+    }
+    .jobDescription,
+    .resumeSkillsSection {
+        font-size: 10px; //p = 14px
+    }
+    .resumeCollege,
+    .resumeCollegeGPA {
+        font-size: 10px; //h6 = 16px
+    }
+    //Projects
+    .heading-title-project {
+        font-size: 18px; //h3 = 28px
+    }
+    .heading-title-role {
+        font-size: 10px; //h6 = 16px
+    }
+    .project-description {
+        font-size: 10px; //p = 14px
+    }
+    .linkTo {
+        font-size: 18px; //h3 = 28px
+    }
+    .fa-external-link-square-alt,
+    .fa-github-square { 
+        font-size: 20px; //fa-2x (2em) = 32px
     }
 
-@media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-height: 667px) 
-    and (-webkit-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-        // General
-        .nameHeader {
-            font-size: 30px; //h1 = 40px
-        }
-        .jobTitleHeader {
-            font-size: 24px; //h3 = 28px
-        }
+    //Footer
+    .footer {
+        font-size: 10px; //h6 = 16px
 
-        .heading-title {
-            font-size: 18px; //h3 = 28px
-        }
-    // About Me
-        .aboutMeSection{
-            font-size: 10px; //p = 14px
-        }
-        .fa-envelope {
-            font-size: 54px; //fa-4x (4em) = 64px
-        }
-        .fa-mobile {
-            font-size: 38px; //fa-3x (3em) = 48px
-        }
-        .email-link,
-        .phone-link {
-            font-size: 10px; //h6 = 16px
-        }
-        .contactHeading {
-            font-size: 14px; //h5 = 20px
-        }
-
-    // Footer
-        .footer {
-            font-size: 10px; //h6 = 16px
-        }
-
-    // Nav Links
-        .homeLink-active,
-        .homeLink,
-        .homeDivider {
-            font-size: 10px; //h6 = 16px
-        }
-}
+    }
+    }
 
 /* iphone 6+, 6s+, 7+, 8+ */
 @media only screen 
@@ -511,51 +609,54 @@ p {
         .homeDivider {
             font-size: 12px; //h6 = 16px
         }
-    }
-@media only screen 
-    and (min-device-width: 414px) 
-    and (max-device-height: 736px) 
-    and (-webkit-device-pixel-ratio: 3) 
-    and (orientation: landscape) {
-    // General
-        .nameHeader {
-            font-size: 34px; //h1 = 40px
+        // Resume
+        .linkTo {
+            font-family: 'Montserrat-Black';
+            color: $aquamarineBlue;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: $rum;
+            -moz-text-stroke-width: 0.5px;
+            -moz-text-stroke-color: $rum;
         }
-        .jobTitleHeader {
+        .resumeSectionHeader { 
             font-size: 24px; //h3 = 28px
         }
-
-        .heading-title {
-            font-size: 18px; //h3 = 28px
+        .jobName {
+            font-size: 20px; //h4 = 24px
         }
-    // About Me
-        .aboutMeSection{
+        .jobTitle {
+            font-size: 16px; //h5 = 20px
+        }
+        .jobDescription,
+        .resumeSkillsSection {
             font-size: 10px; //p = 14px
         }
-        .fa-envelope {
-            font-size: 54px; //fa-4x (4em) = 64px
-        }
-        .fa-mobile {
-            font-size: 38px; //fa-3x (3em) = 48px
-        }
-        .email-link,
-        .phone-link {
-            font-size: 7px; //h6 = 16px
-        }
-        .contactHeading {
-            font-size: 14px; //h5 = 20px
-        }
-
-    // Footer
-        .footer {
-            font-size: 10px; //h6 = 16px
-        }
-
-    // Nav Links
-        .homeLink-active,
-        .homeLink,
-        .homeDivider {
+        .resumeCollege,
+        .resumeCollegeGPA {
             font-size: 12px; //h6 = 16px
+        }
+        //Projects
+        .heading-title-project {
+            font-size: 20px; //h3 = 28px
+        }
+        .heading-title-role {
+            font-size: 12px; //h6 = 16px
+        }
+        .project-description {
+            font-size: 10px; //p = 14px
+        }
+        .linkTo {
+            font-size: 24px; //h3 = 28px
+        }
+        .fa-external-link-square-alt,
+        .fa-github-square { 
+            font-size: 28px; //fa-2x (2em) = 32px
+        }
+
+        //Footer
+        .footer {
+            font-size: 12px; //h6 = 16px
+
         }
     }
 
@@ -580,14 +681,55 @@ p {
         .aboutMeSection{
             font-size: 10px; //p = 14px
         }
-    }
+        // Resume
+        .linkTo {
+            font-family: 'Montserrat-Black';
+            color: $aquamarineBlue;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: $rum;
+            -moz-text-stroke-width: 0.5px;
+            -moz-text-stroke-color: $rum;
+        }
+        .resumeSectionHeader { 
+            font-size: 20px; //h3 = 28px
+        }
+        .jobName {
+            font-size: 12px; //h4 = 24px
+        }
+        .jobTitle {
+            font-size: 10px; //h5 = 20px
+        }
+        .jobDescription,
+        .resumeSkillsSection {
+            font-size: 10px; //p = 14px
+        }
+        .resumeCollege,
+        .resumeCollegeGPA {
+            font-size: 8px; //h6 = 16px
+        }
+        //Projects
+        .heading-title-project {
+            font-size: 20px; //h3 = 28px
+        }
+        .heading-title-role {
+            font-size: 12px; //h6 = 16px
+        }
+        .project-description {
+            font-size: 10px; //p = 14px
+        }
+        .linkTo {
+            font-size: 20px; //h3 = 28px
+        }
+        .fa-external-link-square-alt,
+        .fa-github-square { 
+            font-size: 20px; //fa-2x (2em) = 32px
+        }
 
-@media only screen 
-    and (min-device-width: 375px) 
-    and (max-device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) 
-    and (orientation: landscape) {
-
+        //Footer
+        .footer {
+            font-size: 8px; //h6 = 16px
+    
+        }
     }
 
 /* Pixel 2 */
@@ -596,14 +738,6 @@ p {
     and (max-device-height: 731px) 
     and (-webkit-device-pixel-ratio: 3) 
     and (orientation: portrait) {
-
-    }
-
-@media only screen 
-    and (min-device-width: 411px) 
-    and (max-device-height: 731px) 
-    and (-webkit-device-pixel-ratio: 3) 
-    and (orientation: landscape) {
 
     }
 
@@ -664,7 +798,7 @@ p {
 
 /* Large devices (Computers, 1440px and up) */
 
-@media (min-width: 1440px) and (orientation: landscape) {
+@media (min-width: 1440px) and (max-width: 3839px) and (orientation: landscape) {
     // About Me
     .email-link,
     .phone-link {
@@ -673,3 +807,144 @@ p {
 }
 
 /* ---------------------------------------------------- */
+
+/* 4K Resolution (Computers, 3840px and up) */
+
+@media (min-width: 3840px) and (orientation: landscape) {
+    // General
+    .nameHeader {
+        font-size: 80px; //h1 = 40px
+    }
+    .jobTitleHeader {
+        font-size: 68px; //h3 = 28px
+        padding-bottom: 10rem;
+    }
+
+    .heading-title {
+        font-size: 88px; //h3 = 28px
+    }
+// About Me
+    .aboutMeSection {
+        font-size: 44px; //p = 14px
+    }
+    .fa-envelope {
+        font-size: 7rem; //fa-4x (4em) = 64px
+    }
+    .fa-mobile {
+        font-size: 6rem;
+        padding-bottom: 5rem; //fa-3x (3em) = 48px
+    }
+    .email-link,
+    .phone-link {
+        font-size: 36px; //h6 = 16px
+    }
+    .contactHeading {
+        font-size: 50px; //h5 = 20px
+    }
+    .contactCardRow {
+        padding-top: 2rem;
+    }
+
+// Footer
+    .footer {
+        font-size: 46px; //h6 = 16px
+
+    }
+    .footerContainer {
+        padding-top: 15rem;
+    }
+
+// Nav Links
+    .homeLink-active,
+    .homeLink,
+    .homeDivider {
+        font-size: 36px; //h6 = 16px
+    }
+    .homeLink-active {
+        color: $rum;
+        font-family: 'Montserrat-Black';
+        -webkit-text-stroke-width: 2.5px;
+        -webkit-text-stroke-color: $aquamarineBlue;
+        -moz-text-stroke-width: 2.5px;
+        -moz-text-stroke-color: $aquamarineBlue;
+     }
+// General
+.heading-title,
+.contactHeading,
+.projectName,
+.heading-title-project {
+    font-family: 'Montserrat-Black';
+    color: $rum;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: $aquamarineBlue;
+    -moz-text-stroke-width: 1.5px;
+    -moz-text-stroke-color: $aquamarineBlue;
+    }
+//Project Cards
+    .img-thumbnail-sp,
+    .img-thumbnail-og,
+    .img-thumbnail-bv,
+    .img-thumbnail-bvt,
+    .img-thumbnail-bo,
+    .img-thumbnail-cf,
+    .img-thumbnail-bvb,
+    .img-thumbnail-bvv,
+    .img-thumbnail-ccc {
+        height: 400px;
+        width: 600px;
+    }
+    .projectName {
+        font-size: 5rem;
+    }
+    .fa-gem,
+    .fa-node-js,
+    .fa-react {
+        font-size: 4rem;
+    }
+// Resume
+    .linkTo {
+        font-family: 'Montserrat-Black';
+        color: $aquamarineBlue;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: $rum;
+        -moz-text-stroke-width: 1.5px;
+        -moz-text-stroke-color: $rum;
+    }
+    .resumeSectionHeader { 
+        font-size: 68px; //h3 = 28px
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    .jobName {
+        font-size: 60px; //h4 = 24px
+    }
+    .jobTitle {
+        font-size: 50px; //h5 = 20px
+    }
+    .jobDescription,
+    .resumeSkillsSection {
+        font-size: 44px; //p = 14px
+    }
+    .resumeCollege,
+    .resumeCollegeGPA {
+        font-size: 36px; //h6 = 16px
+    }
+
+    // Projects
+    .heading-title-project {
+        font-size: 68px; //h3 = 28px
+    }
+    .heading-title-role {
+        font-size: 36px; //h6 = 16px
+    }
+    .project-description {
+        font-size: 44px; //p = 14px
+    }
+    .linkTo {
+        font-size: 68px; //h3 = 28px
+    }
+    .fa-external-link-square-alt,
+    .fa-github-square { 
+        font-size: 5rem; //fa-2x (2em) = 32px
+    }
+}

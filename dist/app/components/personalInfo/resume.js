@@ -125,7 +125,7 @@ var Resume = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'p',
-                                { 'class': 'container-fluid pb-3' },
+                                { 'class': 'container-fluid pb-3 resumeSkillsSection' },
                                 _react2.default.createElement(
                                     'span',
                                     { 'class': 'resumeSkillsHeader' },

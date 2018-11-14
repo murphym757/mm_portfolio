@@ -8,7 +8,7 @@ export default class Contact extends Component {
             <div>
                 <div class="container-fluid">
                 <h5 class="contactHeading pb-4">Please feel free to reach me at: </h5>
-                    <div class="row pb-4">
+                    <div class="row contactCardRow pb-4">
                         <div class="col-6">
                             <div class="card contact-card pb-3">
                                 <i class="fa fa-envelope fa-4x"></i>

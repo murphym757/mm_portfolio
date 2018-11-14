@@ -26,7 +26,7 @@ export default class Projects extends Component {
                         <div class="row">
                             <h3 class="heading-title pb-2 col-sm-6">Projects</h3>
                         </div>
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/sega-paradise">
                                     <SegaCard />
@@ -47,8 +47,6 @@ export default class Projects extends Component {
                                     <BVThemeCard />
                                 </Link>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/breakout">
                                     <BreakoutCard />
@@ -69,7 +67,6 @@ export default class Projects extends Component {
                                     <BVVaporwaveCard />
                                 </Link>
                             </div>
-                        <div class="row">
                             <div class="col-sm-3 pb-3">
                                 <Link class="cardLink" to="/projects/cryptocoincount">
                                     <CCCCard />
@@ -77,10 +74,8 @@ export default class Projects extends Component {
                             </div>
                         </div>
                         </div>
- 
                     </div>
                 </div>
-            </div>
           )
       }
 }

@@ -45,7 +45,7 @@ var Contact = function (_Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { 'class': 'row pb-4' },
+                        { 'class': 'row contactCardRow pb-4' },
                         _react2.default.createElement(
                             'div',
                             { 'class': 'col-6' },

@@ -31,7 +31,7 @@ export default class Resume extends Component {
                     </div>
                     <div class="row">
                     <h3 class="resumeSectionHeader container-fluid pb-1 pt-2">Skills</h3>
-                        <p class="container-fluid pb-3">
+                        <p class="container-fluid pb-3 resumeSkillsSection">
                             <span class="resumeSkillsHeader"><i>Version Control<span class="resumeSkillsHeader-colon">:</span> </i></span>Git, GitHub. 
                             <span class="resumeSkillsHeader"><i> Package Managers<span class="resumeSkillsHeader-colon">:</span> </i></span>npm. 
                             <span class="resumeSkillsHeader"><i> Development Tools<span class="resumeSkillsHeader-colon">:</span> </i></span>Heroku, Amazon Web Services, Compass, Agile, Gulp, Webpack. 

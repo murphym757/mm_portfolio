@@ -34,7 +34,7 @@ var Footer = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { 'class': 'container-fluid' },
+                { 'class': 'container-fluid footerContainer' },
                 _react2.default.createElement(
                     'div',
                     { 'class': 'row' },

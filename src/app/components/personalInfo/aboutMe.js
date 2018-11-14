@@ -6,8 +6,7 @@ export default class AboutMe extends Component {
     render() {
         return (
             <div>
-                <p class="aboutMeSection"> 
-                    My name is Maurice Murphy and I'm a forward-thinker. 
+                <p class="aboutMeSection">My name is Maurice Murphy and I'm a forward-thinker. 
                     I use that to my advantage when creating various projects. 
                     My affinity for art drives my design process. My goal is to 
                     consistently improve upon old designs. At the same time, providing 
