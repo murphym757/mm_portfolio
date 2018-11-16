@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import NavLinksProjects from '../projects/navLinksProjects.js';
-import SegaCard from './segaParadise/segaCard.js';
-import OGPortfolioCard from './mmPortfolio/ogPortfolioCard.js';
-import BreakoutCard from './breakout/breakoutCard.js';
-import BVCard from './baysideVinyl/bvCard.js';
-import BVThemeCard from './bvThemeGenerator/bvThemeCard.js';
-import CCCCard from './cryptocoincount/cccCard.js';
-import BVVaporwaveCard from './baysideVaporwave/bvVaporwaveCard.js';
-import CFBlogCard from './crossfaderBlog/cfBlogCard.js';
-import BVBlogCard from './bvBlog/bvBlogCard.js';
 
 import CryptoCoinCount from './cryptocoincount/cryptocoincount.js';
 import BaysideVaporwave from './baysideVaporwave/baysideVaporwave.js';
@@ -41,11 +32,11 @@ export default class Projects extends Component {
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            CryptoCoinCount
-                                        </button>
-                                    </h5>
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                CryptoCoinCount
+                                            </button>
+                                        </h5>
                                     </div>
 
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
