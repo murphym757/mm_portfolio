@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import NavLinksProjects from '../projects/navLinksProjects.js';
 
-import CryptoCoinCount from './cryptocoincount/cryptocoincount.js';
-import BaysideVaporwave from './baysideVaporwave/baysideVaporwave.js';
-import BVBlog from './bvBlog/bvBlog.js';
-import CFBlog from './crossfaderBlog/cfBlog.js';
-import Breakout from './breakout/breakout.js';
-import BVThemeGenerator from './bvThemeGenerator/bvThemeGenerator.js';
-import BaysideVinyl from './baysideVinyl/bvVinyl.js';
-import MMPortfolio from './mmPortfolio/mmPortfolio.js';
-import SegaParadise from './segaParadise/segaParadise.js'; 
+import CryptoCoinCount from './cryptocoincount.js';
+import BaysideVaporwave from './baysideVaporwave.js';
+import BVBlog from './bvBlog.js';
+import CFBlog from './cfBlog.js';
+import Breakout from './breakout.js';
+import BVThemeGenerator from './bvThemeGenerator.js';
+import BaysideVinyl from './bvVinyl.js';
+import MMPortfolio from './mmPortfolio.js';
+import SegaParadise from './segaParadise.js';
 
 export default class Projects extends Component {
     render() {

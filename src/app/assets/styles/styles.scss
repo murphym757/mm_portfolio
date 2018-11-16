@@ -137,7 +137,6 @@ p {
 .aboutMeSection,
 .contactSection,
 .navLinksHeader,
-.project-card,
 .footer {
     text-align: center;
     justify-content: center;
@@ -145,7 +144,6 @@ p {
 
 .heading-title,
 .contactHeading,
-.projectName,
 .heading-title-project {
     font-family: 'Montserrat-Black';
     color: $rum;
@@ -901,22 +899,6 @@ p {
     -webkit-text-stroke-color: $aquamarineBlue;
     -moz-text-stroke-width: 1.5px;
     -moz-text-stroke-color: $aquamarineBlue;
-    }
-//Project Cards
-    .img-thumbnail-sp,
-    .img-thumbnail-og,
-    .img-thumbnail-bv,
-    .img-thumbnail-bvt,
-    .img-thumbnail-bo,
-    .img-thumbnail-cf,
-    .img-thumbnail-bvb,
-    .img-thumbnail-bvv,
-    .img-thumbnail-ccc {
-        height: 400px;
-        width: 600px;
-    }
-    .projectName {
-        font-size: 5rem;
     }
     
 // Resume

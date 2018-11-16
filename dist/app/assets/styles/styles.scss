@@ -137,7 +137,6 @@ p {
 .aboutMeSection,
 .contactSection,
 .navLinksHeader,
-.project-card,
 .footer {
     text-align: center;
     justify-content: center;
@@ -145,7 +144,6 @@ p {
 
 .heading-title,
 .contactHeading,
-.projectName,
 .heading-title-project {
     font-family: 'Montserrat-Black';
     color: $rum;
@@ -222,63 +220,31 @@ p {
     color: $aquamarineBlue;
 }
 
-// Projects Cards
-.img-thumbnail {
-    border: none;
+// Projects Accordian
+.btn-link {
+    font-family: 'Montserrat-Black';
+    color: $rum;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: $aquamarineBlue;
+    -moz-text-stroke-width: 0.5px;
+    -moz-text-stroke-color: $aquamarineBlue;
+}
+.btn-link:hover {
+    font-family: 'Montserrat-Black';
+    color: $aquamarineBlue;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: $rum;
+    -moz-text-stroke-width: 0.5px;
+    -moz-text-stroke-color: $rum;
 }
 
-.sp-card,
-.img-thumbnail-sp {
-    background-color:$black;
-}
-.og-card,
-.img-thumbnail-og {
-    background-color: $wine;
-}
-.bo-card,
-.img-thumbnail-bo {
-    background-color: $iceTeal;
-}
-.bvb-card,
-.img-thumbnail-bvb {
-    background-color: $mint;
-}
-.bv-card,
-.img-thumbnail-bv {
-    background-color: $mint;
-}
-.bvv-card,
-.img-thumbnail-bvv {
-    background-color: $pink;
-}
-.ccc-card,
-.img-thumbnail-ccc {
-    background-color: $black;
-}
-.cf-card,
-.img-thumbnail-cf {
-    background-color: $dustyGrey;
-}
-.mm-card,
-.img-thumbnail-mm {
-    background-color: $wine;
-}
-
-.card-img {
-    padding-top: 2.313em;
-    padding-bottom: 2.313em;
-}
-
-.cardLink:visited,
-.cardLink:hover {
+.btn-link:link,
+.btn-link:active,
+.btn-link:visited,
+.btn-link:hover {
     text-decoration: none;
 }
 
-.fa-gem,
-.fa-node-js,
-.fa-react {
-    color: $aquamarineBlue;
-}
 
 // Projects
 .heading-title-project {
@@ -933,22 +899,6 @@ p {
     -webkit-text-stroke-color: $aquamarineBlue;
     -moz-text-stroke-width: 1.5px;
     -moz-text-stroke-color: $aquamarineBlue;
-    }
-//Project Cards
-    .img-thumbnail-sp,
-    .img-thumbnail-og,
-    .img-thumbnail-bv,
-    .img-thumbnail-bvt,
-    .img-thumbnail-bo,
-    .img-thumbnail-cf,
-    .img-thumbnail-bvb,
-    .img-thumbnail-bvv,
-    .img-thumbnail-ccc {
-        height: 400px;
-        width: 600px;
-    }
-    .projectName {
-        font-size: 5rem;
     }
     
 // Resume

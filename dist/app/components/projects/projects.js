@@ -16,75 +16,39 @@ var _navLinksProjects = require('../projects/navLinksProjects.js');
 
 var _navLinksProjects2 = _interopRequireDefault(_navLinksProjects);
 
-var _segaCard = require('./segaParadise/segaCard.js');
-
-var _segaCard2 = _interopRequireDefault(_segaCard);
-
-var _ogPortfolioCard = require('./mmPortfolio/ogPortfolioCard.js');
-
-var _ogPortfolioCard2 = _interopRequireDefault(_ogPortfolioCard);
-
-var _breakoutCard = require('./breakout/breakoutCard.js');
-
-var _breakoutCard2 = _interopRequireDefault(_breakoutCard);
-
-var _bvCard = require('./baysideVinyl/bvCard.js');
-
-var _bvCard2 = _interopRequireDefault(_bvCard);
-
-var _bvThemeCard = require('./bvThemeGenerator/bvThemeCard.js');
-
-var _bvThemeCard2 = _interopRequireDefault(_bvThemeCard);
-
-var _cccCard = require('./cryptocoincount/cccCard.js');
-
-var _cccCard2 = _interopRequireDefault(_cccCard);
-
-var _bvVaporwaveCard = require('./baysideVaporwave/bvVaporwaveCard.js');
-
-var _bvVaporwaveCard2 = _interopRequireDefault(_bvVaporwaveCard);
-
-var _cfBlogCard = require('./crossfaderBlog/cfBlogCard.js');
-
-var _cfBlogCard2 = _interopRequireDefault(_cfBlogCard);
-
-var _bvBlogCard = require('./bvBlog/bvBlogCard.js');
-
-var _bvBlogCard2 = _interopRequireDefault(_bvBlogCard);
-
-var _cryptocoincount = require('./cryptocoincount/cryptocoincount.js');
+var _cryptocoincount = require('./cryptocoincount.js');
 
 var _cryptocoincount2 = _interopRequireDefault(_cryptocoincount);
 
-var _baysideVaporwave = require('./baysideVaporwave/baysideVaporwave.js');
+var _baysideVaporwave = require('./baysideVaporwave.js');
 
 var _baysideVaporwave2 = _interopRequireDefault(_baysideVaporwave);
 
-var _bvBlog = require('./bvBlog/bvBlog.js');
+var _bvBlog = require('./bvBlog.js');
 
 var _bvBlog2 = _interopRequireDefault(_bvBlog);
 
-var _cfBlog = require('./crossfaderBlog/cfBlog.js');
+var _cfBlog = require('./cfBlog.js');
 
 var _cfBlog2 = _interopRequireDefault(_cfBlog);
 
-var _breakout = require('./breakout/breakout.js');
+var _breakout = require('./breakout.js');
 
 var _breakout2 = _interopRequireDefault(_breakout);
 
-var _bvThemeGenerator = require('./bvThemeGenerator/bvThemeGenerator.js');
+var _bvThemeGenerator = require('./bvThemeGenerator.js');
 
 var _bvThemeGenerator2 = _interopRequireDefault(_bvThemeGenerator);
 
-var _bvVinyl = require('./baysideVinyl/bvVinyl.js');
+var _bvVinyl = require('./bvVinyl.js');
 
 var _bvVinyl2 = _interopRequireDefault(_bvVinyl);
 
-var _mmPortfolio = require('./mmPortfolio/mmPortfolio.js');
+var _mmPortfolio = require('./mmPortfolio.js');
 
 var _mmPortfolio2 = _interopRequireDefault(_mmPortfolio);
 
-var _segaParadise = require('./segaParadise/segaParadise.js');
+var _segaParadise = require('./segaParadise.js');
 
 var _segaParadise2 = _interopRequireDefault(_segaParadise);
 

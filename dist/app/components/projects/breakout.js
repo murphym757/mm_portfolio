@@ -12,7 +12,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = require('react-router-dom');
 
-var _navLinksProjects = require('../projects/navLinksProjects.js');
+var _navLinksProjects = require('./navLinksProjects.js');
 
 var _navLinksProjects2 = _interopRequireDefault(_navLinksProjects);
 
@@ -27,13 +27,38 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Breakout = function (_Component) {
     _inherits(Breakout, _Component);
 
-    function Breakout() {
+    function Breakout(props) {
         _classCallCheck(this, Breakout);
 
-        return _possibleConstructorReturn(this, (Breakout.__proto__ || Object.getPrototypeOf(Breakout)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Breakout.__proto__ || Object.getPrototypeOf(Breakout)).call(this, props));
+
+        _this.state = {
+            project: {}
+        };
+        return _this;
     }
 
     _createClass(Breakout, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            this.breakoutContent();
+        }
+    }, {
+        key: 'breakoutContent',
+        value: function breakoutContent() {
+            this.setState({
+                project: {
+                    projectName: "Breakout! The JavaScript Game",
+                    projectRole: "Developer & Designer",
+                    projectDescription: "Following the MDN Game Tutorial, I created my own interpretation of the game.",
+                    projectUtilities: "Built with HTML5, CSS3, Bootstrap, and JavaScript (ES6)",
+                    projectSite: "http://breakoutmm.herokuapp.com/",
+                    projectGithub: "https://github.com/murphym757/JS-Breakout-Game",
+                    projectImage1: "https://s3.amazonaws.com/mmportfolioreact/BreakoutJSGame/bo-image.png"
+                }
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -41,52 +66,120 @@ var Breakout = function (_Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'container-fluid' },
+                    { 'class': 'container-fluid swing-in-top-fwd' },
                     _react2.default.createElement(
                         'div',
                         { 'class': 'row' },
+                        ' ',
                         _react2.default.createElement(
                             'h3',
-                            { 'class': 'jobTitleHeader col-sm-6' },
-                            'Full-Stack Developer'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-sm-6 pb-3' },
-                            _react2.default.createElement(_navLinksProjects2.default, null)
+                            { 'class': 'heading-title-project col-sm-6' },
+                            this.state.project.projectName
                         )
                     ),
                     _react2.default.createElement(
                         'div',
-                        { 'class': 'container-fluid pt-3' },
+                        { 'class': 'row' },
+                        ' ',
+                        _react2.default.createElement(
+                            'h6',
+                            { 'class': 'heading-title-role pb-2 col-sm-6' },
+                            this.state.project.projectRole
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'row' },
+                        ' ',
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'row' },
+                            { 'class': 'col-sm-6 pb-5' },
+                            ' ',
                             _react2.default.createElement(
-                                'h3',
-                                { 'class': 'heading-title pb-2 col-sm-6' },
-                                'BREAKOUT! JS Game'
+                                'p',
+                                { 'class': 'project-description float-left' },
+                                this.state.project.projectDescription
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { 'class': 'project-description float-left' },
+                                this.state.project.projectUtilities
                             )
                         ),
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'row' },
+                            { 'class': 'col-sm-6 contactSection' },
+                            ' ',
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-6 pb-5' },
+                                { 'class': 'container-fluid pb-2' },
                                 _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Ma$e'
+                                    'div',
+                                    { 'class': 'container' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { id: 'breakoutCarousel', 'class': 'carousel slide', 'data-ride': 'carousel' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { 'class': 'carousel-inner' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { 'class': 'carousel-item active' },
+                                                _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage1, alt: 'First slide' })
+                                            )
+                                        )
+                                    )
                                 )
-                            ),
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'row' },
+                        ' ',
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'col-sm-6 pt-1' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-6 contactSection' },
+                                { 'class': 'row' },
                                 _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Cam\'Ron'
+                                    'div',
+                                    { 'class': 'col-6' },
+                                    ' ',
+                                    _react2.default.createElement(
+                                        'a',
+                                        { 'class': 'projectPageLink float-left', href: this.state.project.projectSite, target: '_blank' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { 'class': 'row' },
+                                            _react2.default.createElement('i', { 'class': 'fas fa-external-link-square-alt fa-2x pr-1' }),
+                                            _react2.default.createElement(
+                                                'h3',
+                                                { 'class': 'linkTo pl-1' },
+                                                'Site'
+                                            )
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { 'class': 'col-6' },
+                                    ' ',
+                                    _react2.default.createElement(
+                                        'a',
+                                        { 'class': 'projectPageLink float-right', href: this.state.project.projectGithub, target: '_blank' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { 'class': 'row' },
+                                            _react2.default.createElement(
+                                                'h3',
+                                                { 'class': 'linkTo pr-1' },
+                                                'Github'
+                                            ),
+                                            _react2.default.createElement('i', { 'class': 'fab fa-github-square fa-2x pl-1' })
+                                        )
+                                    )
                                 )
                             )
                         )

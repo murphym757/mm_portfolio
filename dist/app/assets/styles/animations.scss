@@ -1,38 +1,4 @@
-.pulsate-fwd:hover {
-	-webkit-animation: pulsate-fwd 1.5s ease-in-out infinite alternate both;
-	        animation: pulsate-fwd 1.5s ease-in-out infinite alternate both;
-}
-
-@-webkit-keyframes pulsate-fwd {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    50% {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  @keyframes pulsate-fwd {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    50% {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-  
-  .swing-in-top-fwd {
+.swing-in-top-fwd {
 	-webkit-animation: swing-in-top-fwd 1s ease-out both;
 	        animation: swing-in-top-fwd 1s ease-out both;
 }
