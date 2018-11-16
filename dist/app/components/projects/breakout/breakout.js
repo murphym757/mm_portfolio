@@ -70,137 +70,114 @@ var Breakout = function (_Component) {
                     _react2.default.createElement(
                         'div',
                         { 'class': 'row' },
+                        ' ',
                         _react2.default.createElement(
                             'h3',
-                            { 'class': 'jobTitleHeader col-sm-6' },
-                            'Full-Stack Developer'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-sm-6 pb-3' },
-                            _react2.default.createElement(_navLinksProjects2.default, null)
+                            { 'class': 'heading-title-project col-sm-6' },
+                            this.state.project.projectName
                         )
                     ),
                     _react2.default.createElement(
                         'div',
-                        { 'class': 'container-fluid pt-3' },
+                        { 'class': 'row' },
+                        ' ',
+                        _react2.default.createElement(
+                            'h6',
+                            { 'class': 'heading-title-role pb-2 col-sm-6' },
+                            this.state.project.projectRole
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'row' },
+                        ' ',
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'row' },
+                            { 'class': 'col-sm-6 pb-5' },
                             ' ',
                             _react2.default.createElement(
-                                'h3',
-                                { 'class': 'heading-title-project col-sm-6' },
-                                this.state.project.projectName
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            ' ',
-                            _react2.default.createElement(
-                                'h6',
-                                { 'class': 'heading-title-role pb-2 col-sm-6' },
-                                this.state.project.projectRole
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            ' ',
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'col-sm-6 pb-5' },
-                                ' ',
-                                _react2.default.createElement(
-                                    'p',
-                                    { 'class': 'project-description float-left' },
-                                    this.state.project.projectDescription
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    { 'class': 'project-description float-left' },
-                                    this.state.project.projectUtilities
-                                )
+                                'p',
+                                { 'class': 'project-description float-left' },
+                                this.state.project.projectDescription
                             ),
                             _react2.default.createElement(
+                                'p',
+                                { 'class': 'project-description float-left' },
+                                this.state.project.projectUtilities
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'col-sm-6 contactSection' },
+                            ' ',
+                            _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-6 contactSection' },
-                                ' ',
+                                { 'class': 'container-fluid pb-2' },
                                 _react2.default.createElement(
                                     'div',
-                                    { 'class': 'container-fluid pb-2' },
+                                    { 'class': 'container' },
                                     _react2.default.createElement(
                                         'div',
-                                        { 'class': 'container' },
+                                        { id: 'breakoutCarousel', 'class': 'carousel slide', 'data-ride': 'carousel' },
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'carouselExampleIndicators', 'class': 'carousel slide', 'data-ride': 'carousel' },
-                                            _react2.default.createElement(
-                                                'ol',
-                                                { 'class': 'carousel-indicators' },
-                                                _react2.default.createElement('li', { 'data-target': '#carouselExampleIndicators', 'data-slide-to': '0', 'class': 'active' })
-                                            ),
+                                            { 'class': 'carousel-inner' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'carousel-inner' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'carousel-item active' },
-                                                    _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage1, alt: 'First slide' })
-                                                )
+                                                { 'class': 'carousel-item active' },
+                                                _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage1, alt: 'First slide' })
                                             )
                                         )
                                     )
                                 )
                             )
-                        ),
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'row' },
+                        ' ',
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'row' },
-                            ' ',
+                            { 'class': 'col-sm-6 pt-1' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-6 pt-1 pb-1' },
+                                { 'class': 'row' },
                                 _react2.default.createElement(
                                     'div',
-                                    { 'class': 'row' },
+                                    { 'class': 'col-6' },
+                                    ' ',
                                     _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'col-6' },
-                                        ' ',
+                                        'a',
+                                        { 'class': 'projectPageLink float-left', href: this.state.project.projectSite, target: '_blank' },
                                         _react2.default.createElement(
-                                            'a',
-                                            { 'class': 'projectPageLink float-left', href: this.state.project.projectSite, target: '_blank' },
+                                            'div',
+                                            { 'class': 'row' },
+                                            _react2.default.createElement('i', { 'class': 'fas fa-external-link-square-alt fa-2x pr-1' }),
                                             _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'row' },
-                                                _react2.default.createElement('i', { 'class': 'fas fa-external-link-square-alt fa-2x pr-1' }),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { 'class': 'linkTo pl-1' },
-                                                    'Site'
-                                                )
+                                                'h3',
+                                                { 'class': 'linkTo pl-1' },
+                                                'Site'
                                             )
                                         )
-                                    ),
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { 'class': 'col-6' },
+                                    ' ',
                                     _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'col-6' },
-                                        ' ',
+                                        'a',
+                                        { 'class': 'projectPageLink float-right', href: this.state.project.projectGithub, target: '_blank' },
                                         _react2.default.createElement(
-                                            'a',
-                                            { 'class': 'projectPageLink float-right', href: this.state.project.projectGithub, target: '_blank' },
+                                            'div',
+                                            { 'class': 'row' },
                                             _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'row' },
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { 'class': 'linkTo pr-1' },
-                                                    'Github'
-                                                ),
-                                                _react2.default.createElement('i', { 'class': 'fab fa-github-square fa-2x pl-1' })
-                                            )
+                                                'h3',
+                                                { 'class': 'linkTo pr-1' },
+                                                'Github'
+                                            ),
+                                            _react2.default.createElement('i', { 'class': 'fab fa-github-square fa-2x pl-1' })
                                         )
                                     )
                                 )

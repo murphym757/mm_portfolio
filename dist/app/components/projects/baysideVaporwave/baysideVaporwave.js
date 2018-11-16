@@ -24,13 +24,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MMPortfolio = function (_Component) {
-    _inherits(MMPortfolio, _Component);
+var BaysideVaporwave = function (_Component) {
+    _inherits(BaysideVaporwave, _Component);
 
-    function MMPortfolio(props) {
-        _classCallCheck(this, MMPortfolio);
+    function BaysideVaporwave(props) {
+        _classCallCheck(this, BaysideVaporwave);
 
-        var _this = _possibleConstructorReturn(this, (MMPortfolio.__proto__ || Object.getPrototypeOf(MMPortfolio)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (BaysideVaporwave.__proto__ || Object.getPrototypeOf(BaysideVaporwave)).call(this, props));
 
         _this.state = {
             project: {}
@@ -38,7 +38,7 @@ var MMPortfolio = function (_Component) {
         return _this;
     }
 
-    _createClass(MMPortfolio, [{
+    _createClass(BaysideVaporwave, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
             this.mmPortfolioContent();
@@ -71,171 +71,153 @@ var MMPortfolio = function (_Component) {
                     _react2.default.createElement(
                         'div',
                         { 'class': 'row' },
+                        ' ',
                         _react2.default.createElement(
                             'h3',
-                            { 'class': 'jobTitleHeader col-sm-6' },
-                            'Full-Stack Developer'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-sm-6 pb-3' },
-                            _react2.default.createElement(_navLinksProjects2.default, null)
+                            { 'class': 'heading-title-project col-sm-6' },
+                            this.state.project.projectName
                         )
                     ),
                     _react2.default.createElement(
                         'div',
-                        { 'class': 'container-fluid pt-3' },
+                        { 'class': 'row' },
+                        ' ',
+                        _react2.default.createElement(
+                            'h6',
+                            { 'class': 'heading-title-role pb-2 col-sm-6' },
+                            this.state.project.projectRole
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'row' },
+                        ' ',
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'row' },
+                            { 'class': 'col-sm-6 pb-5' },
                             ' ',
                             _react2.default.createElement(
-                                'h3',
-                                { 'class': 'heading-title-project col-sm-6' },
-                                this.state.project.projectName
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            ' ',
-                            _react2.default.createElement(
-                                'h6',
-                                { 'class': 'heading-title-role pb-2 col-sm-6' },
-                                this.state.project.projectRole
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            ' ',
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'col-sm-6 pb-5' },
-                                ' ',
-                                _react2.default.createElement(
-                                    'p',
-                                    { 'class': 'project-description float-left' },
-                                    this.state.project.projectDescription
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    { 'class': 'project-description float-left' },
-                                    this.state.project.projectUtilities
-                                )
+                                'p',
+                                { 'class': 'project-description float-left' },
+                                this.state.project.projectDescription
                             ),
                             _react2.default.createElement(
+                                'p',
+                                { 'class': 'project-description float-left' },
+                                this.state.project.projectUtilities
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'col-sm-6 contactSection' },
+                            ' ',
+                            _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-6 contactSection' },
-                                ' ',
+                                { 'class': 'container-fluid pb-2' },
                                 _react2.default.createElement(
                                     'div',
-                                    { 'class': 'container-fluid pb-2' },
+                                    { 'class': 'container' },
                                     _react2.default.createElement(
                                         'div',
-                                        { 'class': 'container' },
+                                        { id: 'baysideVaporwaveCarousel', 'class': 'carousel slide', 'data-ride': 'carousel' },
+                                        _react2.default.createElement(
+                                            'ol',
+                                            { 'class': 'carousel-indicators' },
+                                            _react2.default.createElement('li', { 'data-target': '#baysideVaporwaveCarousel', 'data-slide-to': '0', 'class': 'active' }),
+                                            _react2.default.createElement('li', { 'data-target': '#baysideVaporwaveCarousel', 'data-slide-to': '1' })
+                                        ),
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'carouselExampleIndicators', 'class': 'carousel slide', 'data-ride': 'carousel' },
+                                            { 'class': 'carousel-inner' },
                                             _react2.default.createElement(
-                                                'ol',
-                                                { 'class': 'carousel-indicators' },
-                                                _react2.default.createElement('li', { 'data-target': '#carouselExampleIndicators', 'data-slide-to': '0', 'class': 'active' }),
-                                                _react2.default.createElement('li', { 'data-target': '#carouselExampleIndicators', 'data-slide-to': '1' })
+                                                'div',
+                                                { 'class': 'carousel-item active' },
+                                                _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage1, alt: 'First slide' })
                                             ),
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'carousel-inner' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'carousel-item active' },
-                                                    _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage1, alt: 'First slide' })
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'carousel-item' },
-                                                    _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage2, alt: 'Second slide' })
-                                                )
+                                                { 'class': 'carousel-item' },
+                                                _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage2, alt: 'Second slide' })
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'a',
+                                            { 'class': 'carousel-control-prev', href: '#baysideVaporwaveCarousel', role: 'button', 'data-slide': 'prev' },
+                                            _react2.default.createElement(
+                                                'span',
+                                                { 'aria-hidden': 'true' },
+                                                _react2.default.createElement('i', { 'class': 'fas fa-chevron-left fa-2x' })
                                             ),
                                             _react2.default.createElement(
-                                                'a',
-                                                { 'class': 'carousel-control-prev', href: '#carouselExampleIndicators', role: 'button', 'data-slide': 'prev' },
-                                                _react2.default.createElement(
-                                                    'span',
-                                                    { 'aria-hidden': 'true' },
-                                                    _react2.default.createElement('i', { 'class': 'fas fa-chevron-left fa-2x' })
-                                                ),
-                                                _react2.default.createElement(
-                                                    'span',
-                                                    { 'class': 'sr-only' },
-                                                    'Previous'
-                                                )
+                                                'span',
+                                                { 'class': 'sr-only' },
+                                                'Previous'
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'a',
+                                            { 'class': 'carousel-control-next', href: '#baysideVaporwaveCarousel', role: 'button', 'data-slide': 'next' },
+                                            _react2.default.createElement(
+                                                'span',
+                                                { 'aria-hidden': 'true' },
+                                                _react2.default.createElement('i', { 'class': 'fas fa-chevron-right fa-2x' })
                                             ),
                                             _react2.default.createElement(
-                                                'a',
-                                                { 'class': 'carousel-control-next', href: '#carouselExampleIndicators', role: 'button', 'data-slide': 'next' },
-                                                _react2.default.createElement(
-                                                    'span',
-                                                    { 'aria-hidden': 'true' },
-                                                    _react2.default.createElement('i', { 'class': 'fas fa-chevron-right fa-2x' })
-                                                ),
-                                                _react2.default.createElement(
-                                                    'span',
-                                                    { 'class': 'sr-only' },
-                                                    'Next'
-                                                )
+                                                'span',
+                                                { 'class': 'sr-only' },
+                                                'Next'
                                             )
                                         )
                                     )
                                 )
                             )
-                        ),
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'row' },
+                        ' ',
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'row' },
-                            ' ',
+                            { 'class': 'col-sm-6 pt-1' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'col-sm-6 pt-1 pb-1' },
+                                { 'class': 'row' },
                                 _react2.default.createElement(
                                     'div',
-                                    { 'class': 'row' },
+                                    { 'class': 'col-6' },
+                                    ' ',
                                     _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'col-6' },
-                                        ' ',
+                                        'a',
+                                        { 'class': 'projectPageLink float-left', href: this.state.project.projectSite, target: '_blank' },
                                         _react2.default.createElement(
-                                            'a',
-                                            { 'class': 'projectPageLink float-left', href: this.state.project.projectSite, target: '_blank' },
+                                            'div',
+                                            { 'class': 'row' },
+                                            _react2.default.createElement('i', { 'class': 'fas fa-external-link-square-alt fa-2x pr-1' }),
                                             _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'row' },
-                                                _react2.default.createElement('i', { 'class': 'fas fa-external-link-square-alt fa-2x pr-1' }),
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { 'class': 'linkTo pl-1' },
-                                                    'Site'
-                                                )
+                                                'h3',
+                                                { 'class': 'linkTo pl-1' },
+                                                'Site'
                                             )
                                         )
-                                    ),
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { 'class': 'col-6' },
+                                    ' ',
                                     _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'col-6' },
-                                        ' ',
+                                        'a',
+                                        { 'class': 'projectPageLink float-right', href: this.state.project.projectGithub, target: '_blank' },
                                         _react2.default.createElement(
-                                            'a',
-                                            { 'class': 'projectPageLink float-right', href: this.state.project.projectGithub, target: '_blank' },
+                                            'div',
+                                            { 'class': 'row' },
                                             _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'row' },
-                                                _react2.default.createElement(
-                                                    'h3',
-                                                    { 'class': 'linkTo pr-1' },
-                                                    'Github'
-                                                ),
-                                                _react2.default.createElement('i', { 'class': 'fab fa-github-square fa-2x pl-1' })
-                                            )
+                                                'h3',
+                                                { 'class': 'linkTo pr-1' },
+                                                'Github'
+                                            ),
+                                            _react2.default.createElement('i', { 'class': 'fab fa-github-square fa-2x pl-1' })
                                         )
                                     )
                                 )
@@ -247,7 +229,7 @@ var MMPortfolio = function (_Component) {
         }
     }]);
 
-    return MMPortfolio;
+    return BaysideVaporwave;
 }(_react.Component);
 
-exports.default = MMPortfolio;
+exports.default = BaysideVaporwave;

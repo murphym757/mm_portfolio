@@ -29,17 +29,10 @@ export default class Breakout extends Component {
         });
       }
 
-    render() {
+      render() {
         return (
             <div> 
                 <div class="container-fluid swing-in-top-fwd">
-                    <div class="row">
-                        <h3 class="jobTitleHeader col-sm-6">Full-Stack Developer</h3>
-                        <div class="col-sm-6 pb-3">
-                            <NavLinksProjects />
-                        </div>
-                    </div>
-                    <div class="container-fluid pt-3">
                         <div class="row"> {/* Project Name (Lines 44-46) */}
                             <h3 class="heading-title-project col-sm-6">{this.state.project.projectName}</h3>
                         </div>
@@ -58,10 +51,7 @@ export default class Breakout extends Component {
                             <div class="col-sm-6 contactSection"> {/* Carousel Section (Lines 61-88) */}
                                 <div class="container-fluid pb-2">
                                     <div class="container">
-                                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                            </ol>
+                                        <div id="breakoutCarousel" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
                                                     <img class="d-block w-100" src={this.state.project.projectImage1} alt="First slide" />
@@ -73,7 +63,7 @@ export default class Breakout extends Component {
                             </div>
                         </div>
                         <div class="row"> {/* Links Section (Lines 88-109) */}
-                            <div class="col-sm-6 pt-1 pb-1">
+                            <div class="col-sm-6 pt-1">
                                 <div class="row">
                                     <div class="col-6"> {/* Site Link (Lines 93-100) */}
                                         <a class="projectPageLink float-left" href={this.state.project.projectSite} target="_blank">
@@ -94,9 +84,8 @@ export default class Breakout extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
-          )
-      }
+        )
+    }
 }
