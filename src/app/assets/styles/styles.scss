@@ -15,12 +15,9 @@ $iceTeal: #64A0A1;
 
 body {
     display: table;
-    width: 100%;
-    height: auto;
     background-color: $white;
     background-image: url('https://s3.amazonaws.com/mmportfolioreact/Memphis-Grape-Design.jpg');
-    background-blend-mode: multiply;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; 
@@ -411,6 +408,13 @@ p {
     and (min-device-width: 320px) 
     and (max-device-height: 568px) 
     and (orientation: portrait) {
+    // General
+        .nameHeader {
+        font-size: 24px; //h1 = 40px
+        }
+        .jobTitleHeader {
+            font-size: 18px; //h3 = 28px
+        }
     // Nav Links
         .homeLink-active,
         .homeLink,
@@ -519,10 +523,10 @@ p {
     and (orientation: portrait) {
     // General
         .nameHeader {
-            font-size: 32px; //h1 = 40px
+            font-size: 28px; //h1 = 40px
         }
         .jobTitleHeader {
-            font-size: 24px; //h3 = 28px
+            font-size: 20px; //h3 = 28px
         }
 
         .heading-title {
@@ -591,6 +595,25 @@ p {
         font-size: 10px; //h6 = 16px
 
     }
+}
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height: 667px) 
+    and (-webkit-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        // General
+        .nameHeader {
+            font-size: 30px; //h1 = 40px
+        }
+        .jobTitleHeader {
+            font-size: 20px; //h3 = 28px
+        }
+        // Nav Links
+        .homeLink-active,
+        .homeLink,
+        .homeDivider {
+            font-size: 10px; //h6 = 16px
+        }
     }
 
 /* iphone 6+, 6s+, 7+, 8+ */
@@ -666,6 +689,13 @@ p {
     and (max-device-height: 812px) 
     and (-webkit-device-pixel-ratio: 3) 
     and (orientation: portrait) {
+    // General
+        .nameHeader {
+            font-size: 30px; //h1 = 40px
+        }
+        .jobTitleHeader {
+            font-size: 20px; //h3 = 28px
+        }       
     // Nav Links
         .homeLink-active,
         .homeLink,
@@ -732,6 +762,26 @@ p {
         }
     }
 
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: landscape) {
+        // General
+        .nameHeader {
+            font-size: 30px; //h1 = 40px
+        }
+        .jobTitleHeader {
+            font-size: 20px; //h3 = 28px
+        }
+        // Nav Links
+        .homeLink-active,
+        .homeLink,
+        .homeDivider {
+            font-size: 10px; //h6 = 16px
+        }
+    }
+
 /* Pixel 2 */
 @media only screen 
     and (min-device-width: 411px) 
@@ -750,6 +800,10 @@ p {
   and (max-device-height: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: portrait) {
+       // General
+    .nameHeader {
+        font-size: 36px; //h1 = 40px
+    }
     // Nav Links
         .homeLink-active,
         .homeLink,
@@ -896,11 +950,7 @@ p {
     .projectName {
         font-size: 5rem;
     }
-    .fa-gem,
-    .fa-node-js,
-    .fa-react {
-        font-size: 4rem;
-    }
+    
 // Resume
     .linkTo {
         font-family: 'Montserrat-Black';
