@@ -66,7 +66,7 @@ var BVThemeGenerator = function (_Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'container-fluid swing-in-top-fwd' },
+                    { 'class': 'container-fluid' },
                     _react2.default.createElement(
                         'div',
                         { 'class': 'row' },
@@ -93,7 +93,7 @@ var BVThemeGenerator = function (_Component) {
                         ' ',
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'col-sm-6 pb-5' },
+                            { 'class': 'col-sm-6 pb-3' },
                             ' ',
                             _react2.default.createElement(
                                 'p',
@@ -112,21 +112,17 @@ var BVThemeGenerator = function (_Component) {
                             ' ',
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'container-fluid pb-2' },
+                                { 'class': 'pb-2' },
                                 _react2.default.createElement(
                                     'div',
-                                    { 'class': 'container' },
+                                    { id: 'bvThemeGeneratorCarousel', 'class': 'carousel slide', 'data-ride': 'carousel' },
                                     _react2.default.createElement(
                                         'div',
-                                        { id: 'bvThemeGeneratorCarousel', 'class': 'carousel slide', 'data-ride': 'carousel' },
+                                        { 'class': 'carousel-inner' },
                                         _react2.default.createElement(
                                             'div',
-                                            { 'class': 'carousel-inner' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'carousel-item active' },
-                                                _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage1, alt: 'First slide' })
-                                            )
+                                            { 'class': 'carousel-item active' },
+                                            _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage1, alt: 'First slide' })
                                         )
                                     )
                                 )

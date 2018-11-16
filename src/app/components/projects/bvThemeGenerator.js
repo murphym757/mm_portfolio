@@ -32,15 +32,15 @@ export default class BVThemeGenerator extends Component {
       render() {
         return (
             <div> 
-                <div class="container-fluid swing-in-top-fwd">
-                        <div class="row"> {/* Project Name (Lines 44-46) */}
+                <div class="container-fluid">
+                        <div class="row"> {/* Project Name (Lines 36-38) */}
                             <h3 class="heading-title-project col-sm-6">{this.state.project.projectName}</h3>
                         </div>
-                        <div class="row"> {/* Role (Lines 47-49) */}
+                        <div class="row"> {/* Role (Lines 39-41) */}
                             <h6 class="heading-title-role pb-2 col-sm-6">{this.state.project.projectRole}</h6>
                         </div>
-                        <div class="row"> {/* Description (Left Side of Page) & Carousel (Right Side of Page) (Lines 50-87) */}
-                            <div class="col-sm-6 pb-5"> {/* Description Section (Lines 51-58) */}
+                        <div class="row"> {/* Description (Left Side of Page) & Carousel (Right Side of Page) (Lines 42-64) */}
+                            <div class="col-sm-6 pb-3"> {/* Description Section (Lines 43-50) */}
                                 <p class="project-description float-left"> 
                                     {this.state.project.projectDescription}
                                 </p>
@@ -48,24 +48,22 @@ export default class BVThemeGenerator extends Component {
                                     {this.state.project.projectUtilities}
                                 </p>
                             </div>
-                            <div class="col-sm-6 contactSection"> {/* Carousel Section (Lines 61-88) */}
-                                <div class="container-fluid pb-2">
-                                    <div class="container">
-                                        <div id="bvThemeGeneratorCarousel" class="carousel slide" data-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" src={this.state.project.projectImage1} alt="First slide" />
-                                                </div>
+                            <div class="col-sm-6 contactSection"> {/* Carousel Section (Lines 51-61) */}
+                                <div class="pb-2">
+                                    <div id="bvThemeGeneratorCarousel" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src={this.state.project.projectImage1} alt="First slide" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row"> {/* Links Section (Lines 88-109) */}
+                        <div class="row"> {/* Links Section (Lines 65-86) */}
                             <div class="col-sm-6 pt-1">
                                 <div class="row">
-                                    <div class="col-6"> {/* Site Link (Lines 93-100) */}
+                                    <div class="col-6"> {/* Site Link (Lines 68-75) */}
                                         <a class="projectPageLink float-left" href={this.state.project.projectSite} target="_blank">
                                             <div class="row">
                                                 <i class="fas fa-external-link-square-alt fa-2x pr-1"></i>
@@ -73,7 +71,7 @@ export default class BVThemeGenerator extends Component {
                                             </div>    
                                         </a>
                                     </div>
-                                    <div class="col-6"> {/* Github Link (Lines 100-108) */}
+                                    <div class="col-6"> {/* Github Link (Lines 76-83) */}
                                         <a class="projectPageLink float-right" href={this.state.project.projectGithub} target="_blank">
                                             <div class="row">
                                                 <h3 class="linkTo pr-1">Github</h3>

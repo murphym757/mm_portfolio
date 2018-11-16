@@ -35,15 +35,15 @@ export default class BVBlog extends Component {
       render() {
         return (
             <div> 
-                <div class="container-fluid swing-in-top-fwd">
-                        <div class="row"> {/* Project Name (Lines 44-46) */}
+                <div class="container-fluid">
+                        <div class="row"> {/* Project Name (Lines 39-41) */}
                             <h3 class="heading-title-project col-sm-6">{this.state.project.projectName}</h3>
                         </div>
-                        <div class="row"> {/* Role (Lines 47-49) */}
+                        <div class="row"> {/* Role (Lines 42-44) */}
                             <h6 class="heading-title-role pb-2 col-sm-6">{this.state.project.projectRole}</h6>
                         </div>
-                        <div class="row"> {/* Description (Left Side of Page) & Carousel (Right Side of Page) (Lines 50-87) */}
-                            <div class="col-sm-6 pb-5"> {/* Description Section (Lines 51-58) */}
+                        <div class="row"> {/* Description (Left Side of Page) & Carousel (Right Side of Page) (Lines 45-90) */}
+                            <div class="col-sm-6 pb-3"> {/* Description Section (Lines 46-53) */}
                                 <p class="project-description float-left"> 
                                     {this.state.project.projectDescription}
                                 </p>
@@ -51,47 +51,45 @@ export default class BVBlog extends Component {
                                     {this.state.project.projectUtilities}
                                 </p>
                             </div>
-                            <div class="col-sm-6 contactSection"> {/* Carousel Section (Lines 61-88) */}
-                                <div class="container-fluid pb-2">
-                                    <div class="container">
-                                        <div id="bvBlogCarousel" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#bvBlogCarousel" data-slide-to="0" class="active"></li>
-                                                <li data-target="#bvBlogCarousel" data-slide-to="1"></li>
-                                                <li data-target="#bvBlogCarousel" data-slide-to="2"></li>
-                                                <li data-target="#bvBlogCarousel" data-slide-to="3"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100" src={this.state.project.projectImage1} alt="First slide" />
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src={this.state.project.projectImage2} alt="Second slide" />
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src={this.state.project.projectImage3} alt="Third slide" />
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100" src={this.state.project.projectImage4} alt="Fourth slide" />
-                                                </div>
+                            <div class="col-sm-6 contactSection"> {/* Carousel Section (Lines 54-87) */}
+                                <div class="pb-2">
+                                    <div id="bvBlogCarousel" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#bvBlogCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#bvBlogCarousel" data-slide-to="1"></li>
+                                            <li data-target="#bvBlogCarousel" data-slide-to="2"></li>
+                                            <li data-target="#bvBlogCarousel" data-slide-to="3"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src={this.state.project.projectImage1} alt="First slide" />
                                             </div>
-                                            <a class="carousel-control-prev" href="#bvBlogCarousel" role="button" data-slide="prev">
-                                                <span aria-hidden="true"><i class="fas fa-chevron-left fa-2x"></i></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#bvBlogCarousel" role="button" data-slide="next">
-                                                <span aria-hidden="true"><i class="fas fa-chevron-right fa-2x"></i></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src={this.state.project.projectImage2} alt="Second slide" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src={this.state.project.projectImage3} alt="Third slide" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src={this.state.project.projectImage4} alt="Fourth slide" />
+                                            </div>
                                         </div>
+                                        <a class="carousel-control-prev" href="#bvBlogCarousel" role="button" data-slide="prev">
+                                            <span aria-hidden="true"><i class="fas fa-chevron-left fa-2x"></i></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#bvBlogCarousel" role="button" data-slide="next">
+                                            <span aria-hidden="true"><i class="fas fa-chevron-right fa-2x"></i></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row"> {/* Links Section (Lines 88-109) */}
+                        <div class="row"> {/* Links Section (Lines 91-113) */}
                             <div class="col-sm-6 pt-1">
                                 <div class="row">
-                                    <div class="col-6"> {/* Site Link (Lines 93-100) */}
+                                    <div class="col-6"> {/* Site Link (Lines 94-101) */}
                                         <a class="projectPageLink float-left" href={this.state.project.projectSite} target="_blank">
                                             <div class="row">
                                                 <i class="fas fa-external-link-square-alt fa-2x pr-1"></i>
@@ -99,7 +97,7 @@ export default class BVBlog extends Component {
                                             </div>    
                                         </a>
                                     </div>
-                                    <div class="col-6"> {/* Github Link (Lines 100-108) */}
+                                    <div class="col-6"> {/* Github Link (Lines 102-109) */}
                                         <a class="projectPageLink float-right" href={this.state.project.projectGithub} target="_blank">
                                             <div class="row">
                                                 <h3 class="linkTo pr-1">Github</h3>

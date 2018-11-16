@@ -67,7 +67,7 @@ var CryptoCoinCount = function (_Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'container-fluid swing-in-top-fwd' },
+                    { 'class': 'container-fluid' },
                     _react2.default.createElement(
                         'div',
                         { 'class': 'row' },
@@ -94,7 +94,7 @@ var CryptoCoinCount = function (_Component) {
                         ' ',
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'col-sm-6 pb-5' },
+                            { 'class': 'col-sm-6 pb-3' },
                             ' ',
                             _react2.default.createElement(
                                 'p',
@@ -113,60 +113,56 @@ var CryptoCoinCount = function (_Component) {
                             ' ',
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'container-fluid pb-2' },
+                                { 'class': 'pb-2' },
                                 _react2.default.createElement(
                                     'div',
-                                    { 'class': 'container' },
+                                    { id: 'cryptoCoinCountCarousel', 'class': 'carousel slide', 'data-ride': 'carousel' },
+                                    _react2.default.createElement(
+                                        'ol',
+                                        { 'class': 'carousel-indicators' },
+                                        _react2.default.createElement('li', { 'data-target': '#cryptoCoinCountCarousel', 'data-slide-to': '0', 'class': 'active' }),
+                                        _react2.default.createElement('li', { 'data-target': '#cryptoCoinCountCarousel', 'data-slide-to': '1' })
+                                    ),
                                     _react2.default.createElement(
                                         'div',
-                                        { id: 'cryptoCoinCountCarousel', 'class': 'carousel slide', 'data-ride': 'carousel' },
+                                        { 'class': 'carousel-inner' },
                                         _react2.default.createElement(
-                                            'ol',
-                                            { 'class': 'carousel-indicators' },
-                                            _react2.default.createElement('li', { 'data-target': '#cryptoCoinCountCarousel', 'data-slide-to': '0', 'class': 'active' }),
-                                            _react2.default.createElement('li', { 'data-target': '#cryptoCoinCountCarousel', 'data-slide-to': '1' })
+                                            'div',
+                                            { 'class': 'carousel-item active' },
+                                            _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage1, alt: 'First slide' })
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { 'class': 'carousel-inner' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'carousel-item active' },
-                                                _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage1, alt: 'First slide' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'carousel-item' },
-                                                _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage2, alt: 'Second slide' })
-                                            )
+                                            { 'class': 'carousel-item' },
+                                            _react2.default.createElement('img', { 'class': 'd-block w-100', src: this.state.project.projectImage2, alt: 'Second slide' })
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'a',
+                                        { 'class': 'carousel-control-prev', href: '#cryptoCoinCountCarousel', role: 'button', 'data-slide': 'prev' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            { 'aria-hidden': 'true' },
+                                            _react2.default.createElement('i', { 'class': 'fas fa-chevron-left fa-2x' })
                                         ),
                                         _react2.default.createElement(
-                                            'a',
-                                            { 'class': 'carousel-control-prev', href: '#cryptoCoinCountCarousel', role: 'button', 'data-slide': 'prev' },
-                                            _react2.default.createElement(
-                                                'span',
-                                                { 'aria-hidden': 'true' },
-                                                _react2.default.createElement('i', { 'class': 'fas fa-chevron-left fa-2x' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'span',
-                                                { 'class': 'sr-only' },
-                                                'Previous'
-                                            )
+                                            'span',
+                                            { 'class': 'sr-only' },
+                                            'Previous'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'a',
+                                        { 'class': 'carousel-control-next', href: '#cryptoCoinCountCarousel', role: 'button', 'data-slide': 'next' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            { 'aria-hidden': 'true' },
+                                            _react2.default.createElement('i', { 'class': 'fas fa-chevron-right fa-2x' })
                                         ),
                                         _react2.default.createElement(
-                                            'a',
-                                            { 'class': 'carousel-control-next', href: '#cryptoCoinCountCarousel', role: 'button', 'data-slide': 'next' },
-                                            _react2.default.createElement(
-                                                'span',
-                                                { 'aria-hidden': 'true' },
-                                                _react2.default.createElement('i', { 'class': 'fas fa-chevron-right fa-2x' })
-                                            ),
-                                            _react2.default.createElement(
-                                                'span',
-                                                { 'class': 'sr-only' },
-                                                'Next'
-                                            )
+                                            'span',
+                                            { 'class': 'sr-only' },
+                                            'Next'
                                         )
                                     )
                                 )
