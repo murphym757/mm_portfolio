@@ -24,17 +24,20 @@ export default class Projects extends Component {
                         </div>
                     </div>
                     <div class="pt-3">
+                    <div class="container-fluid">
                         <div class="row">
                             <h3 class="heading-title pb-2 col-sm-6">Projects</h3>
                         </div>
                         <div class="row justify-content-center">
-                        <div class="container">
+                        <div class="container-fluid">
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                CryptoCoinCount
+                                                <div class="row">
+                                                    CryptoCoinCount <i class="fab fa-react fa-react-ccc"></i>
+                                                </div>
                                             </button>
                                         </h5>
                                     </div>
@@ -49,7 +52,9 @@ export default class Projects extends Component {
                                     <div class="card-header" id="headingTwo">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Bayside Vaporwave
+                                                <div class="row">
+                                                    Bayside Vaporwave <i class="fab fa-react fa-react-bvv"></i>
+                                                </div>
                                             </button>
                                         </h5>
                                     </div>
@@ -63,7 +68,9 @@ export default class Projects extends Component {
                                     <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            BV Blog
+                                            <div class="row">
+                                                BV Blog <i class="fab fa-node-js fa-node-js-bvb"></i>
+                                            </div>
                                         </button>
                                     </h5>
                                     </div>
@@ -77,7 +84,9 @@ export default class Projects extends Component {
                                     <div class="card-header" id="headingFour">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                Crossfader Blog
+                                                <div class="row">
+                                                    Crossfader Blog <i class="far fa-gem fa-gem-cf"></i>
+                                                </div>
                                             </button>
                                         </h5>
                                     </div>
@@ -91,7 +100,9 @@ export default class Projects extends Component {
                                     <div class="card-header" id="headingFive">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                BREAKOUT! JS Game
+                                                <div class="row">
+                                                    BREAKOUT! JS Game <i class="fab fa-node-js fa-node-js-bo"></i>
+                                                </div>
                                             </button>
                                         </h5>
                                     </div>
@@ -105,7 +116,9 @@ export default class Projects extends Component {
                                     <div class="card-header" id="headingSix">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                BV Theme Generator
+                                                <div class="row">
+                                                    BV Theme Generator <i class="far fa-gem fa-gem-bvt"></i>
+                                                </div>
                                             </button>
                                         </h5>
                                     </div>
@@ -119,7 +132,9 @@ export default class Projects extends Component {
                                     <div class="card-header" id="headingSeven">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                Bayside Vinyl
+                                                <div class="row">
+                                                    Bayside Vinyl <i class="far fa-gem fa-gem-bv"></i>
+                                                </div>
                                             </button>
                                         </h5>
                                     </div>
@@ -133,7 +148,9 @@ export default class Projects extends Component {
                                     <div class="card-header" id="headingEight">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                Portfolio (RoR)
+                                                <div class="row">
+                                                    Portfolio (RoR) <i class="far fa-gem fa-gem-mm"></i>
+                                                </div>
                                             </button>
                                         </h5>
                                     </div>
@@ -147,7 +164,9 @@ export default class Projects extends Component {
                                     <div class="card-header" id="headingNine">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                                Sega Paradise
+                                                <div class="row">
+                                                    Sega Paradise <i class="far fa-gem fa-gem-sp"></i>
+                                                </div>
                                             </button>
                                         </h5>
                                     </div>
@@ -158,7 +177,8 @@ export default class Projects extends Component {
                                     </div>
                                 </div>
                             </div>
-                            </div>
+                        </div>
+                        </div>
                         </div>
                         </div>
                     </div>

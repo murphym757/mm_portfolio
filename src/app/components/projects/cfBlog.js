@@ -20,7 +20,7 @@ export default class CFBlog extends Component {
             project: {
                 projectName: "Crossfader Blog",
                 projectRole: "Developer & Designer",
-                projectDescription: "A blog that I made for the iPhone App, Crossfader. Currently, the blog is in the earlier stages of use. Changes and alterations will be made based on the client's needs.",
+                projectDescription: "A blog that I made for the iPhone App, Crossfader. Being a community member/administrator, this was my way of thanking my fellow community members and the entire Crossfader team.",
                 projectUtilities: "Built with Ruby on Rails, HTML5, CSS3/SASS, Devise, Paperclip, Bootstrap, JavaScript (ES6)",
                 projectSite: "http://crossfaderblog.herokuapp.com/",
                 projectGithub: "https://github.com/murphym757/cfblog",

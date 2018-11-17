@@ -97,253 +97,302 @@ var Projects = function (_Component) {
                         { 'class': 'pt-3' },
                         _react2.default.createElement(
                             'div',
-                            { 'class': 'row' },
-                            _react2.default.createElement(
-                                'h3',
-                                { 'class': 'heading-title pb-2 col-sm-6' },
-                                'Projects'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row justify-content-center' },
+                            { 'class': 'container-fluid' },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'container' },
+                                { 'class': 'row' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    { 'class': 'heading-title pb-2 col-sm-6' },
+                                    'Projects'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'row justify-content-center' },
                                 _react2.default.createElement(
                                     'div',
-                                    { 'class': 'accordion', id: 'accordionExample' },
+                                    { 'class': 'container-fluid' },
                                     _react2.default.createElement(
                                         'div',
-                                        { 'class': 'card' },
+                                        { 'class': 'accordion', id: 'accordionExample' },
                                         _react2.default.createElement(
                                             'div',
-                                            { 'class': 'card-header', id: 'headingOne' },
+                                            { 'class': 'card' },
                                             _react2.default.createElement(
-                                                'h5',
-                                                { 'class': 'mb-0' },
+                                                'div',
+                                                { 'class': 'card-header', id: 'headingOne' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseOne', 'aria-expanded': 'false', 'aria-controls': 'collapseOne' },
-                                                    'CryptoCoinCount'
+                                                    'h5',
+                                                    { 'class': 'mb-0' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseOne', 'aria-expanded': 'false', 'aria-controls': 'collapseOne' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row' },
+                                                            'CryptoCoinCount ',
+                                                            _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-ccc' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseOne', 'class': 'collapse', 'aria-labelledby': 'headingOne', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_cryptocoincount2.default, null)
                                                 )
                                             )
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'collapseOne', 'class': 'collapse', 'aria-labelledby': 'headingOne', 'data-parent': '#accordionExample' },
+                                            { 'class': 'card' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'card-body' },
-                                                _react2.default.createElement(_cryptocoincount2.default, null)
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'card' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card-header', id: 'headingTwo' },
-                                            _react2.default.createElement(
-                                                'h5',
-                                                { 'class': 'mb-0' },
+                                                { 'class': 'card-header', id: 'headingTwo' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseTwo', 'aria-expanded': 'false', 'aria-controls': 'collapseTwo' },
-                                                    'Bayside Vaporwave'
+                                                    'h5',
+                                                    { 'class': 'mb-0' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseTwo', 'aria-expanded': 'false', 'aria-controls': 'collapseTwo' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row' },
+                                                            'Bayside Vaporwave ',
+                                                            _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-bvv' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseTwo', 'class': 'collapse', 'aria-labelledby': 'headingTwo', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_baysideVaporwave2.default, null)
                                                 )
                                             )
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'collapseTwo', 'class': 'collapse', 'aria-labelledby': 'headingTwo', 'data-parent': '#accordionExample' },
+                                            { 'class': 'card' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'card-body' },
-                                                _react2.default.createElement(_baysideVaporwave2.default, null)
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'card' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card-header', id: 'headingThree' },
-                                            _react2.default.createElement(
-                                                'h5',
-                                                { 'class': 'mb-0' },
+                                                { 'class': 'card-header', id: 'headingThree' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseThree', 'aria-expanded': 'false', 'aria-controls': 'collapseThree' },
-                                                    'BV Blog'
+                                                    'h5',
+                                                    { 'class': 'mb-0' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseThree', 'aria-expanded': 'false', 'aria-controls': 'collapseThree' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row' },
+                                                            'BV Blog ',
+                                                            _react2.default.createElement('i', { 'class': 'fab fa-node-js fa-node-js-bvb' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseThree', 'class': 'collapse', 'aria-labelledby': 'headingThree', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_bvBlog2.default, null)
                                                 )
                                             )
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'collapseThree', 'class': 'collapse', 'aria-labelledby': 'headingThree', 'data-parent': '#accordionExample' },
+                                            { 'class': 'card' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'card-body' },
-                                                _react2.default.createElement(_bvBlog2.default, null)
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'card' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card-header', id: 'headingFour' },
-                                            _react2.default.createElement(
-                                                'h5',
-                                                { 'class': 'mb-0' },
+                                                { 'class': 'card-header', id: 'headingFour' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseFour', 'aria-expanded': 'false', 'aria-controls': 'collapseFour' },
-                                                    'Crossfader Blog'
+                                                    'h5',
+                                                    { 'class': 'mb-0' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseFour', 'aria-expanded': 'false', 'aria-controls': 'collapseFour' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row' },
+                                                            'Crossfader Blog ',
+                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-cf' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseFour', 'class': 'collapse', 'aria-labelledby': 'headingFour', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_cfBlog2.default, null)
                                                 )
                                             )
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'collapseFour', 'class': 'collapse', 'aria-labelledby': 'headingFour', 'data-parent': '#accordionExample' },
+                                            { 'class': 'card' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'card-body' },
-                                                _react2.default.createElement(_cfBlog2.default, null)
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'card' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card-header', id: 'headingFive' },
-                                            _react2.default.createElement(
-                                                'h5',
-                                                { 'class': 'mb-0' },
+                                                { 'class': 'card-header', id: 'headingFive' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseFive', 'aria-expanded': 'false', 'aria-controls': 'collapseFive' },
-                                                    'BREAKOUT! JS Game'
+                                                    'h5',
+                                                    { 'class': 'mb-0' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseFive', 'aria-expanded': 'false', 'aria-controls': 'collapseFive' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row' },
+                                                            'BREAKOUT! JS Game ',
+                                                            _react2.default.createElement('i', { 'class': 'fab fa-node-js fa-node-js-bo' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseFive', 'class': 'collapse', 'aria-labelledby': 'headingFive', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_breakout2.default, null)
                                                 )
                                             )
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'collapseFive', 'class': 'collapse', 'aria-labelledby': 'headingFive', 'data-parent': '#accordionExample' },
+                                            { 'class': 'card' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'card-body' },
-                                                _react2.default.createElement(_breakout2.default, null)
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'card' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card-header', id: 'headingSix' },
-                                            _react2.default.createElement(
-                                                'h5',
-                                                { 'class': 'mb-0' },
+                                                { 'class': 'card-header', id: 'headingSix' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseSix', 'aria-expanded': 'false', 'aria-controls': 'collapseSix' },
-                                                    'BV Theme Generator'
+                                                    'h5',
+                                                    { 'class': 'mb-0' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseSix', 'aria-expanded': 'false', 'aria-controls': 'collapseSix' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row' },
+                                                            'BV Theme Generator ',
+                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-bvt' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseSix', 'class': 'collapse', 'aria-labelledby': 'headingSix', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_bvThemeGenerator2.default, null)
                                                 )
                                             )
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'collapseSix', 'class': 'collapse', 'aria-labelledby': 'headingSix', 'data-parent': '#accordionExample' },
+                                            { 'class': 'card' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'card-body' },
-                                                _react2.default.createElement(_bvThemeGenerator2.default, null)
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'card' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card-header', id: 'headingSeven' },
-                                            _react2.default.createElement(
-                                                'h5',
-                                                { 'class': 'mb-0' },
+                                                { 'class': 'card-header', id: 'headingSeven' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseSeven', 'aria-expanded': 'false', 'aria-controls': 'collapseSeven' },
-                                                    'Bayside Vinyl'
+                                                    'h5',
+                                                    { 'class': 'mb-0' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseSeven', 'aria-expanded': 'false', 'aria-controls': 'collapseSeven' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row' },
+                                                            'Bayside Vinyl ',
+                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-bv' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseSeven', 'class': 'collapse', 'aria-labelledby': 'headingSeven', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_bvVinyl2.default, null)
                                                 )
                                             )
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'collapseSeven', 'class': 'collapse', 'aria-labelledby': 'headingSeven', 'data-parent': '#accordionExample' },
+                                            { 'class': 'card' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'card-body' },
-                                                _react2.default.createElement(_bvVinyl2.default, null)
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'card' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card-header', id: 'headingEight' },
-                                            _react2.default.createElement(
-                                                'h5',
-                                                { 'class': 'mb-0' },
+                                                { 'class': 'card-header', id: 'headingEight' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseEight', 'aria-expanded': 'false', 'aria-controls': 'collapseEight' },
-                                                    'Portfolio (RoR)'
+                                                    'h5',
+                                                    { 'class': 'mb-0' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseEight', 'aria-expanded': 'false', 'aria-controls': 'collapseEight' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row' },
+                                                            'Portfolio (RoR) ',
+                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-mm' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseEight', 'class': 'collapse', 'aria-labelledby': 'headingEight', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_mmPortfolio2.default, null)
                                                 )
                                             )
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { id: 'collapseEight', 'class': 'collapse', 'aria-labelledby': 'headingEight', 'data-parent': '#accordionExample' },
+                                            { 'class': 'card' },
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'card-body' },
-                                                _react2.default.createElement(_mmPortfolio2.default, null)
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'card' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card-header', id: 'headingNine' },
-                                            _react2.default.createElement(
-                                                'h5',
-                                                { 'class': 'mb-0' },
+                                                { 'class': 'card-header', id: 'headingNine' },
                                                 _react2.default.createElement(
-                                                    'button',
-                                                    { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseNine', 'aria-expanded': 'false', 'aria-controls': 'collapseNine' },
-                                                    'Sega Paradise'
+                                                    'h5',
+                                                    { 'class': 'mb-0' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseNine', 'aria-expanded': 'false', 'aria-controls': 'collapseNine' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row' },
+                                                            'Sega Paradise ',
+                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-sp' })
+                                                        )
+                                                    )
                                                 )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { id: 'collapseNine', 'class': 'collapse', 'aria-labelledby': 'headingNine', 'data-parent': '#accordionExample' },
+                                            ),
                                             _react2.default.createElement(
                                                 'div',
-                                                { 'class': 'card-body' },
-                                                _react2.default.createElement(_segaParadise2.default, null)
+                                                { id: 'collapseNine', 'class': 'collapse', 'aria-labelledby': 'headingNine', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_segaParadise2.default, null)
+                                                )
                                             )
                                         )
                                     )

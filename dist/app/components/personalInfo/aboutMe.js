@@ -38,7 +38,7 @@ var AboutMe = function (_Component) {
                 _react2.default.createElement(
                     'p',
                     { 'class': 'aboutMeSection' },
-                    'My name is Maurice Murphy and I\'m a forward-thinker. I use that to my advantage when creating various projects. My affinity for art drives my design process. My goal is to consistently improve upon old designs. At the same time, providing something fresh (and unique) to the overall design. I\'m constantly thinking of ways to test myself and push my skills to the next level. As I obtain new languages and concepts, this site will continuously be updated.'
+                    'My name is Maurice Murphy and I\'m a forward thinker. I\u2019m always looking towards the future and my work reflects that. My affinity for art drives my design process. I use that to my advantage when creating various projects. I have a passion for recreating various aesthetics through the use of Ruby on Rails and Javascript (React). I\'m constantly thinking of ways to test myself and push my skills to the next level. My goal is to consistently improve my skills while providing the assistance necessary to help those around me do the same.'
                 )
             );
         }
