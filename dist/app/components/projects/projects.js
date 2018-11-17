@@ -124,13 +124,13 @@ var Projects = function (_Component) {
                                                 { 'class': 'card-header', id: 'headingOne' },
                                                 _react2.default.createElement(
                                                     'h5',
-                                                    { 'class': 'mb-0' },
+                                                    { 'class': 'mb-auto' },
                                                     _react2.default.createElement(
                                                         'button',
                                                         { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseOne', 'aria-expanded': 'false', 'aria-controls': 'collapseOne' },
                                                         _react2.default.createElement(
                                                             'div',
-                                                            { 'class': 'row' },
+                                                            { 'class': 'row pl-2 pr-2' },
                                                             'CryptoCoinCount ',
                                                             _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-ccc' })
                                                         )
@@ -155,13 +155,13 @@ var Projects = function (_Component) {
                                                 { 'class': 'card-header', id: 'headingTwo' },
                                                 _react2.default.createElement(
                                                     'h5',
-                                                    { 'class': 'mb-0' },
+                                                    { 'class': 'mb-auto' },
                                                     _react2.default.createElement(
                                                         'button',
                                                         { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseTwo', 'aria-expanded': 'false', 'aria-controls': 'collapseTwo' },
                                                         _react2.default.createElement(
                                                             'div',
-                                                            { 'class': 'row' },
+                                                            { 'class': 'row pl-2 pr-2' },
                                                             'Bayside Vaporwave ',
                                                             _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-bvv' })
                                                         )
@@ -186,13 +186,13 @@ var Projects = function (_Component) {
                                                 { 'class': 'card-header', id: 'headingThree' },
                                                 _react2.default.createElement(
                                                     'h5',
-                                                    { 'class': 'mb-0' },
+                                                    { 'class': 'mb-auto' },
                                                     _react2.default.createElement(
                                                         'button',
                                                         { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseThree', 'aria-expanded': 'false', 'aria-controls': 'collapseThree' },
                                                         _react2.default.createElement(
                                                             'div',
-                                                            { 'class': 'row' },
+                                                            { 'class': 'row pl-2 pr-2' },
                                                             'BV Blog ',
                                                             _react2.default.createElement('i', { 'class': 'fab fa-node-js fa-node-js-bvb' })
                                                         )
@@ -217,13 +217,13 @@ var Projects = function (_Component) {
                                                 { 'class': 'card-header', id: 'headingFour' },
                                                 _react2.default.createElement(
                                                     'h5',
-                                                    { 'class': 'mb-0' },
+                                                    { 'class': 'mb-auto' },
                                                     _react2.default.createElement(
                                                         'button',
                                                         { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseFour', 'aria-expanded': 'false', 'aria-controls': 'collapseFour' },
                                                         _react2.default.createElement(
                                                             'div',
-                                                            { 'class': 'row' },
+                                                            { 'class': 'row pl-2 pr-2' },
                                                             'Crossfader Blog ',
                                                             _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-cf' })
                                                         )
@@ -248,13 +248,13 @@ var Projects = function (_Component) {
                                                 { 'class': 'card-header', id: 'headingFive' },
                                                 _react2.default.createElement(
                                                     'h5',
-                                                    { 'class': 'mb-0' },
+                                                    { 'class': 'mb-auto' },
                                                     _react2.default.createElement(
                                                         'button',
                                                         { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseFive', 'aria-expanded': 'false', 'aria-controls': 'collapseFive' },
                                                         _react2.default.createElement(
                                                             'div',
-                                                            { 'class': 'row' },
+                                                            { 'class': 'row pl-2 pr-2' },
                                                             'BREAKOUT! JS Game ',
                                                             _react2.default.createElement('i', { 'class': 'fab fa-node-js fa-node-js-bo' })
                                                         )
@@ -279,13 +279,13 @@ var Projects = function (_Component) {
                                                 { 'class': 'card-header', id: 'headingSix' },
                                                 _react2.default.createElement(
                                                     'h5',
-                                                    { 'class': 'mb-0' },
+                                                    { 'class': 'mb-auto' },
                                                     _react2.default.createElement(
                                                         'button',
                                                         { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseSix', 'aria-expanded': 'false', 'aria-controls': 'collapseSix' },
                                                         _react2.default.createElement(
                                                             'div',
-                                                            { 'class': 'row' },
+                                                            { 'class': 'row pl-2 pr-2' },
                                                             'BV Theme Generator ',
                                                             _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-bvt' })
                                                         )
@@ -310,13 +310,13 @@ var Projects = function (_Component) {
                                                 { 'class': 'card-header', id: 'headingSeven' },
                                                 _react2.default.createElement(
                                                     'h5',
-                                                    { 'class': 'mb-0' },
+                                                    { 'class': 'mb-auto' },
                                                     _react2.default.createElement(
                                                         'button',
                                                         { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseSeven', 'aria-expanded': 'false', 'aria-controls': 'collapseSeven' },
                                                         _react2.default.createElement(
                                                             'div',
-                                                            { 'class': 'row' },
+                                                            { 'class': 'row pl-2 pr-2' },
                                                             'Bayside Vinyl ',
                                                             _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-bv' })
                                                         )
@@ -341,13 +341,13 @@ var Projects = function (_Component) {
                                                 { 'class': 'card-header', id: 'headingEight' },
                                                 _react2.default.createElement(
                                                     'h5',
-                                                    { 'class': 'mb-0' },
+                                                    { 'class': 'mb-auto' },
                                                     _react2.default.createElement(
                                                         'button',
                                                         { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseEight', 'aria-expanded': 'false', 'aria-controls': 'collapseEight' },
                                                         _react2.default.createElement(
                                                             'div',
-                                                            { 'class': 'row' },
+                                                            { 'class': 'row pl-2 pr-2' },
                                                             'Portfolio (RoR) ',
                                                             _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-mm' })
                                                         )
@@ -372,13 +372,13 @@ var Projects = function (_Component) {
                                                 { 'class': 'card-header', id: 'headingNine' },
                                                 _react2.default.createElement(
                                                     'h5',
-                                                    { 'class': 'mb-0' },
+                                                    { 'class': 'mb-auto' },
                                                     _react2.default.createElement(
                                                         'button',
                                                         { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseNine', 'aria-expanded': 'false', 'aria-controls': 'collapseNine' },
                                                         _react2.default.createElement(
                                                             'div',
-                                                            { 'class': 'row' },
+                                                            { 'class': 'row pl-2 pr-2' },
                                                             'Sega Paradise ',
                                                             _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-sp' })
                                                         )

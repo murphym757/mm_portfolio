@@ -33,9 +33,9 @@ export default class Projects extends Component {
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
-                                        <h5 class="mb-0">
+                                        <h5 class="mb-auto">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                <div class="row">
+                                                <div class="row pl-2 pr-2">
                                                     CryptoCoinCount <i class="fab fa-react fa-react-ccc"></i>
                                                 </div>
                                             </button>
@@ -50,9 +50,9 @@ export default class Projects extends Component {
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
-                                        <h5 class="mb-0">
+                                        <h5 class="mb-auto">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                <div class="row">
+                                                <div class="row pl-2 pr-2">
                                                     Bayside Vaporwave <i class="fab fa-react fa-react-bvv"></i>
                                                 </div>
                                             </button>
@@ -66,9 +66,9 @@ export default class Projects extends Component {
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingThree">
-                                    <h5 class="mb-0">
+                                    <h5 class="mb-auto">
                                         <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <div class="row">
+                                            <div class="row pl-2 pr-2">
                                                 BV Blog <i class="fab fa-node-js fa-node-js-bvb"></i>
                                             </div>
                                         </button>
@@ -82,9 +82,9 @@ export default class Projects extends Component {
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingFour">
-                                        <h5 class="mb-0">
+                                        <h5 class="mb-auto">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                <div class="row">
+                                                <div class="row pl-2 pr-2">
                                                     Crossfader Blog <i class="far fa-gem fa-gem-cf"></i>
                                                 </div>
                                             </button>
@@ -98,9 +98,9 @@ export default class Projects extends Component {
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingFive">
-                                        <h5 class="mb-0">
+                                        <h5 class="mb-auto">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                <div class="row">
+                                                <div class="row pl-2 pr-2">
                                                     BREAKOUT! JS Game <i class="fab fa-node-js fa-node-js-bo"></i>
                                                 </div>
                                             </button>
@@ -114,9 +114,9 @@ export default class Projects extends Component {
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingSix">
-                                        <h5 class="mb-0">
+                                        <h5 class="mb-auto">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                <div class="row">
+                                                <div class="row pl-2 pr-2">
                                                     BV Theme Generator <i class="far fa-gem fa-gem-bvt"></i>
                                                 </div>
                                             </button>
@@ -130,9 +130,9 @@ export default class Projects extends Component {
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingSeven">
-                                        <h5 class="mb-0">
+                                        <h5 class="mb-auto">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                <div class="row">
+                                                <div class="row pl-2 pr-2">
                                                     Bayside Vinyl <i class="far fa-gem fa-gem-bv"></i>
                                                 </div>
                                             </button>
@@ -146,9 +146,9 @@ export default class Projects extends Component {
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingEight">
-                                        <h5 class="mb-0">
+                                        <h5 class="mb-auto">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                <div class="row">
+                                                <div class="row pl-2 pr-2">
                                                     Portfolio (RoR) <i class="far fa-gem fa-gem-mm"></i>
                                                 </div>
                                             </button>
@@ -162,9 +162,9 @@ export default class Projects extends Component {
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingNine">
-                                        <h5 class="mb-0">
+                                        <h5 class="mb-auto">
                                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                                <div class="row">
+                                                <div class="row pl-2 pr-2">
                                                     Sega Paradise <i class="far fa-gem fa-gem-sp"></i>
                                                 </div>
                                             </button>
