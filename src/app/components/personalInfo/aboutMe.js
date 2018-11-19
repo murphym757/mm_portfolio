@@ -9,8 +9,7 @@ export default class AboutMe extends Component {
                 <p class="aboutMeSection">
                     My name is Maurice Murphy and I'm a forward thinker. 
                     I’m always looking towards the future and my work reflects 
-                    that. My affinity for art drives my design process. I use 
-                    that to my advantage when creating various projects. I have 
+                    that. My affinity for art drives my design process. I have 
                     a passion for recreating various aesthetics through the use 
                     of Ruby on Rails and Javascript (React). I'm constantly thinking 
                     of ways to test myself and push my skills to the next level. My 
