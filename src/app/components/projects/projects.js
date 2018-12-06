@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import NavLinksProjects from '../projects/navLinksProjects.js';
 
+import PopArtWeather from './popArtWeather.js';
+import NewMMPortfolio from './newMMPortfolio.js';
 import CryptoCoinCount from './cryptocoincount.js';
 import BaysideVaporwave from './baysideVaporwave.js';
 import BVBlog from './bvBlog.js';
@@ -31,6 +33,38 @@ export default class Projects extends Component {
                         <div class="row justify-content-center">
                         <div class="container-fluid">
                             <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingZeroOne">
+                                    <h5 class="mb-auto">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseZeroOne" aria-expanded="false" aria-controls="collapseZeroOne">
+                                            <div class="row pl-2 pr-2">
+                                               PopArtWeather <i class="fab fa-react fa-react-ccc"></i>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseZeroOne" class="collapse" aria-labelledby="headingZeroOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <PopArtWeather />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingZero">
+                                    <h5 class="mb-auto">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseZero" aria-expanded="false" aria-controls="collapseZero">
+                                            <div class="row pl-2 pr-2">
+                                                Portfolio (React) <i class="fab fa-react fa-react-ccc"></i>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <NewMMPortfolio />
+                                    </div>
+                                </div>
+                            </div>
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
                                         <h5 class="mb-auto">
@@ -41,7 +75,6 @@ export default class Projects extends Component {
                                             </button>
                                         </h5>
                                     </div>
-
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                         <div class="card-body">
                                             <CryptoCoinCount />

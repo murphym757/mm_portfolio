@@ -16,6 +16,14 @@ var _navLinksProjects = require('../projects/navLinksProjects.js');
 
 var _navLinksProjects2 = _interopRequireDefault(_navLinksProjects);
 
+var _popArtWeather = require('./popArtWeather.js');
+
+var _popArtWeather2 = _interopRequireDefault(_popArtWeather);
+
+var _newMMPortfolio = require('./newMMPortfolio.js');
+
+var _newMMPortfolio2 = _interopRequireDefault(_newMMPortfolio);
+
 var _cryptocoincount = require('./cryptocoincount.js');
 
 var _cryptocoincount2 = _interopRequireDefault(_cryptocoincount);
@@ -116,6 +124,68 @@ var Projects = function (_Component) {
                                     _react2.default.createElement(
                                         'div',
                                         { 'class': 'accordion', id: 'accordionExample' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { 'class': 'card' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { 'class': 'card-header', id: 'headingZeroOne' },
+                                                _react2.default.createElement(
+                                                    'h5',
+                                                    { 'class': 'mb-auto' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseZeroOne', 'aria-expanded': 'false', 'aria-controls': 'collapseZeroOne' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row pl-2 pr-2' },
+                                                            'PopArtWeather ',
+                                                            _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-ccc' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseZeroOne', 'class': 'collapse', 'aria-labelledby': 'headingZeroOne', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_popArtWeather2.default, null)
+                                                )
+                                            )
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            { 'class': 'card' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { 'class': 'card-header', id: 'headingZero' },
+                                                _react2.default.createElement(
+                                                    'h5',
+                                                    { 'class': 'mb-auto' },
+                                                    _react2.default.createElement(
+                                                        'button',
+                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseZero', 'aria-expanded': 'false', 'aria-controls': 'collapseZero' },
+                                                        _react2.default.createElement(
+                                                            'div',
+                                                            { 'class': 'row pl-2 pr-2' },
+                                                            'Portfolio (React) ',
+                                                            _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-ccc' })
+                                                        )
+                                                    )
+                                                )
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { id: 'collapseZero', 'class': 'collapse', 'aria-labelledby': 'headingZero', 'data-parent': '#accordionExample' },
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { 'class': 'card-body' },
+                                                    _react2.default.createElement(_newMMPortfolio2.default, null)
+                                                )
+                                            )
+                                        ),
                                         _react2.default.createElement(
                                             'div',
                                             { 'class': 'card' },
