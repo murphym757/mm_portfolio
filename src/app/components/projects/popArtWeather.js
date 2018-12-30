@@ -24,7 +24,7 @@ export default class PopArtWeather extends Component {
                 projectDescription: "A react app that uses coordinates to provide the user a forecast for a precise location. Using the Mapbox API, a set of coordinates are provide to the user. From there, a detailed forecast for those coordinates is provided via the Dark Sky API. The style is heavily influenced by the pop art movement.",
                 projectUtilities: "Built with React, React-Router, Node.js, HTML5, CSS3/SASS, Javascript ES2015 (formally ES6), JSX, Bootstrap, Webpack, Babel, npm, Mapbox API, and Dark Sky API",
                 projectSite: "http://popartweather.herokuapp.com/",
-                projectGithub: "https://github.com/murphym757/mm_portfolio",
+                projectGithub: "https://github.com/murphym757/popartweather",
                 projectImage1: "https://s3.amazonaws.com/mmportfolioreact/popartweather/popartweatherimg.png",
                 projectImage2: "https://s3.amazonaws.com/mmportfolioreact/popartweather/popartweatherimg2.png",
                 projectImage3: "https://s3.amazonaws.com/mmportfolioreact/popartweather/popartweatherimg3.png",
