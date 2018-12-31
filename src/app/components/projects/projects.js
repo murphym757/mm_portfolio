@@ -13,6 +13,7 @@ import BVThemeGenerator from './bvThemeGenerator.js';
 import BaysideVinyl from './bvVinyl.js';
 import MMPortfolio from './mmPortfolio.js';
 import SegaParadise from './segaParadise.js';
+import SegaParadise2 from './segaParadise2.js';
 
 export default class Projects extends Component {
     render() {
@@ -33,6 +34,22 @@ export default class Projects extends Component {
                         <div class="row justify-content-center">
                         <div class="container-fluid">
                             <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                    <div class="card-header" id="headingZeroTwo">
+                                        <h5 class="mb-auto">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseZeroTwo" aria-expanded="false" aria-controls="collapseZeroTwo">
+                                                <div class="row pl-2 pr-2">
+                                                    Sega Paradise 2 <i class="fab fa-react fa-react-ccc"></i>
+                                                </div>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseZeroTwo" class="collapse" aria-labelledby="headingZeroTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <SegaParadise2 />
+                                        </div>
+                                    </div>
+                                </div>
                             <div class="card">
                                 <div class="card-header" id="headingZeroOne">
                                     <h5 class="mb-auto">

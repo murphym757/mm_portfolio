@@ -16,6 +16,7 @@ import BVBlog from '../projects/bvBlog.js';
 import BaysideVaporwave from '../projects/baysideVaporwave.js';
 import CryptoCoinCount from '../projects/cryptocoincount.js';
 import Resume from '../personalInfo/resume.js';
+import SegaParadise2 from '../projects/segaParadise2.js';
 
 export default class Home extends Component {
     render() {
@@ -42,6 +43,7 @@ export default class Home extends Component {
                                     <Route exact path="/projects/bv-blog" component={BVBlog}/>
                                     <Route exact path="/projects/bayside-vaporwave" component={BaysideVaporwave}/>
                                     <Route exact path="/projects/cryptocoincount" component={CryptoCoinCount}/>
+                                    <Route exact path="/projects/sega-paradise-2" component={SegaParadise2}/>
                                 </Switch>
                                 <Footer />
                             </div>
