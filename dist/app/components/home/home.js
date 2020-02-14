@@ -1,147 +1,94 @@
-'use strict';
+"use strict";
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports["default"] = Home;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _react = _interopRequireWildcard(require("react"));
 
-var _react = require('react');
+var _reactRouterDom = require("react-router-dom");
 
-var _react2 = _interopRequireDefault(_react);
+var _provider = _interopRequireDefault(require("@bootstrap-styled/provider"));
 
-var _reactRouterDom = require('react-router-dom');
+var _theme = require("bootstrap-styled/lib/theme");
 
-var _navigation = require('../design/navigation.js');
+var _globalStyling = require("../../assets/styles/globalStyling");
 
-var _navigation2 = _interopRequireDefault(_navigation);
+var _navigation = _interopRequireDefault(require("../design/navigation.js"));
 
-var _projects = require('../projects/projects.js');
+var _projects = _interopRequireDefault(require("../projects/projects.js"));
 
-var _projects2 = _interopRequireDefault(_projects);
+var _header = _interopRequireDefault(require("../design/header.js"));
 
-var _header = require('../design/header.js');
+var _footer = _interopRequireDefault(require("../design/footer.js"));
 
-var _header2 = _interopRequireDefault(_header);
+var _globalTheme = require("../../assets/styles/globalTheme");
 
-var _footer = require('../design/footer.js');
+var _mainStyling = require("../../assets/styles/mainStyling");
 
-var _footer2 = _interopRequireDefault(_footer);
+var _designStyling = require("../../assets/styles/designStyling");
 
-var _segaParadise = require('../projects/segaParadise.js');
+var _v = require("@bootstrap-styled/v4");
 
-var _segaParadise2 = _interopRequireDefault(_segaParadise);
+var _resume = _interopRequireDefault(require("../personalInfo/resume.js"));
 
-var _mmPortfolio = require('../projects/mmPortfolio.js');
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var _mmPortfolio2 = _interopRequireDefault(_mmPortfolio);
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
-var _bvVinyl = require('../projects/bvVinyl.js');
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var _bvVinyl2 = _interopRequireDefault(_bvVinyl);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-var _bvThemeGenerator = require('../projects/bvThemeGenerator.js');
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-var _bvThemeGenerator2 = _interopRequireDefault(_bvThemeGenerator);
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
-var _breakout = require('../projects/breakout.js');
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var _breakout2 = _interopRequireDefault(_breakout);
+function Home(props) {
+  var _useState = (0, _react.useState)(),
+      _useState2 = _slicedToArray(_useState, 2),
+      currentTheme = _useState2[0],
+      setCurrentTheme = _useState2[1];
 
-var _cfBlog = require('../projects/cfBlog.js');
+  (0, _react.useEffect)(function () {
+    var currentTime = new Date();
+    var time = currentTime.getHours();
+    console.log(time);
 
-var _cfBlog2 = _interopRequireDefault(_cfBlog);
-
-var _bvBlog = require('../projects/bvBlog.js');
-
-var _bvBlog2 = _interopRequireDefault(_bvBlog);
-
-var _baysideVaporwave = require('../projects/baysideVaporwave.js');
-
-var _baysideVaporwave2 = _interopRequireDefault(_baysideVaporwave);
-
-var _cryptocoincount = require('../projects/cryptocoincount.js');
-
-var _cryptocoincount2 = _interopRequireDefault(_cryptocoincount);
-
-var _resume = require('../personalInfo/resume.js');
-
-var _resume2 = _interopRequireDefault(_resume);
-
-var _segaParadise3 = require('../projects/segaParadise2.js');
-
-var _segaParadise4 = _interopRequireDefault(_segaParadise3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// Routes
-
-
-var Home = function (_Component) {
-    _inherits(Home, _Component);
-
-    function Home() {
-        _classCallCheck(this, Home);
-
-        return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+    if (time >= 17 || time < 7) {
+      setCurrentTheme(_globalTheme.souseDefaultThemeDark);
+    } else {
+      setCurrentTheme(_globalTheme.souseDefaultTheme);
     }
-
-    _createClass(Home, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                _reactRouterDom.BrowserRouter,
-                null,
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'container-fluid p-auto' },
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'container-fluid pt-3 pb-3' },
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'card main-card' },
-                                _react2.default.createElement(
-                                    _reactRouterDom.Link,
-                                    { 'class': 'nameHeader-Link', to: '/' },
-                                    _react2.default.createElement(_header2.default, null)
-                                ),
-                                _react2.default.createElement(
-                                    _reactRouterDom.Switch,
-                                    null,
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _navigation2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/resume', component: _resume2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects', component: _projects2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/sega-paradise', component: _segaParadise2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/maurice-murphy-portfolio', component: _mmPortfolio2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/bayside-vinyl', component: _bvVinyl2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/bv-theme-generator', component: _bvThemeGenerator2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/breakout', component: _breakout2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/crossfader-blog', component: _cfBlog2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/bv-blog', component: _bvBlog2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/bayside-vaporwave', component: _baysideVaporwave2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/cryptocoincount', component: _cryptocoincount2.default }),
-                                    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/projects/sega-paradise-2', component: _segaParadise4.default })
-                                ),
-                                _react2.default.createElement(_footer2.default, null)
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Home;
-}(_react.Component);
-
-exports.default = Home;
+  });
+  return _react["default"].createElement(_reactRouterDom.BrowserRouter, null, _react["default"].createElement("div", null, _react["default"].createElement("div", {
+    "class": "container-fluid p-auto"
+  }, _react["default"].createElement(_mainStyling.CardContainer, {
+    className: "container-fluid pt-3 pb-3"
+  }, _react["default"].createElement(_provider["default"], {
+    theme: currentTheme
+  }, _react["default"].createElement(_globalStyling.GlobalStyle, null), _react["default"].createElement(_mainStyling.MainCard, {
+    className: "container"
+  }, _react["default"].createElement(_v.CardBlock, {
+    className: "m-0 pl-0 pr-0"
+  }, _react["default"].createElement("nameHeaderLink", {
+    to: "/"
+  }, _react["default"].createElement(_header["default"], null)), _react["default"].createElement(_reactRouterDom.Switch, null, _react["default"].createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/",
+    component: _navigation["default"]
+  }), _react["default"].createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/resume",
+    component: _resume["default"]
+  }), _react["default"].createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/projects",
+    component: _projects["default"]
+  })))))))));
+}

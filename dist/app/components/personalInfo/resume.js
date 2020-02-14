@@ -1,293 +1,102 @@
-'use strict';
+"use strict";
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports["default"] = Resume;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _react = _interopRequireWildcard(require("react"));
 
-var _react = require('react');
+var _reactRouterDom = require("react-router-dom");
 
-var _react2 = _interopRequireDefault(_react);
+var _NavLinksResume = _interopRequireDefault(require("../personalInfo/NavLinksResume.js"));
 
-var _reactRouterDom = require('react-router-dom');
+var _designStyling = require("../../assets/styles/designStyling");
 
-var _NavLinksResume = require('../personalInfo/NavLinksResume.js');
+var _footer = _interopRequireDefault(require("../design/footer.js"));
 
-var _NavLinksResume2 = _interopRequireDefault(_NavLinksResume);
+var _personalInfoStyling = require("../../assets/styles/personalInfoStyling");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _fontAwesomeStyling = require("../../assets/styles/fontAwesomeStyling");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var _mainStyling = require("../../assets/styles/mainStyling");
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+var _quickDB = require("../../../server/quickDB");
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var Resume = function (_Component) {
-    _inherits(Resume, _Component);
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
-    function Resume() {
-        _classCallCheck(this, Resume);
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-        return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).apply(this, arguments));
-    }
-
-    _createClass(Resume, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'div',
-                    { 'class': 'container-fluid swing-in-top-fwd' },
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'row' },
-                        _react2.default.createElement(
-                            'h3',
-                            { 'class': 'jobTitleHeader col-sm-6' },
-                            'Full-Stack Developer'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-sm-6 pb-3' },
-                            _react2.default.createElement(_NavLinksResume2.default, null)
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'container-fluid pt-3' },
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            _react2.default.createElement(
-                                'h3',
-                                { 'class': 'heading-title pb-2 col-sm-6' },
-                                'Resume'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            _react2.default.createElement(
-                                'h3',
-                                { 'class': 'resumeSectionHeader container-fluid pt-2 pb-1' },
-                                'Work'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'col-sm-6 pb-3' },
-                                _react2.default.createElement(
-                                    'h4',
-                                    { 'class': 'jobName' },
-                                    'FREELANCE'
-                                ),
-                                _react2.default.createElement(
-                                    'h5',
-                                    { 'class': 'jobTitle' },
-                                    'DESIGNER & DEVELOPER, Jan. 2015 to present'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    { 'class': 'jobDescription' },
-                                    'Develop and design web-based apps with the use of the MEAN Stack, React, Ruby on Rails, Bootstrap and numerous other technologies. Consult with clients about web designs, develop products with the use of wire-framing techniques.'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'col-sm-6' },
-                                _react2.default.createElement(
-                                    'h4',
-                                    { 'class': 'jobName' },
-                                    'FLORIDA INSTITUTE OF TECHNOLOGY'
-                                ),
-                                _react2.default.createElement(
-                                    'h5',
-                                    { 'class': 'jobTitle' },
-                                    'TECHNICAL SUPPORT TECHNICIAN, Melbourne, FL, Jan. 2015 to May. 2015'
-                                ),
-                                _react2.default.createElement(
-                                    'p',
-                                    { 'class': 'jobDescription' },
-                                    'As a technical support technician, I assisted customers with navigating the school\'s website. As well as, provided a helping hand around the office when my assistance was needed.'
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            _react2.default.createElement(
-                                'h3',
-                                { 'class': 'resumeSectionHeader container-fluid pb-1 pt-2' },
-                                'Skills'
-                            ),
-                            _react2.default.createElement(
-                                'p',
-                                { 'class': 'container-fluid pb-3 resumeSkillsSection' },
-                                _react2.default.createElement(
-                                    'span',
-                                    { 'class': 'resumeSkillsHeader' },
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        'Version Control',
-                                        _react2.default.createElement(
-                                            'span',
-                                            { 'class': 'resumeSkillsHeader-colon' },
-                                            ':'
-                                        ),
-                                        ' '
-                                    )
-                                ),
-                                'Git, GitHub.',
-                                _react2.default.createElement(
-                                    'span',
-                                    { 'class': 'resumeSkillsHeader' },
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        ' Package Managers',
-                                        _react2.default.createElement(
-                                            'span',
-                                            { 'class': 'resumeSkillsHeader-colon' },
-                                            ':'
-                                        ),
-                                        ' '
-                                    )
-                                ),
-                                'npm.',
-                                _react2.default.createElement(
-                                    'span',
-                                    { 'class': 'resumeSkillsHeader' },
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        ' Development Tools',
-                                        _react2.default.createElement(
-                                            'span',
-                                            { 'class': 'resumeSkillsHeader-colon' },
-                                            ':'
-                                        ),
-                                        ' '
-                                    )
-                                ),
-                                'Heroku, Amazon Web Services, Compass, Agile, Gulp, Webpack.',
-                                _react2.default.createElement(
-                                    'span',
-                                    { 'class': 'resumeSkillsHeader' },
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        ' Languages',
-                                        _react2.default.createElement(
-                                            'span',
-                                            { 'class': 'resumeSkillsHeader-colon' },
-                                            ':'
-                                        ),
-                                        ' '
-                                    )
-                                ),
-                                'Ruby, JavaScript, SQL, noSQL, HTML, CSS, SASS.',
-                                _react2.default.createElement(
-                                    'span',
-                                    { 'class': 'resumeSkillsHeader' },
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        ' Frameworks & Libraries',
-                                        _react2.default.createElement(
-                                            'span',
-                                            { 'class': 'resumeSkillsHeader-colon' },
-                                            ':'
-                                        ),
-                                        ' '
-                                    )
-                                ),
-                                'MEAN Stack, React, JSX, Babel, Pug (formally Jade), Ruby on Rails, jQuery, Bootstrap.',
-                                _react2.default.createElement(
-                                    'span',
-                                    { 'class': 'resumeSkillsHeader' },
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        ' Design Tools',
-                                        _react2.default.createElement(
-                                            'span',
-                                            { 'class': 'resumeSkillsHeader-colon' },
-                                            ':'
-                                        ),
-                                        ' '
-                                    )
-                                ),
-                                'Photoshop.'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            _react2.default.createElement(
-                                'h3',
-                                { 'class': 'resumeSectionHeader container-fluid pb-2 pt-2' },
-                                'Education'
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'col-sm-6 pb-3' },
-                                _react2.default.createElement(
-                                    'h6',
-                                    { 'class': 'resumeCollege' },
-                                    'FLORIDA INSTITUTE OF TECHNOLOGY',
-                                    _react2.default.createElement(
-                                        'span',
-                                        { 'class': 'resumeCollegeGrad' },
-                                        ' (Melbourne, FL, 2015)'
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'h6',
-                                    { 'class': 'resumeCollege' },
-                                    'BACHELOR OF SCIENCE, INFORMATION SYSTEMS'
-                                ),
-                                _react2.default.createElement(
-                                    'h6',
-                                    { 'class': 'resumeCollegeGPA' },
-                                    'GPA: 3.20/4.00'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'col-sm-6' },
-                                _react2.default.createElement(
-                                    'h6',
-                                    { 'class': 'resumeCollege' },
-                                    'EASTERN FLORIDA STATE COLLEGE',
-                                    _react2.default.createElement(
-                                        'span',
-                                        { 'class': 'resumeCollegeGrad' },
-                                        ' (Melbourne, FL, 2013)'
-                                    )
-                                ),
-                                _react2.default.createElement(
-                                    'h6',
-                                    { 'class': 'resumeCollege' },
-                                    'ASSOCIATE OF ARTS, GENERAL EDUCATION'
-                                ),
-                                _react2.default.createElement(
-                                    'h6',
-                                    { 'class': 'resumeCollegeGPA' },
-                                    'GPA: 3.09/4.00'
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Resume;
-}(_react.Component);
-
-exports.default = Resume;
+function Resume(props) {
+  return _react["default"].createElement("div", null, _react["default"].createElement(_mainStyling.SwingInTopDiv, {
+    className: "container-fluid m-0 p-0"
+  }, _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement(_designStyling.JobTitleHeader, {
+    className: "col-sm-6"
+  }, "Full-Stack Developer"), _react["default"].createElement("div", {
+    "class": "col-sm-6 pb-3"
+  }, _react["default"].createElement(_NavLinksResume["default"], null))), _react["default"].createElement("div", {
+    "class": "container-fluid pt-3"
+  }, _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement(_designStyling.HeadingTitle, {
+    className: "pb-2 col-sm-6"
+  }, "Resume")), _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSectionHeader, {
+    className: "container-fluid pt-2 pb-1"
+  }, "Work"), _react["default"].createElement("div", {
+    "class": "col-sm-12 pb-3"
+  }, _react["default"].createElement(_personalInfoStyling.JobName, null, _quickDB.resume.job1.jobName), _react["default"].createElement(_personalInfoStyling.JobTitle, null, _quickDB.resume.job1.jobTitleYears), _react["default"].createElement(_personalInfoStyling.JobDescription, null, _quickDB.resume.job1.jobDescription))), _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSectionHeader, {
+    className: "container-fluid pb-1 pt-2"
+  }, "Skills"), _react["default"].createElement(_personalInfoStyling.ResumeSkillsSection, {
+    className: "container-fluid pb-3"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Version Control", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.versionControl, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Package Managers", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.packageManagers, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Development Tools", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.developmentTools, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Languages", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.languages, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Frameworks & Libraries", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.frameworksLibraries, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Design Tools", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.designTools)), _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSectionHeader, {
+    className: "container-fluid pb-2 pt-2"
+  }, "Education"), _react["default"].createElement("div", {
+    "class": "col-sm-6 pb-3"
+  }, " ", _react["default"].createElement("div", {
+    "class": "row mb-2 ml-1"
+  }, _react["default"].createElement("div", {
+    "class": "col-12 m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeCollege, {
+    className: "mb-0"
+  }, _quickDB.resume.education.college1.collegeName)), _react["default"].createElement("div", {
+    "class": "col-12 m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeCollegeGrad, null, _quickDB.resume.education.college1.collegeLocationGradYear))), _react["default"].createElement("div", {
+    "class": "row mb-2 ml-1"
+  }, _react["default"].createElement("div", {
+    "class": "col-12 m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeCollege, {
+    className: "mb-0"
+  }, _quickDB.resume.education.college1.collegeDegree)), _react["default"].createElement("div", {
+    "class": "col-12 m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeCollegeGPA, null, _quickDB.resume.education.college1.collegeGPA)))), _react["default"].createElement("div", {
+    "class": "col-sm-6"
+  }, " ", _react["default"].createElement("div", {
+    "class": "row mb-2 ml-1"
+  }, _react["default"].createElement("div", {
+    "class": "col-12 m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeCollege, {
+    className: "mb-0"
+  }, _quickDB.resume.education.college2.collegeLocationGradYear)), _react["default"].createElement("div", {
+    "class": "col-12 m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeCollegeGrad, null, _quickDB.resume.education.college2.collegeLocationGradYear))), _react["default"].createElement("div", {
+    "class": "row mb-2 ml-1"
+  }, _react["default"].createElement("div", {
+    "class": "col-12 m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeCollege, {
+    className: "mb-0"
+  }, _quickDB.resume.education.college2.collegeDegree)), _react["default"].createElement("div", {
+    "class": "col-12 m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeCollegeGPA, null, _quickDB.resume.education.college2.collegeGPA))))))), _react["default"].createElement(_footer["default"], null));
+}

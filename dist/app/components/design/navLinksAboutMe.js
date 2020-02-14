@@ -1,108 +1,43 @@
-'use strict';
+"use strict";
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports["default"] = NavLinksAboutMe;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _react = _interopRequireWildcard(require("react"));
 
-var _react = require('react');
+var _reactRouterDom = require("react-router-dom");
 
-var _react2 = _interopRequireDefault(_react);
+var _Navs = require("../../assets/styles/Navs");
 
-var _reactRouterDom = require('react-router-dom');
+var _fontAwesomeStyling = require("../../assets/styles/fontAwesomeStyling");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _quickDB = require("../../../server/quickDB");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var NavLinksAboutMe = function (_Component) {
-    _inherits(NavLinksAboutMe, _Component);
-
-    function NavLinksAboutMe() {
-        _classCallCheck(this, NavLinksAboutMe);
-
-        return _possibleConstructorReturn(this, (NavLinksAboutMe.__proto__ || Object.getPrototypeOf(NavLinksAboutMe)).apply(this, arguments));
-    }
-
-    _createClass(NavLinksAboutMe, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { 'class': 'navLinksHeader' },
-                _react2.default.createElement(
-                    'h6',
-                    null,
-                    _react2.default.createElement(
-                        'ul',
-                        null,
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { 'class': 'homeLink-active', to: '/' },
-                                'About'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            { 'class': 'pl-2 pr-2 homeDivider' },
-                            '|'
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { 'class': 'homeLink', to: '/resume' },
-                                'Resume'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            { 'class': 'pl-2 pr-2 homeDivider' },
-                            '|'
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { 'class': 'homeLink', to: '/projects' },
-                                'Projects'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            { 'class': 'pl-2 pr-2 homeDivider' },
-                            '|'
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                {
-                                    'class': 'homeLink',
-                                    href: 'https://github.com/murphym757',
-                                    target: '_blank' },
-                                _react2.default.createElement('i', { 'class': 'fab fa-github' }),
-                                ' Github'
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return NavLinksAboutMe;
-}(_react.Component);
-
-exports.default = NavLinksAboutMe;
+function NavLinksAboutMe(props) {
+  return _react["default"].createElement(_Navs.NavLinksHeader, null, _react["default"].createElement("h6", null, _react["default"].createElement("ul", null, _react["default"].createElement("li", null, _react["default"].createElement(_Navs.HomeLinkActive, {
+    to: "/"
+  }, "About")), _react["default"].createElement(_Navs.LinkDivider, {
+    className: "pl-2 pr-2"
+  }, "|"), _react["default"].createElement("li", null, _react["default"].createElement(_Navs.HomeLink, {
+    to: "/resume"
+  }, "Resume")), _react["default"].createElement(_Navs.LinkDivider, {
+    className: "pl-2 pr-2"
+  }, "|"), _react["default"].createElement("li", null, _react["default"].createElement(_Navs.HomeLink, {
+    to: "/projects"
+  }, "Projects")), _react["default"].createElement(_Navs.LinkDivider, {
+    className: "pl-2 pr-2"
+  }, "|"), _react["default"].createElement("li", null, _react["default"].createElement(_Navs.HomeLinkStandard, {
+    href: _quickDB.githubHome,
+    target: "_blank"
+  }, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+    className: "fab fa-github"
+  }), " Github")))));
+}

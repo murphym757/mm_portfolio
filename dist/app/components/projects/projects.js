@@ -1,516 +1,615 @@
-'use strict';
+"use strict";
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports["default"] = Projects;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _react = _interopRequireWildcard(require("react"));
 
-var _react = require('react');
+var _reactRouterDom = require("react-router-dom");
 
-var _react2 = _interopRequireDefault(_react);
+var _navLinksProjects = _interopRequireDefault(require("../projects/navLinksProjects.js"));
 
-var _reactRouterDom = require('react-router-dom');
+var _projectName = _interopRequireDefault(require("./projectName.js"));
 
-var _navLinksProjects = require('../projects/navLinksProjects.js');
+var _footer = _interopRequireDefault(require("../design/footer.js"));
 
-var _navLinksProjects2 = _interopRequireDefault(_navLinksProjects);
+var _quickDB = require("../../../server/quickDB");
 
-var _popArtWeather = require('./popArtWeather.js');
+var _designStyling = require("../../assets/styles/designStyling");
 
-var _popArtWeather2 = _interopRequireDefault(_popArtWeather);
+var _projectsStyling = require("../../assets/styles/projectsStyling");
 
-var _newMMPortfolio = require('./newMMPortfolio.js');
+var _fontAwesomeStyling = require("../../assets/styles/fontAwesomeStyling");
 
-var _newMMPortfolio2 = _interopRequireDefault(_newMMPortfolio);
+var _mainStyling = require("../../assets/styles/mainStyling");
 
-var _cryptocoincount = require('./cryptocoincount.js');
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var _cryptocoincount2 = _interopRequireDefault(_cryptocoincount);
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
-var _baysideVaporwave = require('./baysideVaporwave.js');
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var _baysideVaporwave2 = _interopRequireDefault(_baysideVaporwave);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-var _bvBlog = require('./bvBlog.js');
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-var _bvBlog2 = _interopRequireDefault(_bvBlog);
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
-var _cfBlog = require('./cfBlog.js');
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var _cfBlog2 = _interopRequireDefault(_cfBlog);
+function Projects(props) {
+  var _useState = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading13"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse13",
+      "aria-expanded": "false",
+      "aria-controls": "collapse13"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "Souse ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "fab fa-react fa-react-ccc"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse13",
+      "class": "collapse",
+      "aria-labelledby": "heading13",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.souse.projectName,
+      projectRoleProp: _quickDB.souse.projectRole,
+      projectDescriptionProp: _quickDB.souse.projectDescription,
+      projectUtilitiesProp: _quickDB.souse.projectUtilities,
+      projectSiteProp: _quickDB.souse.projectSite,
+      projectGithubProp: _quickDB.souse.projectGithub,
+      projectImage1Prop: _quickDB.souse.projectImage1,
+      projectImage2Prop: _quickDB.souse.projectImage2,
+      projectImage3Prop: _quickDB.souse.projectImage3,
+      projectImage4Prop: _quickDB.souse.projectImage4,
+      projectCarouselProp: "souseCarousel"
+    }))))
+  }),
+      _useState2 = _slicedToArray(_useState, 2),
+      card13 = _useState2[0],
+      setStateCard13 = _useState2[1];
 
-var _breakout = require('./breakout.js');
+  var _useState3 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading12"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse12",
+      "aria-expanded": "false",
+      "aria-controls": "collapse12"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "Sega Paradise 2 ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "fab fa-react fa-react-ccc"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse12",
+      "class": "collapse",
+      "aria-labelledby": "heading12",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.segaParadise2.projectName,
+      projectRoleProp: _quickDB.segaParadise2.projectRole,
+      projectDescriptionProp: _quickDB.segaParadise2.projectDescription,
+      projectUtilitiesProp: _quickDB.segaParadise2.projectUtilities,
+      projectSiteProp: _quickDB.segaParadise2.projectSite,
+      projectGithubProp: _quickDB.segaParadise2.projectGithub,
+      projectImage1Prop: _quickDB.segaParadise2.projectImage1,
+      projectImage2Prop: _quickDB.segaParadise2.projectImage2,
+      projectImage3Prop: _quickDB.segaParadise2.projectImage3,
+      projectImage4Prop: _quickDB.segaParadise2.projectImage4,
+      projectCarouselProp: "segaParadise2Carousel"
+    }))))
+  }),
+      _useState4 = _slicedToArray(_useState3, 2),
+      card12 = _useState4[0],
+      setStateCard12 = _useState4[1];
 
-var _breakout2 = _interopRequireDefault(_breakout);
+  var _useState5 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading11"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse11",
+      "aria-expanded": "false",
+      "aria-controls": "collapse11"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "PopArtWeather ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "fab fa-react fa-react-ccc"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse11",
+      "class": "collapse",
+      "aria-labelledby": "heading11",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.popArtWeather.projectName,
+      projectRoleProp: _quickDB.popArtWeather.projectRole,
+      projectDescriptionProp: _quickDB.popArtWeather.projectDescription,
+      projectUtilitiesProp: _quickDB.popArtWeather.projectUtilities,
+      projectSiteProp: _quickDB.popArtWeather.projectSite,
+      projectGithubProp: _quickDB.popArtWeather.projectGithub,
+      projectImage1Prop: _quickDB.popArtWeather.projectImage1,
+      projectImage2Prop: _quickDB.popArtWeather.projectImage2,
+      projectImage3Prop: _quickDB.popArtWeather.projectImage3,
+      projectImage4Prop: _quickDB.popArtWeather.projectImage4,
+      projectCarouselProp: "popArtWeatherCarousel"
+    }))))
+  }),
+      _useState6 = _slicedToArray(_useState5, 2),
+      card11 = _useState6[0],
+      setStateCard11 = _useState6[1];
 
-var _bvThemeGenerator = require('./bvThemeGenerator.js');
+  var _useState7 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading10"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse10",
+      "aria-expanded": "false",
+      "aria-controls": "collapse10"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "Portfolio (React) ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "fab fa-react fa-react-ccc"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse10",
+      "class": "collapse",
+      "aria-labelledby": "heading10",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.newMMPortfolio.projectName,
+      projectRoleProp: _quickDB.newMMPortfolio.projectRole,
+      projectDescriptionProp: _quickDB.newMMPortfolio.projectDescription,
+      projectUtilitiesProp: _quickDB.newMMPortfolio.projectUtilities,
+      projectSiteProp: _quickDB.newMMPortfolio.projectSite,
+      projectGithubProp: _quickDB.newMMPortfolio.projectGithub,
+      projectImage1Prop: _quickDB.newMMPortfolio.projectImage1,
+      projectImage2Prop: _quickDB.newMMPortfolio.projectImage2,
+      projectImage3Prop: _quickDB.newMMPortfolio.projectImage3,
+      projectImage4Prop: _quickDB.newMMPortfolio.projectImage4,
+      projectCarouselProp: "newMMPortfolioCarousel"
+    }))))
+  }),
+      _useState8 = _slicedToArray(_useState7, 2),
+      card10 = _useState8[0],
+      setStateCard10 = _useState8[1];
 
-var _bvThemeGenerator2 = _interopRequireDefault(_bvThemeGenerator);
+  var _useState9 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading9"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse9",
+      "aria-expanded": "false",
+      "aria-controls": "collapse9"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "CryptoCoinCount ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "fab fa-react fa-react-ccc"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse9",
+      "class": "collapse",
+      "aria-labelledby": "heading9",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.cryptocoincount.projectName,
+      projectRoleProp: _quickDB.cryptocoincount.projectRole,
+      projectDescriptionProp: _quickDB.cryptocoincount.projectDescription,
+      projectUtilitiesProp: _quickDB.cryptocoincount.projectUtilities,
+      projectSiteProp: _quickDB.cryptocoincount.projectSite,
+      projectGithubProp: _quickDB.cryptocoincount.projectGithub,
+      projectImage1Prop: _quickDB.cryptocoincount.projectImage1,
+      projectImage2Prop: _quickDB.cryptocoincount.projectImage2,
+      projectImage3Prop: _quickDB.cryptocoincount.projectImage3,
+      projectImage4Prop: _quickDB.cryptocoincount.projectImage4,
+      projectCarouselProp: "cryptocoincountCarousel"
+    }))))
+  }),
+      _useState10 = _slicedToArray(_useState9, 2),
+      card9 = _useState10[0],
+      setStateCard9 = _useState10[1];
 
-var _bvVinyl = require('./bvVinyl.js');
+  var _useState11 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading8"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse8",
+      "aria-expanded": "false",
+      "aria-controls": "collapse8"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "Bayside Vaporwave ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "fab fa-react fa-react-bvv"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse8",
+      "class": "collapse",
+      "aria-labelledby": "heading8",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.baysideVaporwave.projectName,
+      projectRoleProp: _quickDB.baysideVaporwave.projectRole,
+      projectDescriptionProp: _quickDB.baysideVaporwave.projectDescription,
+      projectUtilitiesProp: _quickDB.baysideVaporwave.projectUtilities,
+      projectSiteProp: _quickDB.baysideVaporwave.projectSite,
+      projectGithubProp: _quickDB.baysideVaporwave.projectGithub,
+      projectImage1Prop: _quickDB.baysideVaporwave.projectImage1,
+      projectImage2Prop: _quickDB.baysideVaporwave.projectImage2,
+      projectImage3Prop: _quickDB.baysideVaporwave.projectImage3,
+      projectImage4Prop: _quickDB.baysideVaporwave.projectImage4,
+      projectCarouselProp: "baysideVaporwaveCarousel"
+    }))))
+  }),
+      _useState12 = _slicedToArray(_useState11, 2),
+      card8 = _useState12[0],
+      setStateCard8 = _useState12[1];
 
-var _bvVinyl2 = _interopRequireDefault(_bvVinyl);
+  var _useState13 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading7"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse7",
+      "aria-expanded": "false",
+      "aria-controls": "collapse7"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "BV Blog ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "fab fa-node-js fa-node-js-bvb"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse7",
+      "class": "collapse",
+      "aria-labelledby": "heading7",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.bvBlog.projectName,
+      projectRoleProp: _quickDB.bvBlog.projectRole,
+      projectDescriptionProp: _quickDB.bvBlog.projectDescription,
+      projectUtilitiesProp: _quickDB.bvBlog.projectUtilities,
+      projectSiteProp: _quickDB.bvBlog.projectSite,
+      projectGithubProp: _quickDB.bvBlog.projectGithub,
+      projectImage1Prop: _quickDB.bvBlog.projectImage1,
+      projectImage2Prop: _quickDB.bvBlog.projectImage2,
+      projectImage3Prop: _quickDB.bvBlog.projectImage3,
+      projectImage4Prop: _quickDB.bvBlog.projectImage4,
+      projectCarouselProp: "bvBlogCarousel"
+    }))))
+  }),
+      _useState14 = _slicedToArray(_useState13, 2),
+      card7 = _useState14[0],
+      setStateCard7 = _useState14[1];
 
-var _mmPortfolio = require('./mmPortfolio.js');
+  var _useState15 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading6"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse6",
+      "aria-expanded": "false",
+      "aria-controls": "collapse6"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "Crossfader Blog ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "far fa-gem fa-gem-cf"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse6",
+      "class": "collapse",
+      "aria-labelledby": "heading6",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.cfBlog.projectName,
+      projectRoleProp: _quickDB.cfBlog.projectRole,
+      projectDescriptionProp: _quickDB.cfBlog.projectDescription,
+      projectUtilitiesProp: _quickDB.cfBlog.projectUtilities,
+      projectSiteProp: _quickDB.cfBlog.projectSite,
+      projectGithubProp: _quickDB.cfBlog.projectGithub,
+      projectImage1Prop: _quickDB.cfBlog.projectImage1,
+      projectImage2Prop: _quickDB.cfBlog.projectImage2,
+      projectImage3Prop: _quickDB.cfBlog.projectImage3,
+      projectImage4Prop: _quickDB.cfBlog.projectImage4,
+      projectCarouselProp: "cfBlogCarousel"
+    }))))
+  }),
+      _useState16 = _slicedToArray(_useState15, 2),
+      card6 = _useState16[0],
+      setStateCard6 = _useState16[1];
 
-var _mmPortfolio2 = _interopRequireDefault(_mmPortfolio);
+  var _useState17 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading5"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse5",
+      "aria-expanded": "false",
+      "aria-controls": "collapse5"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "BREAKOUT! JS Game ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "fab fa-node-js fa-node-js-bo"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse5",
+      "class": "collapse",
+      "aria-labelledby": "heading5",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.breakout.projectName,
+      projectRoleProp: _quickDB.breakout.projectRole,
+      projectDescriptionProp: _quickDB.breakout.projectDescription,
+      projectUtilitiesProp: _quickDB.breakout.projectUtilities,
+      projectSiteProp: _quickDB.breakout.projectSite,
+      projectGithubProp: _quickDB.breakout.projectGithub,
+      projectImage1Prop: _quickDB.breakout.projectImage1,
+      projectImage2Prop: _quickDB.breakout.projectImage2,
+      projectImage3Prop: _quickDB.breakout.projectImage3,
+      projectImage4Prop: _quickDB.breakout.projectImage4,
+      projectCarouselProp: "breakoutCarousel"
+    }))))
+  }),
+      _useState18 = _slicedToArray(_useState17, 2),
+      card5 = _useState18[0],
+      setStateCard5 = _useState18[1];
 
-var _segaParadise = require('./segaParadise.js');
+  var _useState19 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading4"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse4",
+      "aria-expanded": "false",
+      "aria-controls": "collapse4"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "BV Theme Generator ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "far fa-gem fa-gem-bvt"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse4",
+      "class": "collapse",
+      "aria-labelledby": "heading4",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.bvThemeGenerator.projectName,
+      projectRoleProp: _quickDB.bvThemeGenerator.projectRole,
+      projectDescriptionProp: _quickDB.bvThemeGenerator.projectDescription,
+      projectUtilitiesProp: _quickDB.bvThemeGenerator.projectUtilities,
+      projectSiteProp: _quickDB.bvThemeGenerator.projectSite,
+      projectGithubProp: _quickDB.bvThemeGenerator.projectGithub,
+      projectImage1Prop: _quickDB.bvThemeGenerator.projectImage1,
+      projectImage2Prop: _quickDB.bvThemeGenerator.projectImage2,
+      projectImage3Prop: _quickDB.bvThemeGenerator.projectImage3,
+      projectImage4Prop: _quickDB.bvThemeGenerator.projectImage4,
+      projectCarouselProp: "bvThemeGeneratorCarousel"
+    }))))
+  }),
+      _useState20 = _slicedToArray(_useState19, 2),
+      card4 = _useState20[0],
+      setStateCard4 = _useState20[1];
 
-var _segaParadise2 = _interopRequireDefault(_segaParadise);
+  var _useState21 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading3"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse3",
+      "aria-expanded": "false",
+      "aria-controls": "collapse3"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "Bayside Vinyl ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "far fa-gem fa-gem-bv"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse3",
+      "class": "collapse",
+      "aria-labelledby": "heading3",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.bvVinyl.projectName,
+      projectRoleProp: _quickDB.bvVinyl.projectRole,
+      projectDescriptionProp: _quickDB.bvVinyl.projectDescription,
+      projectUtilitiesProp: _quickDB.bvVinyl.projectUtilities,
+      projectSiteProp: _quickDB.bvVinyl.projectSite,
+      projectGithubProp: _quickDB.bvVinyl.projectGithub,
+      projectImage1Prop: _quickDB.bvVinyl.projectImage1,
+      projectImage2Prop: _quickDB.bvVinyl.projectImage2,
+      projectImage3Prop: _quickDB.bvVinyl.projectImage3,
+      projectImage4Prop: _quickDB.bvVinyl.projectImage4,
+      projectCarouselProp: "bvVinylCarousel"
+    }))))
+  }),
+      _useState22 = _slicedToArray(_useState21, 2),
+      card3 = _useState22[0],
+      setStateCard3 = _useState22[1];
 
-var _segaParadise3 = require('./segaParadise2.js');
+  var _useState23 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading2"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse2",
+      "aria-expanded": "false",
+      "aria-controls": "collapse2"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "Portfolio (RoR) ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "far fa-gem fa-gem-mm"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse2",
+      "class": "collapse",
+      "aria-labelledby": "heading2",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.mmPortfolio.projectName,
+      projectRoleProp: _quickDB.mmPortfolio.projectRole,
+      projectDescriptionProp: _quickDB.mmPortfolio.projectDescription,
+      projectUtilitiesProp: _quickDB.mmPortfolio.projectUtilities,
+      projectSiteProp: _quickDB.mmPortfolio.projectSite,
+      projectGithubProp: _quickDB.mmPortfolio.projectGithub,
+      projectImage1Prop: _quickDB.mmPortfolio.projectImage1,
+      projectImage2Prop: _quickDB.mmPortfolio.projectImage2,
+      projectImage3Prop: _quickDB.mmPortfolio.projectImage3,
+      projectImage4Prop: _quickDB.mmPortfolio.projectImage4,
+      projectCarouselProp: "mmPortfolioCarousel"
+    }))))
+  }),
+      _useState24 = _slicedToArray(_useState23, 2),
+      card2 = _useState24[0],
+      setStateCard2 = _useState24[1];
 
-var _segaParadise4 = _interopRequireDefault(_segaParadise3);
+  var _useState25 = (0, _react.useState)({
+    card: _react["default"].createElement("div", {
+      "class": "card"
+    }, _react["default"].createElement(_projectsStyling.CardHeader, {
+      className: "container",
+      id: "heading1"
+    }, _react["default"].createElement("h5", {
+      "class": "mb-auto"
+    }, _react["default"].createElement(_projectsStyling.BtnLink, {
+      className: "btn collapsed",
+      type: "button",
+      "data-toggle": "collapse",
+      "data-target": "#collapse1",
+      "aria-expanded": "false",
+      "aria-controls": "collapse1"
+    }, _react["default"].createElement("div", {
+      "class": "row pl-2 pr-2"
+    }, "Sega Paradise ", _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+      className: "far fa-gem fa-gem-sp"
+    }))))), _react["default"].createElement("div", {
+      id: "collapse1",
+      "class": "collapse",
+      "aria-labelledby": "heading1",
+      "data-parent": "#accordionExample"
+    }, _react["default"].createElement(_projectsStyling.CardBody, null, _react["default"].createElement(_projectName["default"], {
+      projectNameProp: _quickDB.segaParadise.projectName,
+      projectRoleProp: _quickDB.segaParadise.projectRole,
+      projectDescriptionProp: _quickDB.segaParadise.projectDescription,
+      projectUtilitiesProp: _quickDB.segaParadise.projectUtilities,
+      projectSiteProp: _quickDB.segaParadise.projectSite,
+      projectGithubProp: _quickDB.segaParadise.projectGithub,
+      projectImage1Prop: _quickDB.segaParadise.projectImage1,
+      projectImage2Prop: _quickDB.segaParadise.projectImage2,
+      projectImage3Prop: _quickDB.segaParadise.projectImage3,
+      projectImage4Prop: _quickDB.segaParadise.projectImage4,
+      projectCarouselProp: "segaParadiseCarousel"
+    }))))
+  }),
+      _useState26 = _slicedToArray(_useState25, 2),
+      card1 = _useState26[0],
+      setStateCard1 = _useState26[1];
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Projects = function (_Component) {
-    _inherits(Projects, _Component);
-
-    function Projects() {
-        _classCallCheck(this, Projects);
-
-        return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).apply(this, arguments));
-    }
-
-    _createClass(Projects, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'div',
-                    { 'class': 'swing-in-top-fwd' },
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'row' },
-                        _react2.default.createElement(
-                            'h3',
-                            { 'class': 'jobTitleHeader col-sm-6' },
-                            'Full-Stack Developer'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-sm-6 pb-3' },
-                            _react2.default.createElement(_navLinksProjects2.default, null)
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'pt-3' },
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'container-fluid' },
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'row' },
-                                _react2.default.createElement(
-                                    'h3',
-                                    { 'class': 'heading-title pb-2 col-sm-6' },
-                                    'Projects'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'row justify-content-center' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { 'class': 'container-fluid' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { 'class': 'accordion', id: 'accordionExample' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingZeroTwo' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseZeroTwo', 'aria-expanded': 'false', 'aria-controls': 'collapseZeroTwo' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'Sega Paradise 2 ',
-                                                            _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-ccc' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseZeroTwo', 'class': 'collapse', 'aria-labelledby': 'headingZeroTwo', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_segaParadise4.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingZeroOne' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseZeroOne', 'aria-expanded': 'false', 'aria-controls': 'collapseZeroOne' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'PopArtWeather ',
-                                                            _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-ccc' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseZeroOne', 'class': 'collapse', 'aria-labelledby': 'headingZeroOne', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_popArtWeather2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingZero' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseZero', 'aria-expanded': 'false', 'aria-controls': 'collapseZero' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'Portfolio (React) ',
-                                                            _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-ccc' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseZero', 'class': 'collapse', 'aria-labelledby': 'headingZero', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_newMMPortfolio2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingOne' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseOne', 'aria-expanded': 'false', 'aria-controls': 'collapseOne' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'CryptoCoinCount ',
-                                                            _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-ccc' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseOne', 'class': 'collapse', 'aria-labelledby': 'headingOne', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_cryptocoincount2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingTwo' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseTwo', 'aria-expanded': 'false', 'aria-controls': 'collapseTwo' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'Bayside Vaporwave ',
-                                                            _react2.default.createElement('i', { 'class': 'fab fa-react fa-react-bvv' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseTwo', 'class': 'collapse', 'aria-labelledby': 'headingTwo', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_baysideVaporwave2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingThree' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseThree', 'aria-expanded': 'false', 'aria-controls': 'collapseThree' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'BV Blog ',
-                                                            _react2.default.createElement('i', { 'class': 'fab fa-node-js fa-node-js-bvb' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseThree', 'class': 'collapse', 'aria-labelledby': 'headingThree', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_bvBlog2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingFour' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseFour', 'aria-expanded': 'false', 'aria-controls': 'collapseFour' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'Crossfader Blog ',
-                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-cf' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseFour', 'class': 'collapse', 'aria-labelledby': 'headingFour', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_cfBlog2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingFive' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseFive', 'aria-expanded': 'false', 'aria-controls': 'collapseFive' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'BREAKOUT! JS Game ',
-                                                            _react2.default.createElement('i', { 'class': 'fab fa-node-js fa-node-js-bo' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseFive', 'class': 'collapse', 'aria-labelledby': 'headingFive', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_breakout2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingSix' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseSix', 'aria-expanded': 'false', 'aria-controls': 'collapseSix' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'BV Theme Generator ',
-                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-bvt' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseSix', 'class': 'collapse', 'aria-labelledby': 'headingSix', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_bvThemeGenerator2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingSeven' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseSeven', 'aria-expanded': 'false', 'aria-controls': 'collapseSeven' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'Bayside Vinyl ',
-                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-bv' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseSeven', 'class': 'collapse', 'aria-labelledby': 'headingSeven', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_bvVinyl2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingEight' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseEight', 'aria-expanded': 'false', 'aria-controls': 'collapseEight' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'Portfolio (RoR) ',
-                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-mm' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseEight', 'class': 'collapse', 'aria-labelledby': 'headingEight', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_mmPortfolio2.default, null)
-                                                )
-                                            )
-                                        ),
-                                        _react2.default.createElement(
-                                            'div',
-                                            { 'class': 'card' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { 'class': 'card-header', id: 'headingNine' },
-                                                _react2.default.createElement(
-                                                    'h5',
-                                                    { 'class': 'mb-auto' },
-                                                    _react2.default.createElement(
-                                                        'button',
-                                                        { 'class': 'btn btn-link collapsed', type: 'button', 'data-toggle': 'collapse', 'data-target': '#collapseNine', 'aria-expanded': 'false', 'aria-controls': 'collapseNine' },
-                                                        _react2.default.createElement(
-                                                            'div',
-                                                            { 'class': 'row pl-2 pr-2' },
-                                                            'Sega Paradise ',
-                                                            _react2.default.createElement('i', { 'class': 'far fa-gem fa-gem-sp' })
-                                                        )
-                                                    )
-                                                )
-                                            ),
-                                            _react2.default.createElement(
-                                                'div',
-                                                { id: 'collapseNine', 'class': 'collapse', 'aria-labelledby': 'headingNine', 'data-parent': '#accordionExample' },
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { 'class': 'card-body' },
-                                                    _react2.default.createElement(_segaParadise2.default, null)
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Projects;
-}(_react.Component);
-
-exports.default = Projects;
+  return _react["default"].createElement("div", null, _react["default"].createElement(_mainStyling.SwingInTopDiv, {
+    className: "container-fluid"
+  }, _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement(_designStyling.JobTitleHeader, {
+    className: "col-sm-6"
+  }, "Full-Stack Developer"), _react["default"].createElement("div", {
+    "class": "col-sm-6 pb-3"
+  }, _react["default"].createElement(_navLinksProjects["default"], null))), _react["default"].createElement("div", {
+    "class": "pt-3"
+  }, _react["default"].createElement("div", {
+    "class": "container-fluid"
+  }, _react["default"].createElement("div", {
+    "class": "row pb-3"
+  }, _react["default"].createElement(_designStyling.HeadingTitle, {
+    className: "pb-2 col-sm-6"
+  }, "Projects")), _react["default"].createElement("div", {
+    "class": "row justify-content-center"
+  }, _react["default"].createElement("div", {
+    "class": "container-fluid m-0 p-0"
+  }, _react["default"].createElement("div", {
+    "class": "accordion",
+    id: "accordionExample"
+  }, card13.card, card12.card, card11.card, card10.card, card9.card, card8.card, card7.card, card6.card, card5.card, card4.card, card3.card, card2.card, card1.card)))))), _react["default"].createElement(_footer["default"], null));
+}

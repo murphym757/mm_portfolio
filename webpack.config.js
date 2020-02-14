@@ -1,4 +1,5 @@
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
@@ -22,10 +23,9 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        cacheDirectory: true,
-                        plugins: ['transform-class-properties']
+                        cacheDirectory: true
                     }
-            },
+                },
                 exclude: /node_modules/
             },
             {
@@ -46,14 +46,22 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[path][name].[hash].[ext]'
+                            name: './src/app/images/[hash].[ext]'
                         },
                     },
                 ]
             }
         ]
     },
-    plugins: [htmlWebpackPlugin],
+    node: {
+        fs: "empty"
+    },
+    plugins: [
+        htmlWebpackPlugin,
+        new Dotenv({
+            path: path.resolve(__dirname, '.env')
+        })
+    ],
     resolve: {
         extensions: [".js", ".jsx"]
     },

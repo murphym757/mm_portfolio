@@ -1,29 +1,39 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import {
+    NavLinksHeader,
+    HomeLinkStandard,
+    HomeLink,
+    HomeLinkActive,
+    LinkDivider
+} from '../../assets/styles/Navs';
+import {
+    CustomIcon
+} from '../../assets/styles/fontAwesomeStyling';
+import {
+    githubHome
+} from '../../../server/quickDB';
 
-export default class NavLinksProjects extends Component {
-    render() {
-        return (
-                <div class="navLinksHeader">
-                    <h6>
-                        <ul>
-                            <li><Link class="homeLink" to="/">About</Link></li>
-                            <li class="pl-2 pr-2 homeDivider">|</li>
-                            <li><Link class="homeLink" to="/resume">Resume</Link></li>
-                            <li class="pl-2 pr-2 homeDivider">|</li>
-                            <li><Link class="homeLink-active" to="/projects">Projects</Link></li>
-                            <li class="pl-2 pr-2 homeDivider">|</li>
-                            <li>
-                                <a 
-                                class="homeLink" 
-                                href="https://github.com/murphym757" 
-                                target="_blank">
-                                    <i class="fab fa-github"></i> Github
-                                </a>
-                            </li>
-                        </ul>
-                    </h6>
-                </div>
-          )
-      }
+export default function NavLinksProjects(props) {
+    return (
+        <NavLinksHeader>
+            <h6>
+                <ul>
+                    <li><HomeLink to="/">About</HomeLink></li>
+                        <LinkDivider className="pl-2 pr-2">|</LinkDivider>
+                    <li><HomeLink to="/resume">Resume</HomeLink></li>
+                        <LinkDivider className="pl-2 pr-2">|</LinkDivider>
+                    <li><HomeLinkActive to="/projects">Projects</HomeLinkActive></li>
+                        <LinkDivider className="pl-2 pr-2">|</LinkDivider>
+                    <li>
+                        <HomeLinkStandard
+                        href={githubHome} 
+                        target="_blank">
+                            <CustomIcon className="fab fa-github"></CustomIcon> Github
+                        </HomeLinkStandard>
+                    </li>
+                </ul>
+            </h6>
+        </NavLinksHeader>
+    )
 }

@@ -1,16 +1,10 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Home from './home/home.js'
 
-export default class MainSource extends Component {
-    render() {
-        return (
-            <div>
-                <Home />
-            </div>
-          );
-      }
+export default function MainSource(props) {
+    return (
+        <div>
+            <Home />
+        </div>
+        );
 }
-
-
-
-  

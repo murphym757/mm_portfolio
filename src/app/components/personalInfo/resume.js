@@ -1,61 +1,114 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NavLinksResume from '../personalInfo/NavLinksResume.js';
-export default class Resume extends Component {
-    render() {
-        return (
-            <div> 
-                <div class="container-fluid swing-in-top-fwd">
+import {
+    JobTitleHeader,
+    HeadingTitle
+} from '../../assets/styles/designStyling';
+import Footer from '../design/footer.js';
+import {
+    JobName,
+    JobTitle,
+    JobDescription,
+    ResumeSectionHeader,
+    ResumeSkillsSection,
+    ResumeSkillsHeader,
+    ResumeSkillsHeaderColon,
+    ResumeCollege,
+    ResumeCollegeGPA,
+    ResumeCollegeGrad
+} from '../../assets/styles/personalInfoStyling';
+import {
+    CustomIcon
+} from '../../assets/styles/fontAwesomeStyling';
+import {
+    SwingInTopDiv
+} from '../../assets/styles/mainStyling';
+import {
+    resume
+} from '../../../server/quickDB';
+
+export default function Resume(props) {
+    return (
+        <div> 
+            <SwingInTopDiv className="container-fluid m-0 p-0">
                 <div class="row">
-                    <h3 class="jobTitleHeader col-sm-6">Full-Stack Developer</h3>
+                    <JobTitleHeader className="col-sm-6">Full-Stack Developer</JobTitleHeader>
                     <div class="col-sm-6 pb-3">
                         <NavLinksResume />
                     </div>
                 </div>
                 <div class="container-fluid pt-3">
                     <div class="row">
-                    <h3 class="heading-title pb-2 col-sm-6">Resume</h3>
+                        <HeadingTitle className="pb-2 col-sm-6">Resume</HeadingTitle>
                     </div>
                     <div class="row">
-                        <h3 class="resumeSectionHeader container-fluid pt-2 pb-1">Work</h3>
-                        <div class="col-sm-6 pb-3">
-                            <h4 class="jobName">FREELANCE</h4>
-                            <h5 class="jobTitle">DESIGNER & DEVELOPER, Jan. 2015 to present</h5>
-                            <p class="jobDescription">Develop and design web-based apps with the use of the MEAN Stack, React, Ruby on Rails, Bootstrap and numerous other technologies. Consult with clients about web designs, develop products with the use of wire-framing techniques.</p>
+                        <ResumeSectionHeader className="container-fluid pt-2 pb-1">Work</ResumeSectionHeader>
+                        <div class="col-sm-12 pb-3">
+                            <JobName>{resume.job1.jobName}</JobName>
+                            <JobTitle>{resume.job1.jobTitleYears}</JobTitle>
+                            <JobDescription>{resume.job1.jobDescription}</JobDescription>
                         </div>
-                        <div class="col-sm-6">
-                            <h4 class="jobName">FLORIDA INSTITUTE OF TECHNOLOGY</h4>
-                            <h5 class="jobTitle">TECHNICAL SUPPORT TECHNICIAN, Melbourne, FL, Jan. 2015 to May. 2015</h5>
-                            <p class="jobDescription">As a technical support technician, I assisted customers with navigating the school's website. As well as, provided a helping hand around the office when my assistance was needed.</p>
+                    {/*   <div class="col-sm-6">
+                            <JobName>{resume.job2.jobName}</JobName>
+                            <JobTitle>{resume.job2.jobTitleYears}</JobTitle>
+                            <JobDescription>{resume.job2.jobDescription}</JobDescription>
                         </div>
+                    */}
                     </div>
                     <div class="row">
-                    <h3 class="resumeSectionHeader container-fluid pb-1 pt-2">Skills</h3>
-                        <p class="container-fluid pb-3 resumeSkillsSection">
-                            <span class="resumeSkillsHeader"><i>Version Control<span class="resumeSkillsHeader-colon">:</span> </i></span>Git, GitHub. 
-                            <span class="resumeSkillsHeader"><i> Package Managers<span class="resumeSkillsHeader-colon">:</span> </i></span>npm. 
-                            <span class="resumeSkillsHeader"><i> Development Tools<span class="resumeSkillsHeader-colon">:</span> </i></span>Heroku, Amazon Web Services, Compass, Agile, Gulp, Webpack. 
-                            <span class="resumeSkillsHeader"><i> Languages<span class="resumeSkillsHeader-colon">:</span> </i></span>Ruby, JavaScript, SQL, noSQL, HTML, CSS, SASS. 
-                            <span class="resumeSkillsHeader"><i> Frameworks & Libraries<span class="resumeSkillsHeader-colon">:</span> </i></span>MEAN Stack, React, JSX, Babel, Pug (formally Jade), Ruby on Rails, jQuery, Bootstrap. 
-                            <span class="resumeSkillsHeader"><i> Design Tools<span class="resumeSkillsHeader-colon">:</span> </i></span>Photoshop.
-                        </p>
+                    <ResumeSectionHeader className="container-fluid pb-1 pt-2">Skills</ResumeSectionHeader>
+                        <ResumeSkillsSection className="container-fluid pb-3">
+                            <ResumeSkillsHeader><CustomIcon>Version Control<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.versionControl}
+                            <ResumeSkillsHeader><CustomIcon>Package Managers<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.packageManagers}
+                            <ResumeSkillsHeader><CustomIcon>Development Tools<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.developmentTools}
+                            <ResumeSkillsHeader><CustomIcon>Languages<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.languages}
+                            <ResumeSkillsHeader><CustomIcon>Frameworks & Libraries<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.frameworksLibraries}
+                            <ResumeSkillsHeader><CustomIcon>Design Tools<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.designTools}
+                        </ResumeSkillsSection>
                     </div>
                     <div class="row">
-                    <h3 class="resumeSectionHeader container-fluid pb-2 pt-2">Education</h3>
-                        <div class="col-sm-6 pb-3">
-                            <h6 class="resumeCollege">FLORIDA INSTITUTE OF TECHNOLOGY<span class="resumeCollegeGrad"> (Melbourne, FL, 2015)</span></h6>
-                            <h6 class="resumeCollege">BACHELOR OF SCIENCE, INFORMATION SYSTEMS</h6>
-                            <h6 class="resumeCollegeGPA">GPA: 3.20/4.00</h6>
+                    <ResumeSectionHeader className="container-fluid pb-2 pt-2">Education</ResumeSectionHeader>
+                        <div class="col-sm-6 pb-3"> {/* Florida Tech Section */}
+                            <div class="row mb-2 ml-1">
+                                <div class="col-12 m-0 p-0">
+                                    <ResumeCollege className="mb-0">{resume.education.college1.collegeName}</ResumeCollege>
+                                </div>
+                                <div class="col-12 m-0 p-0">
+                                    <ResumeCollegeGrad>{resume.education.college1.collegeLocationGradYear}</ResumeCollegeGrad>
+                                </div>
+                            </div>
+                            <div class="row mb-2 ml-1">
+                                <div class="col-12 m-0 p-0">
+                                    <ResumeCollege className="mb-0">{resume.education.college1.collegeDegree}</ResumeCollege>
+                                </div>
+                                <div class="col-12 m-0 p-0">
+                                    <ResumeCollegeGPA>{resume.education.college1.collegeGPA}</ResumeCollegeGPA>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <h6 class="resumeCollege">EASTERN FLORIDA STATE COLLEGE<span class="resumeCollegeGrad"> (Melbourne, FL, 2013)</span></h6>
-                            <h6 class="resumeCollege">ASSOCIATE OF ARTS, GENERAL EDUCATION</h6>
-                            <h6 class="resumeCollegeGPA">GPA: 3.09/4.00</h6>
+                        <div class="col-sm-6"> {/* BCC Section */}
+                            <div class="row mb-2 ml-1">
+                                <div class="col-12 m-0 p-0">
+                                    <ResumeCollege className="mb-0">{resume.education.college2.collegeLocationGradYear}</ResumeCollege>
+                                </div>
+                                <div class="col-12 m-0 p-0">
+                                    <ResumeCollegeGrad>{resume.education.college2.collegeLocationGradYear}</ResumeCollegeGrad>
+                                </div>
+                            </div>
+                            <div class="row mb-2 ml-1">
+                                <div class="col-12 m-0 p-0">
+                                    <ResumeCollege className="mb-0">{resume.education.college2.collegeDegree}</ResumeCollege>
+                                </div>
+                                <div class="col-12 m-0 p-0">
+                                    <ResumeCollegeGPA>{resume.education.college2.collegeGPA}</ResumeCollegeGPA>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-            </div>
-          )
-      }
+            </SwingInTopDiv>
+            <Footer/>
+        </div>
+    )
 }

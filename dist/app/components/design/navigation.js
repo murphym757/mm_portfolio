@@ -1,106 +1,68 @@
-'use strict';
+"use strict";
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports["default"] = Navigation;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _react = _interopRequireWildcard(require("react"));
 
-var _react = require('react');
+var _reactRouterDom = require("react-router-dom");
 
-var _react2 = _interopRequireDefault(_react);
+var _header = _interopRequireDefault(require("./header.js"));
 
-var _reactRouterDom = require('react-router-dom');
+var _contact = _interopRequireDefault(require("../personalInfo/contact.js"));
 
-var _header = require('./header.js');
+var _aboutMe = _interopRequireDefault(require("../personalInfo/aboutMe.js"));
 
-var _header2 = _interopRequireDefault(_header);
+var _navLinksAboutMe = _interopRequireDefault(require("./navLinksAboutMe"));
 
-var _contact = require('../personalInfo/contact.js');
+var _footer = _interopRequireDefault(require("./footer"));
 
-var _contact2 = _interopRequireDefault(_contact);
+var _designStyling = require("../../assets/styles/designStyling");
 
-var _aboutMe = require('../personalInfo/aboutMe.js');
+var _projectsStyling = require("../../assets/styles/projectsStyling");
 
-var _aboutMe2 = _interopRequireDefault(_aboutMe);
+var _mainStyling = require("../../assets/styles/mainStyling");
 
-var _navLinksAboutMe = require('../design/navLinksAboutMe.js');
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var _navLinksAboutMe2 = _interopRequireDefault(_navLinksAboutMe);
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Navigation = function (_Component) {
-    _inherits(Navigation, _Component);
-
-    function Navigation() {
-        _classCallCheck(this, Navigation);
-
-        return _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).apply(this, arguments));
-    }
-
-    _createClass(Navigation, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'div',
-                    { 'class': 'container-fluid swing-in-top-fwd' },
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'row' },
-                        _react2.default.createElement(
-                            'h3',
-                            { 'class': 'jobTitleHeader col-sm-6' },
-                            'Full-Stack Developer'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-sm-6 pb-3' },
-                            _react2.default.createElement(_navLinksAboutMe2.default, null)
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'container-fluid pt-3' },
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            _react2.default.createElement(
-                                'h3',
-                                { 'class': 'heading-title pb-2 col-sm-6' },
-                                'About Me'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'row' },
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'col-sm-6 pb-5' },
-                                _react2.default.createElement(_aboutMe2.default, null)
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'col-sm-6 contactSection' },
-                                _react2.default.createElement(_contact2.default, null)
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Navigation;
-}(_react.Component);
-
-exports.default = Navigation;
+function Navigation(props) {
+  return _react["default"].createElement("div", null, _react["default"].createElement(_mainStyling.SwingInTopDiv, {
+    className: "container-fluid m-0 p-0"
+  }, _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement(_designStyling.JobTitleHeader, {
+    className: "col-sm-6"
+  }, "Full-Stack Developer"), _react["default"].createElement("div", {
+    "class": "col-sm-6 pb-3"
+  }, _react["default"].createElement(_navLinksAboutMe["default"], null))), _react["default"].createElement("div", {
+    "class": "container-fluid pt-3"
+  }, _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement(_designStyling.HeadingTitle, {
+    className: "pb-2 col-sm-6"
+  }, "About Me")), _react["default"].createElement("div", {
+    "class": "d-none d-xl-block container-fluid pt-2"
+  }, " ", _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement("div", {
+    "class": "col-12 pb-5"
+  }, _react["default"].createElement(_aboutMe["default"], null)), _react["default"].createElement(_projectsStyling.ContactSection, {
+    className: "col-12"
+  }, _react["default"].createElement(_contact["default"], null)))), _react["default"].createElement("div", {
+    "class": "d-xl-none container-fluid"
+  }, " ", _react["default"].createElement("div", {
+    "class": "row"
+  }, _react["default"].createElement("div", {
+    "class": "col-sm-6 pb-5"
+  }, _react["default"].createElement(_aboutMe["default"], null)), _react["default"].createElement(_projectsStyling.ContactSection, {
+    className: "col-sm-6"
+  }, _react["default"].createElement(_contact["default"], null)))), _react["default"].createElement(_footer["default"], null))));
+}

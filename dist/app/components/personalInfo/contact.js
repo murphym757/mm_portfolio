@@ -1,94 +1,48 @@
-'use strict';
+"use strict";
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
+exports["default"] = Contact;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _react = _interopRequireWildcard(require("react"));
 
-var _react = require('react');
+var _reactRouterDom = require("react-router-dom");
 
-var _react2 = _interopRequireDefault(_react);
+var _personalInfoStyling = require("../../assets/styles/personalInfoStyling");
 
-var _reactRouterDom = require('react-router-dom');
+var _fontAwesomeStyling = require("../../assets/styles/fontAwesomeStyling");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _quickDB = require("../../../server/quickDB");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Contact = function (_Component) {
-    _inherits(Contact, _Component);
-
-    function Contact() {
-        _classCallCheck(this, Contact);
-
-        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
-    }
-
-    _createClass(Contact, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'div',
-                    { 'class': 'container-fluid' },
-                    _react2.default.createElement(
-                        'h5',
-                        { 'class': 'contactHeading pb-4' },
-                        'Please feel free to reach me at: '
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'row contactCardRow pb-4' },
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-6' },
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'card contact-card pb-3' },
-                                _react2.default.createElement('i', { 'class': 'fa fa-envelope fa-4x' })
-                            ),
-                            _react2.default.createElement(
-                                'h6',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { 'class': 'email-link', href: 'mailto:maurice.murphy757@gmail.com' },
-                                    'maurice.murphy757@gmail.com'
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-6' },
-                            _react2.default.createElement(
-                                'div',
-                                { 'class': 'card contact-card pb-3' },
-                                _react2.default.createElement('i', { 'class': 'fa fa-mobile fa-3x pt-2 pb-2' })
-                            ),
-                            _react2.default.createElement(
-                                'h6',
-                                null,
-                                _react2.default.createElement(
-                                    'a',
-                                    { 'class': 'phone-link', href: 'tel:+17864233489' },
-                                    '786-423-3489'
-                                )
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Contact;
-}(_react.Component);
-
-exports.default = Contact;
+function Contact(props) {
+  return _react["default"].createElement("div", null, _react["default"].createElement("div", {
+    "class": "container-fluid"
+  }, _react["default"].createElement(_personalInfoStyling.ContactHeading, {
+    className: "pb-4"
+  }, "Please feel free to reach me at: "), _react["default"].createElement(_personalInfoStyling.ContactCardRow, {
+    className: "row pb-4"
+  }, _react["default"].createElement("div", {
+    "class": "col-6"
+  }, _react["default"].createElement(_personalInfoStyling.ContactCard, {
+    className: "card-transparent pb-3"
+  }, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+    className: "fa fa-envelope fa-4x"
+  })), _react["default"].createElement("h6", null, _react["default"].createElement(_personalInfoStyling.EmailLink, {
+    href: _quickDB.contactInfo.emailLinkFormat
+  }, _quickDB.contactInfo.emailLink))), _react["default"].createElement("div", {
+    "class": "col-6"
+  }, _react["default"].createElement(_personalInfoStyling.ContactCard, {
+    className: "card-transparent pb-3"
+  }, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, {
+    className: "fa fa-mobile fa-3x pt-2 pb-2"
+  })), _react["default"].createElement("h6", null, _react["default"].createElement(_personalInfoStyling.PhoneLink, {
+    href: _quickDB.contactInfo.phoneLinkFormat
+  }, _quickDB.contactInfo.phoneLink))))));
+}

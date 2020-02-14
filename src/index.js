@@ -4,8 +4,5 @@ import MainSource from './app/components/main.js';
 import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import bootstrapGrid from '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
 import bootstrapJs from '../node_modules/bootstrap/dist/js/bootstrap.min.js';
-import './app/assets/styles/styles.scss';
-import './app/assets/styles/fonts.scss';
-import './app/assets/styles/animations.scss';
 
 render(<MainSource />, document.getElementById("app"));
