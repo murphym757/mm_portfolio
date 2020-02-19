@@ -57,15 +57,44 @@ export default function Resume(props) {
                     */}
                     </div>
                     <div class="row">
-                    <ResumeSectionHeader className="container-fluid pb-1 pt-2">Skills</ResumeSectionHeader>
-                        <ResumeSkillsSection className="container-fluid pb-3">
-                            <ResumeSkillsHeader><CustomIcon>Version Control<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.versionControl}
-                            <ResumeSkillsHeader><CustomIcon>Package Managers<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.packageManagers}
-                            <ResumeSkillsHeader><CustomIcon>Development Tools<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.developmentTools}
-                            <ResumeSkillsHeader><CustomIcon>Languages<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.languages}
-                            <ResumeSkillsHeader><CustomIcon>Frameworks & Libraries<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.frameworksLibraries}
-                            <ResumeSkillsHeader><CustomIcon>Design Tools<ResumeSkillsHeaderColon>:</ResumeSkillsHeaderColon> </CustomIcon></ResumeSkillsHeader>{resume.skills.designTools}
-                        </ResumeSkillsSection>
+                        <div class="d-none d-xl-block"> {/* For larger Sceens */}
+                            <ResumeSectionHeader className="container-fluid pb-1 pt-2">Skills</ResumeSectionHeader>
+                                <ResumeSkillsSection className="container-fluid pb-3">
+                                    <ResumeSkillsHeader><CustomIcon>Version Control<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.versionControl}
+                                    <ResumeSkillsHeader><CustomIcon>Package Managers<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.packageManagers}
+                                    <ResumeSkillsHeader><CustomIcon>Development Tools<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.developmentTools}
+                                    <ResumeSkillsHeader><CustomIcon>Languages<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.languages}
+                                    <ResumeSkillsHeader><CustomIcon>Frameworks & Libraries<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.frameworksLibraries}
+                                    <ResumeSkillsHeader><CustomIcon>Design Tools<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.designTools}
+                                </ResumeSkillsSection>
+                        </div>
+
+                        <div class="d-xl-none"> {/* For smaller Sceens */}
+                            <ResumeSectionHeader className="container-fluid pb-1 pt-2">Skills</ResumeSectionHeader>
+                                <ResumeSkillsSection className="container-fluid pb-3">
+                                    <div class="row m-0 p-0">
+                                        <ResumeSkillsHeader><CustomIcon>Version Control<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.versionControl.slice(0, -2)}
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <ResumeSkillsHeader><CustomIcon>Package Managers<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.packageManagers.slice(0, -2)}
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <ResumeSkillsHeader><CustomIcon>Development Tools<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.developmentTools.slice(0, -2)}
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <ResumeSkillsHeader><CustomIcon>Languages<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.languages.slice(0, -2)}
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <ResumeSkillsHeader><CustomIcon>Frameworks & Libraries<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.frameworksLibrariesMobile1}
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        {resume.skills.frameworksLibrariesMobile2.slice(0, -2)}
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <ResumeSkillsHeader><CustomIcon>Design Tools<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.designTools.slice(0, -2)}
+                                    </div>
+                                </ResumeSkillsSection>
+                        </div>
                     </div>
                     <div class="row">
                     <ResumeSectionHeader className="container-fluid pb-2 pt-2">Education</ResumeSectionHeader>
@@ -90,7 +119,7 @@ export default function Resume(props) {
                         <div class="col-sm-6"> {/* BCC Section */}
                             <div class="row mb-2 ml-1">
                                 <div class="col-12 m-0 p-0">
-                                    <ResumeCollege className="mb-0">{resume.education.college2.collegeLocationGradYear}</ResumeCollege>
+                                    <ResumeCollege className="mb-0">{resume.education.college2.collegeName}</ResumeCollege>
                                 </div>
                                 <div class="col-12 m-0 p-0">
                                     <ResumeCollegeGrad>{resume.education.college2.collegeLocationGradYear}</ResumeCollegeGrad>

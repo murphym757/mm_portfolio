@@ -54,11 +54,57 @@ function Resume(props) {
     "class": "col-sm-12 pb-3"
   }, _react["default"].createElement(_personalInfoStyling.JobName, null, _quickDB.resume.job1.jobName), _react["default"].createElement(_personalInfoStyling.JobTitle, null, _quickDB.resume.job1.jobTitleYears), _react["default"].createElement(_personalInfoStyling.JobDescription, null, _quickDB.resume.job1.jobDescription))), _react["default"].createElement("div", {
     "class": "row"
-  }, _react["default"].createElement(_personalInfoStyling.ResumeSectionHeader, {
+  }, _react["default"].createElement("div", {
+    "class": "d-none d-xl-block"
+  }, " ", _react["default"].createElement(_personalInfoStyling.ResumeSectionHeader, {
     className: "container-fluid pb-1 pt-2"
   }, "Skills"), _react["default"].createElement(_personalInfoStyling.ResumeSkillsSection, {
     className: "container-fluid pb-3"
-  }, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Version Control", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.versionControl, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Package Managers", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.packageManagers, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Development Tools", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.developmentTools, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Languages", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.languages, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Frameworks & Libraries", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.frameworksLibraries, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Design Tools", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, null, ":"), " ")), _quickDB.resume.skills.designTools)), _react["default"].createElement("div", {
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Version Control", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.versionControl, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Package Managers", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.packageManagers, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Development Tools", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.developmentTools, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Languages", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.languages, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Frameworks & Libraries", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.frameworksLibraries, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Design Tools", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.designTools)), _react["default"].createElement("div", {
+    "class": "d-xl-none"
+  }, " ", _react["default"].createElement(_personalInfoStyling.ResumeSectionHeader, {
+    className: "container-fluid pb-1 pt-2"
+  }, "Skills"), _react["default"].createElement(_personalInfoStyling.ResumeSkillsSection, {
+    className: "container-fluid pb-3"
+  }, _react["default"].createElement("div", {
+    "class": "row m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Version Control", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.versionControl.slice(0, -2)), _react["default"].createElement("div", {
+    "class": "row m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Package Managers", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.packageManagers.slice(0, -2)), _react["default"].createElement("div", {
+    "class": "row m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Development Tools", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.developmentTools.slice(0, -2)), _react["default"].createElement("div", {
+    "class": "row m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Languages", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.languages.slice(0, -2)), _react["default"].createElement("div", {
+    "class": "row m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Frameworks & Libraries", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.frameworksLibrariesMobile1), _react["default"].createElement("div", {
+    "class": "row m-0 p-0"
+  }, _quickDB.resume.skills.frameworksLibrariesMobile2.slice(0, -2)), _react["default"].createElement("div", {
+    "class": "row m-0 p-0"
+  }, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Design Tools", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
+    className: "pr-1"
+  }, ":"))), _quickDB.resume.skills.designTools.slice(0, -2))))), _react["default"].createElement("div", {
     "class": "row"
   }, _react["default"].createElement(_personalInfoStyling.ResumeSectionHeader, {
     className: "container-fluid pb-2 pt-2"
@@ -88,7 +134,7 @@ function Resume(props) {
     "class": "col-12 m-0 p-0"
   }, _react["default"].createElement(_personalInfoStyling.ResumeCollege, {
     className: "mb-0"
-  }, _quickDB.resume.education.college2.collegeLocationGradYear)), _react["default"].createElement("div", {
+  }, _quickDB.resume.education.college2.collegeName)), _react["default"].createElement("div", {
     "class": "col-12 m-0 p-0"
   }, _react["default"].createElement(_personalInfoStyling.ResumeCollegeGrad, null, _quickDB.resume.education.college2.collegeLocationGradYear))), _react["default"].createElement("div", {
     "class": "row mb-2 ml-1"

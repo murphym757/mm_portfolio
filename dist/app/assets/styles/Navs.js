@@ -34,7 +34,7 @@ exports.LinkDivider = LinkDivider;
 var HomeLinkStandard = _styledComponents["default"].a.withConfig({
   displayName: "Navs__HomeLinkStandard",
   componentId: "sc-1qvjclo-2"
-})([":link,:active,:visited{color:", ";font-family:'Montserrat-Black';}:hover{color:", ";text-decoration:none;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:1em;}@media ", "{font-size:1em;}@media ", "{font-size:1.25em;}@media ", "{font-size:1.25em;}"], function (props) {
+})([":link,:active,:visited{color:", ";font-family:'Montserrat-Black';}:hover{color:", ";text-decoration:none;}@media ", "{font-size:0.6em;}@media ", "{font-size:0.6em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:1em;}@media ", "{font-size:1em;}@media ", "{font-size:1.25em;}@media ", "{font-size:1.25em;}"], function (props) {
   return props.theme.primaryColorAlt;
 }, function (props) {
   return props.theme.primaryColor;
@@ -45,7 +45,7 @@ exports.HomeLinkStandard = HomeLinkStandard;
 var HomeLink = (0, _styledComponents["default"])(_reactRouterDom.Link).withConfig({
   displayName: "Navs__HomeLink",
   componentId: "sc-1qvjclo-3"
-})([":link,:active,:visited{color:", ";font-family:'Montserrat-Black';}:hover{color:", ";text-decoration:none;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:1em;}@media ", "{font-size:1em;}@media ", "{font-size:1.25em;}@media ", "{font-size:1.25em;}"], function (props) {
+})([":link,:active,:visited{color:", ";font-family:'Montserrat-Black';}:hover{color:", ";text-decoration:none;}@media ", "{font-size:0.6em;}@media ", "{font-size:0.6em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:1em;}@media ", "{font-size:1em;}@media ", "{font-size:1.25em;}@media ", "{font-size:1.25em;}"], function (props) {
   return props.theme.primaryColorAlt;
 }, function (props) {
   return props.theme.primaryColor;
@@ -55,7 +55,7 @@ exports.HomeLink = HomeLink;
 var HomeLinkActive = (0, _styledComponents["default"])(_reactRouterDom.Link).withConfig({
   displayName: "Navs__HomeLinkActive",
   componentId: "sc-1qvjclo-4"
-})(["color:", ";font-family:'Montserrat-Black';-webkit-text-stroke-width:0.031em;-webkit-text-stroke-color:", ";-moz-text-stroke-width:0.031em;-moz-text-stroke-color:", ";:hover{color:", ";text-decoration:none;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:0.1em;}@media ", "{font-size:1em;}@media ", "{font-size:1em;}@media ", "{font-size:1.25em;}@media ", "{color:", ";font-family:'Montserrat-Black';-webkit-text-stroke-width:0.1em;-webkit-text-stroke-color:", ";;-moz-text-stroke-width:0.1em;-moz-text-stroke-color:", ";;font-size:1.25em;}"], function (props) {
+})(["color:", ";font-family:'Montserrat-Black';-webkit-text-stroke-width:0.031em;-webkit-text-stroke-color:", ";-moz-text-stroke-width:0.031em;-moz-text-stroke-color:", ";:hover{color:", ";text-decoration:none;}@media ", "{font-size:0.6em;}@media ", "{font-size:0.6em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.625em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:0.8em;}@media ", "{font-size:1em;}@media ", "{font-size:1em;}@media ", "{font-size:1.25em;}@media ", "{color:", ";font-family:'Montserrat-Black';-webkit-text-stroke-width:0.1em;-webkit-text-stroke-color:", ";;-moz-text-stroke-width:0.1em;-moz-text-stroke-color:", ";;font-size:1.25em;}"], function (props) {
   return props.theme.primaryColor;
 }, function (props) {
   return props.theme.secondaryColor;

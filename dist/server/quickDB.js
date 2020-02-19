@@ -232,7 +232,9 @@ var resume = {
     developmentTools: "Heroku, Amazon Web Services(S3), Babel, Webpack, Gulp. ",
     languages: "JavaScript, noSQL, SQL, HTML, CSS, SASS, Ruby. ",
     frameworksLibraries: "MERN Stack, React, React-Router, Axios, JSX, Styled-Components, jQuery, Bootstrap, Pug(formally Jade), Ruby on Rails. ",
-    designTools: "Photoshop."
+    frameworksLibrariesMobile1: "MERN Stack, React, React-Router, Axios, JSX, ",
+    frameworksLibrariesMobile2: "Styled-Components, jQuery, Bootstrap, Pug(formally Jade), Ruby on Rails. ",
+    designTools: "Photoshop. "
   },
   education: {
     college1: {

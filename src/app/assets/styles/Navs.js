@@ -105,10 +105,10 @@ export const HomeLinkStandard = styled.a `
     /* ----------------------------------------- */
     /* Small Mobile Phones */
     @media ${souseMediaQueries.mobileS.portrait} {
-       font-size: 0.1em;
+       font-size: 0.6em;
     }
     @media ${souseMediaQueries.mobileS.landscape} {
-        font-size: 0.1em;
+        font-size: 0.6em;
     } 
     /* Medium Mobile Phones */
     @media ${souseMediaQueries.mobileM.portrait} {
@@ -119,24 +119,24 @@ export const HomeLinkStandard = styled.a `
     } 
     /* Large Mobile Phones */
     @media ${souseMediaQueries.mobileL.portrait} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
     @media ${souseMediaQueries.mobileL.landscape} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     } 
     /* Large Mobile Phones (Max) */
     @media ${souseMediaQueries.mobileLMax.portrait} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
     @media ${souseMediaQueries.mobileLMax.landscape} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     } 
     /* Tablets */
     @media ${souseMediaQueries.tablet.portrait} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
     @media ${souseMediaQueries.tablet.landscape} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     } 
     /* Laptops and Large Tablets */
     @media ${souseMediaQueries.laptop.portrait} {
@@ -171,10 +171,10 @@ export const HomeLink = styled(Link) `
     /* ----------------------------------------- */
     /* Small Mobile Phones */
     @media ${souseMediaQueries.mobileS.portrait} {
-       font-size: 0.1em;
+       font-size: 0.6em;
     }
     @media ${souseMediaQueries.mobileS.landscape} {
-        font-size: 0.1em;
+        font-size: 0.6em;
     } 
     /* Medium Mobile Phones */
     @media ${souseMediaQueries.mobileM.portrait} {
@@ -185,24 +185,24 @@ export const HomeLink = styled(Link) `
     } 
     /* Large Mobile Phones */
     @media ${souseMediaQueries.mobileL.portrait} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
     @media ${souseMediaQueries.mobileL.landscape} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     } 
     /* Large Mobile Phones (Max) */
     @media ${souseMediaQueries.mobileLMax.portrait} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
     @media ${souseMediaQueries.mobileLMax.landscape} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     } 
     /* Tablets */
     @media ${souseMediaQueries.tablet.portrait} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
     @media ${souseMediaQueries.tablet.landscape} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     } 
     /* Laptops and Large Tablets */
     @media ${souseMediaQueries.laptop.portrait} {
@@ -239,10 +239,10 @@ export const HomeLinkActive = styled(Link) `
     /* ----------------------------------------- */
     /* Small Mobile Phones */
     @media ${souseMediaQueries.mobileS.portrait} {
-       font-size: 0.1em;
+       font-size: 0.6em;
     }
     @media ${souseMediaQueries.mobileS.landscape} {
-        font-size: 0.1em;
+        font-size: 0.6em;
     } 
     /* Medium Mobile Phones */
     @media ${souseMediaQueries.mobileM.portrait} {
@@ -253,24 +253,24 @@ export const HomeLinkActive = styled(Link) `
     } 
     /* Large Mobile Phones */
     @media ${souseMediaQueries.mobileL.portrait} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
     @media ${souseMediaQueries.mobileL.landscape} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     } 
     /* Large Mobile Phones (Max) */
     @media ${souseMediaQueries.mobileLMax.portrait} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
     @media ${souseMediaQueries.mobileLMax.landscape} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     } 
     /* Tablets */
     @media ${souseMediaQueries.tablet.portrait} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     }
     @media ${souseMediaQueries.tablet.landscape} {
-        font-size: 0.1em;
+        font-size: 0.8em;
     } 
     /* Laptops and Large Tablets */
     @media ${souseMediaQueries.laptop.portrait} {
