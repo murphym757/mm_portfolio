@@ -21,7 +21,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function Header(props) {
   return _react["default"].createElement(_mainStyling.SwingInTopDiv, {
-    className: "container-fluid second-title pt-4"
+    className: "container-fluid second-title m-0 p-0 pt-4 pt-4"
   }, _react["default"].createElement("div", {
     "class": "row"
   }, _react["default"].createElement(_designStyling.NameHeader, {

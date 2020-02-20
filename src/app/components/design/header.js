@@ -9,7 +9,7 @@ import {
 
 export default function Header(props) {
     return (
-        <SwingInTopDiv className="container-fluid second-title pt-4">
+        <SwingInTopDiv className="container-fluid second-title m-0 p-0 pt-4 pt-4">
             <div class="row">
                 <NameHeader className="col-sm-6">Maurice Murphy</NameHeader>
             </div>
