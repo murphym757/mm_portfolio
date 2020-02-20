@@ -55,7 +55,7 @@ function Resume(props) {
   }, _react["default"].createElement(_personalInfoStyling.JobName, null, _quickDB.resume.job1.jobName), _react["default"].createElement(_personalInfoStyling.JobTitle, null, _quickDB.resume.job1.jobTitleYears), _react["default"].createElement(_personalInfoStyling.JobDescription, null, _quickDB.resume.job1.jobDescription))), _react["default"].createElement("div", {
     "class": "row"
   }, _react["default"].createElement("div", {
-    "class": "d-none d-xl-block"
+    "class": "d-none d-md-block"
   }, " ", _react["default"].createElement(_personalInfoStyling.ResumeSectionHeader, {
     className: "container-fluid pb-1 pt-2"
   }, "Skills"), _react["default"].createElement(_personalInfoStyling.ResumeSkillsSection, {
@@ -73,7 +73,7 @@ function Resume(props) {
   }, ":"))), _quickDB.resume.skills.frameworksLibraries, _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeader, null, _react["default"].createElement(_fontAwesomeStyling.CustomIcon, null, "Design Tools", _react["default"].createElement(_personalInfoStyling.ResumeSkillsHeaderColon, {
     className: "pr-1"
   }, ":"))), _quickDB.resume.skills.designTools)), _react["default"].createElement("div", {
-    "class": "d-xl-none"
+    "class": "d-md-none"
   }, " ", _react["default"].createElement(_personalInfoStyling.ResumeSectionHeader, {
     className: "container-fluid pb-1 pt-2"
   }, "Skills"), _react["default"].createElement(_personalInfoStyling.ResumeSkillsSection, {

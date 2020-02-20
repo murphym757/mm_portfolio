@@ -57,7 +57,7 @@ export default function Resume(props) {
                     */}
                     </div>
                     <div class="row">
-                        <div class="d-none d-xl-block"> {/* For larger Sceens */}
+                        <div class="d-none d-md-block"> {/* For larger Sceens */}
                             <ResumeSectionHeader className="container-fluid pb-1 pt-2">Skills</ResumeSectionHeader>
                                 <ResumeSkillsSection className="container-fluid pb-3">
                                     <ResumeSkillsHeader><CustomIcon>Version Control<ResumeSkillsHeaderColon className="pr-1">:</ResumeSkillsHeaderColon></CustomIcon></ResumeSkillsHeader>{resume.skills.versionControl}
@@ -69,7 +69,7 @@ export default function Resume(props) {
                                 </ResumeSkillsSection>
                         </div>
 
-                        <div class="d-xl-none"> {/* For smaller Sceens */}
+                        <div class="d-md-none"> {/* For smaller Sceens */}
                             <ResumeSectionHeader className="container-fluid pb-1 pt-2">Skills</ResumeSectionHeader>
                                 <ResumeSkillsSection className="container-fluid pb-3">
                                     <div class="row m-0 p-0">
