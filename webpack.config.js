@@ -19,21 +19,27 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
-                use: {
-                    loader: 'babel-loader',
+                test: /(\.css|.scss)$/,
+                use: [{
+                    loader: "style-loader" // creates style nodes from JS strings
+                }, {
+                    loader: "css-loader" // translates CSS into CommonJS
+                }, {
+                    loader: "sass-loader" // compiles Sass to CSS
+                }]
+            },
+            {
+                test: /\.(jsx|js)?$/,
+                use: [{
+                    loader: "babel-loader",
                     options: {
-                        cacheDirectory: true
+                        cacheDirectory: true,
+                        presets: ['react', 'es2015'] // Transpiles JSX and ES6
                     }
-                },
-                exclude: /node_modules/
+                }]
             },
             {
-                test: /\.(s*)css$/,
-                use: ["style-loader", "css-loader", "sass-loader"]
-            },
-            {
-                test: /\.(pdf|jp(e*)g|png|gif|svg|ico)$/,
+                test: /\.(pdf|jpg|png|gif|svg|ico)$/,
                 use: [
                     {
                         loader: 'url-loader'
@@ -41,12 +47,12 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jp(e*)g|png|gif|svg|pdf|ico|ttf|otf|eot|woff|woff2)$/,
+                test: /\.(jpg|png|gif|svg|pdf|ico|ttf|eot|woff|woff2)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
-                            name: './src/app/images/[hash].[ext]'
+                            name: '[path][name].[hash].[ext]'
                         },
                     },
                 ]
