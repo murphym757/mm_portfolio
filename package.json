@@ -1,6 +1,10 @@
 {
   "name": "react-template",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.19.2"
+  },
   "description": "A React template for future projects.",
   "main": "dist/index.js",
   "scripts": {
@@ -21,7 +25,9 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.6",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
-    "rimraf": "^2.7.1"
+    "rimraf": "^2.7.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^10.3.1"
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.6.2",
@@ -49,7 +55,6 @@
     "materialize-css": "^1.0.0",
     "method-override": "^3.0.0",
     "mongoose": "^5.7.13",
-    "node-sass": "^4.13.0",
     "npm": "^6.13.7",
     "popper.js": "^1.16.0",
     "react": "^16.12.0",
@@ -58,7 +63,6 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "^3.2.0",
     "react-switch": "^5.0.1",
-    "sass-loader": "^8.0.0",
     "style-loader": "^1.1.2",
     "styled-components": "^4.4.1",
     "styled-icons": "^7.15.1",
